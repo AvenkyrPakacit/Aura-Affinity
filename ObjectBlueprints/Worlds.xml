@@ -1,0 +1,186 @@
+<!--<?xml version="1.0" encoding="utf-8" ?>
+<worlds>
+
+  <world Name="Dorator" ZoneFactory="DoratorZoneFactory" Map="JoppaWorldNew8.rpm" DisplayName="Dorator">
+    <builder Class="DoratorBuilder"></builder>
+    <builder Class="RingGateBuilder" StaticGateZones="Dorator.17.17.1.1.14"></builder>
+    <cell Name="DefaultDoratorCell" Inherits="" ApplyTo="*Default">
+      <zone Level="0-9" x="0-2" y="0-2" Name="open sky" IndefiniteArticle="the" GroundLiquid="" HasWeather="true" WindSpeed="0-80" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="500-6000">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+        <builder Class="EmptyGround"></builder>
+        <music Track="Overworld1" />
+      </zone>
+      <zone Level="11-20" x="0-2" y="0-2" Name="subterranean caves">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:Caves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Caves1" />
+      </zone>
+      <zone Level="21-30" x="0-2" y="0-2" Name="subterranean caves">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:Caves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Caves1" />
+      </zone>
+      <zone Level="31-40" x="0-2" y="0-2" Name="subterranean caves">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:Caves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Caves1" />
+      </zone>
+      <zone Level="41-49" x="0-2" y="0-2" Name="subterranean caves">
+        <builder Class="Strata"></builder>
+        <builder Class="ZoneTemplate:Caves"></builder>
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <music Track="Deeper Caverns" />
+      </zone>
+    </cell>
+    <cell Name="Akadaenos" Inherits="WatervineCell" ApplyTo="TerrainJoppa" Mutable="false">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Akadaenos" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="outskirts" NameContext="Akadaenos" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000">
+        <builder Class="JoppaOutskirts" />
+        <population Table="Akadaenos Outskirts" />
+      </zone>
+      <zone Level="10" x="1" y="1" Name="Akadaenos" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" AmbientBed="Sounds/Ambiences/amb_bed_settlement_Joppa">
+        <map FileName="Joppa.rpm"></map>
+        <music Track="MehmetsMorning" />
+        <prebuilder Class="IsCheckpoint" Key="Akadaenos"></prebuilder>
+      </zone>
+    </cell>
+    <cell Name="Akfiastrava" Inherits="WatervineCell" ApplyTo="TerrainJoppa" Mutable="false">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Akfiastrava" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="outskirts" NameContext="Akfiastrava" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000">
+        <builder Class="JoppaOutskirts" />
+        <population Table="Akfiastrava Outskirts" />
+      </zone>
+      <zone Level="10" x="1" y="1" Name="Akfiastrava" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" AmbientBed="Sounds/Ambiences/amb_bed_settlement_Joppa">
+        <map FileName="Joppa.rpm"></map>
+        <music Track="MehmetsMorning" />
+        <prebuilder Class="IsCheckpoint" Key="Akfiastrava"></prebuilder>
+      </zone>
+    </cell>
+    <cell Name="Akilisefa" Inherits="WatervineCell" ApplyTo="TerrainJoppa" Mutable="false">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Akilisefa" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="outskirts" NameContext="Akilisefa" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000">
+        <builder Class="JoppaOutskirts" />
+        <population Table="Akilisefa Outskirts" />
+      </zone>
+      <zone Level="10" x="1" y="1" Name="Akilisefa" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" AmbientBed="Sounds/Ambiences/amb_bed_settlement_Joppa">
+        <map FileName="Joppa.rpm"></map>
+        <music Track="MehmetsMorning" />
+        <prebuilder Class="IsCheckpoint" Key="Akilisefa"></prebuilder>
+      </zone>
+    </cell>
+    <cell Name="Aminalasos" Inherits="WatervineCell" ApplyTo="TerrainJoppa" Mutable="false">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Aminalasos" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="outskirts" NameContext="Aminalasos" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000">
+        <builder Class="JoppaOutskirts" />
+        <population Table="Aminalasos Outskirts" />
+      </zone>
+      <zone Level="10" x="1" y="1" Name="Aminalasos" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" AmbientBed="Sounds/Ambiences/amb_bed_settlement_Joppa">
+        <map FileName="Joppa.rpm"></map>
+        <music Track="MehmetsMorning" />
+        <prebuilder Class="IsCheckpoint" Key="Aminalasos"></prebuilder>
+      </zone>
+    </cell>
+    <cell Name="Avenlasal" Inherits="WatervineCell" ApplyTo="TerrainJoppa" Mutable="false">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Avenlasal" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="outskirts" NameContext="Avenlasal" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000">
+        <builder Class="JoppaOutskirts" />
+        <population Table="Avenlasal Outskirts" />
+      </zone>
+      <zone Level="10" x="1" y="1" Name="Avenlasal" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" AmbientBed="Sounds/Ambiences/amb_bed_settlement_Joppa">
+        <map FileName="Joppa.rpm"></map>
+        <music Track="MehmetsMorning" />
+        <prebuilder Class="IsCheckpoint" Key="Avenlasal"></prebuilder>
+      </zone>
+    </cell>
+    <cell Name="Axeikiceex" Inherits="WatervineCell" ApplyTo="TerrainJoppa" Mutable="false">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Axeikiceex" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="outskirts" NameContext="Axeikiceex" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000">
+        <builder Class="JoppaOutskirts" />
+        <population Table="Axeikiceex Outskirts" />
+      </zone>
+      <zone Level="10" x="1" y="1" Name="Axeikiceex" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" AmbientBed="Sounds/Ambiences/amb_bed_settlement_Joppa">
+        <map FileName="Joppa.rpm"></map>
+        <music Track="MehmetsMorning" />
+        <prebuilder Class="IsCheckpoint" Key="Axeikiceex"></prebuilder>
+      </zone>
+    </cell>
+    <cell Name="Daksemica" Inherits="WatervineCell" ApplyTo="TerrainJoppa" Mutable="false">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Daksemica" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="outskirts" NameContext="Daksemica" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000">
+        <builder Class="JoppaOutskirts" />
+        <population Table="Daksemica Outskirts" />
+      </zone>
+      <zone Level="10" x="1" y="1" Name="Daksemica" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" AmbientBed="Sounds/Ambiences/amb_bed_settlement_Joppa">
+        <map FileName="Joppa.rpm"></map>
+        <music Track="MehmetsMorning" />
+        <prebuilder Class="IsCheckpoint" Key="Daksemica"></prebuilder>
+      </zone>
+    </cell>
+    <cell Name="Delasfiana" Inherits="WatervineCell" ApplyTo="TerrainJoppa" Mutable="false">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Delasfiana" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="outskirts" NameContext="Delasfiana" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000">
+        <builder Class="JoppaOutskirts" />
+        <population Table="Delasfiana Outskirts" />
+      </zone>
+      <zone Level="10" x="1" y="1" Name="Delasfiana" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" AmbientBed="Sounds/Ambiences/amb_bed_settlement_Joppa">
+        <map FileName="Joppa.rpm"></map>
+        <music Track="MehmetsMorning" />
+        <prebuilder Class="IsCheckpoint" Key="Delasfiana"></prebuilder>
+      </zone>
+    </cell>
+    <cell Name="Jakraskna" Inherits="WatervineCell" ApplyTo="TerrainJoppa" Mutable="false">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Jakraskna" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="outskirts" NameContext="Jakraskna" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000">
+        <builder Class="JoppaOutskirts" />
+        <population Table="Jakraskna Outskirts" />
+      </zone>
+      <zone Level="10" x="1" y="1" Name="Jakraskna" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" AmbientBed="Sounds/Ambiences/amb_bed_settlement_Joppa">
+        <map FileName="Joppa.rpm"></map>
+        <music Track="MehmetsMorning" />
+        <prebuilder Class="IsCheckpoint" Key="Jakraskna"></prebuilder>
+      </zone>
+    </cell>
+    <cell Name="Javicemina" Inherits="WatervineCell" ApplyTo="TerrainJoppa" Mutable="false">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above Javicemina" IndefiniteArticle="the">
+        <builder Class="Sky"></builder>
+      </zone>
+      <zone Level="10" x="0-2" y="0-2" Name="outskirts" NameContext="Javicemina" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000">
+        <builder Class="JoppaOutskirts" />
+        <population Table="Javicemina Outskirts" />
+      </zone>
+      <zone Level="10" x="1" y="1" Name="Javicemina" ProperName="true" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" AmbientBed="Sounds/Ambiences/amb_bed_settlement_Joppa">
+        <map FileName="Joppa.rpm"></map>
+        <music Track="MehmetsMorning" />
+        <prebuilder Class="IsCheckpoint" Key="Javicemina"></prebuilder>
+      </zone>
+    </cell>
+  </world>
+
+</worlds>-->

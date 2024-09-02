@@ -1,0 +1,1537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conversations>
+
+  <!--DefaultConversations-->
+
+  <conversation ID="Avryialus">
+    <node ID="Start">
+      <text>
+        {{emote|*cautious growling*}}
+        {{emote|*cautious hissing*}}~
+        {{emote|*chirps and barks*}}~
+        {{emote|*hisses and growls*}}~
+      </text>
+      <choice GotoID="End">...live and drink.</choice>
+    </node>
+    <node ID="Start" IfSubtype="Arinate" Priority="1">
+      <text>
+        Hows everything been, =player.siblingTerm=?~
+        Need anyone to comfort you, =player.offspringTerm=?~
+        you seem well, =player.siblingTerm=.~
+        As much as I admire those fangs, =player.offspringTerm=. I'm not exactly in the mood to get bit.
+      </text>
+      <choice GotoID="End">Feast well, =pronouns.siblingTerm=.</choice>
+    </node>
+    <node ID="Start" IfSubtype="Kazvate" Priority="1">
+      <text>
+        Hows everything been, =player.siblingTerm=?~
+        Need anyone to comfort you, =player.offspringTerm=?~
+        you seem well, =player.siblingTerm=.~
+        How's my twin tailed offspringTerm this lovely day?
+      </text>
+      <choice GotoID="End">Enjoy yourself, =pronouns.siblingTerm=.</choice>
+    </node>
+    <node ID="Start" IfSubtype="Voderai Arkai" Priority="1">
+      <text>
+        Hows everything been, =player.siblingTerm=?~
+        Need anyone to comfort you, =player.offspringTerm=?~
+        you seem well, =player.siblingTerm=.~
+        =player.OffspringTerm=, care little that my size is twice that of your own, and even little for my sting.
+      </text>
+      <choice GotoID="End">Live well, =pronouns.siblingTerm=.</choice>
+    </node>
+  </conversation>
+
+  <conversation ID="Kazvate">
+    <node ID="Start">
+      <text>
+        Kazva!
+        Kazvate!~
+        {{emote|*chirps and barks*}}~
+        {{emote|*hisses and growls*}}~
+      </text>
+      <choice GotoID="End">...live and drink.</choice>
+    </node>
+    <node ID="Start" IfSubtype="Arinate" Priority="1">
+      <text>
+        Kazva!
+        Kazvate!~
+        {{emote|*chirps and barks*}}~
+        {{emote|*hisses and growls*}}~
+      </text>
+      <choice GotoID="End">Feast well, =pronouns.siblingTerm=.</choice>
+    </node>
+    <node ID="Start" IfSubtype="Kazvate" Priority="1">
+      <text>
+        Kazva!
+        Kazvate!~
+        Kazva! =pronouns.SiblingTerm=!~
+        Kazvate! =pronouns.SiblingTerm=!~
+      </text>
+      <choice GotoID="End">Enjoy yourself, =pronouns.siblingTerm=.</choice>
+    </node>
+    <node ID="Start" IfSubtype="Voderai Arkai" Priority="1">
+      <text>
+        Kazva!
+        Kazvate!~
+        {{emote|*chirps and barks*}}~
+        {{emote|*hisses and growls*}}~
+      </text>
+      <choice GotoID="End">Live well, =pronouns.siblingTerm=.</choice>
+    </node>
+  </conversation>
+
+  <conversation ID="Korshek">
+    <node ID="Start">
+      <text>
+        Any reasoning =ifplayerplural:ye are:thou'rt= bothering me, sin blooded?~
+        May =ifplayerplural:your:thine= sin burn bright, =player.formalAddressTerm=.~
+        =ifplayerplural:ye:thee=, =player.formalAddressTerm=?~
+        Tread with ease, sin blooded.
+      </text>
+      <choice GotoID="End">Live and drink.</choice>
+    </node>
+  </conversation>
+
+  <conversation ID="Rinate">
+    <node ID="Start">
+      <text>
+        {{emote|*irritated growling*}}
+        {{emote|*irritated hissing*}}~
+        {{emote|*chirps and barks*}}~
+        {{emote|*hisses and growls*}}~
+      </text>
+      <choice GotoID="End">...live and drink.</choice>
+    </node>
+    <node ID="Start" IfSubtype="Arinate" Priority="1">
+      <text>
+        Care for my horns, =player.siblingTerm=?~
+        Ever been bit, =player.siblingTerm=?~
+        My horns are ready, and my fangs sharp, =player.siblingTerm=?~
+        Haven't sunk my fangs into anything in over a week. Anyways: how's your day been, =player.siblingTerm=?
+      </text>
+      <choice GotoID="End">Feast well, =pronouns.siblingTerm=.</choice>
+    </node>
+    <node ID="Start" IfSubtype="Kazvate" Priority="1">
+      <text>
+        Care for my horns, =player.siblingTerm=?~
+        Ever been bit, =player.siblingTerm=?~
+        My horns are ready, and my fangs sharp, =player.siblingTerm=?~
+        *purrs* A lovely kazva to bite?
+      </text>
+      <choice GotoID="End">Enjoy yourself, =pronouns.siblingTerm=.</choice>
+    </node>
+    <node ID="Start" IfSubtype="Voderai Arkai" Priority="1">
+      <text>
+        Care for my horns, =player.siblingTerm=?~
+        Ever been bit, =player.siblingTerm=?~
+        My horns are ready, and my fangs sharp, =player.siblingTerm=?~
+        Arkaedus, I feel as our souls will soon meet. Care for a hunt later, =player.siblingTerm=?
+      </text>
+      <choice GotoID="End">Live well, =pronouns.siblingTerm=.</choice>
+    </node>
+  </conversation>
+
+  <conversation ID="Vaskate">
+    <node ID="Start">
+      <text>
+        Vaska!
+        Vaskate!~
+        {{emote|*chirps and barks*}}~
+        {{emote|*hisses and growls*}}~
+      </text>
+      <choice GotoID="End">...live and drink.</choice>
+    </node>
+    <node ID="Start" IfSubtype="Arinate" Priority="1">
+      <text>
+        Vaska!
+        Vaskate!~
+        {{emote|*chirps and barks*}}~
+        {{emote|*hisses and growls*}}~
+      </text>
+      <choice GotoID="End">Feast well, =pronouns.siblingTerm=.</choice>
+    </node>
+    <node ID="Start" IfSubtype="Kazvate" Priority="1">
+      <text>
+        Vaska!
+        Vaskate!~
+        Vaska! Vaska!~
+        Vaska! Vaskate!~
+      </text>
+      <choice GotoID="End">Enjoy yourself, =pronouns.siblingTerm=.</choice>
+    </node>
+    <node ID="Start" IfSubtype="Voderai Arkai" Priority="1">
+      <text>
+        Vaska!
+        Vaskate!~
+        {{emote|*chirps and barks*}}~
+        {{emote|*hisses and growls*}}~
+      </text>
+      <choice GotoID="End">Live well, =pronouns.siblingTerm=.</choice>
+    </node>
+  </conversation>
+
+  <conversation ID="Voderai">
+    <node ID="Start">
+      <text>
+        {{emote|*anxious growling*}}
+        {{emote|*anxious hissing*}}~
+        {{emote|*chirps and barks*}}~
+        {{emote|*hisses and growls*}}~
+      </text>
+      <choice GotoID="End">...live and drink.</choice>
+    </node>
+    <node ID="Start" IfSubtype="Arinate" Priority="1">
+      <text>
+        What reasoning, =player.siblingTerm=?~
+        Leave me be, =player.siblingTerm=.~
+        What is it, =player.siblingTerm=.~
+        I feel we'll become rather fond of one another, arinate.
+      </text>
+      <choice GotoID="End">Feast well, =pronouns.siblingTerm=.</choice>
+    </node>
+    <node ID="Start" IfSubtype="Kazvate" Priority="1">
+      <text>
+        What reasoning, =player.siblingTerm=?~
+        Leave me be, =player.siblingTerm=.~
+        What is it, =player.siblingTerm=.~
+        Tell me you aren't fucking drunk, =pronouns.siblingTerm=?
+      </text>
+      <choice GotoID="End">Enjoy yourself, =pronouns.siblingTerm=.</choice>
+    </node>
+    <node ID="Start" IfSubtype="Voderai Arkai" Priority="1">
+      <text>
+        What reasoning, =player.siblingTerm=?~
+        Leave me be, =player.siblingTerm=.~
+        What is it, =player.siblingTerm=.~
+        Try to keep those eyes clear, and your hunger satisfied.
+      </text>
+      <choice GotoID="End">Live well, =pronouns.siblingTerm=.</choice>
+    </node>
+  </conversation>
+
+  <!--Main Characters-->
+
+  <!--Syrenalian-->
+
+  <conversation ID="Savistato" Inherits="BaseSlynthMayor">
+    <node ID="Start">
+      <text IfNotHaveQuest="The Hegemon of Fire">
+        Oh, I wasn't expecting company..
+
+        Savistato, high councillor of Syrenalia. And..you are?
+      </text>
+      <text IfHaveActiveQuest="The Hegemon of Fire" IfNotFinishedQuestStep="Accept Savistato's proposal">
+        Welcome back, =name=.
+
+        Did you forget something?
+      </text>
+      <text IfHaveActiveQuest="The Hegemon of Fire" IfFinishedQuestStep="Accept Savistato's proposal">
+        Welcome back, =name=.
+
+        Is there any news?
+      </text>
+      <text IfFinishedQuest="The Hegemon of Fire">
+        Welcome back, =name=.
+
+        Is there anything I can do for you?
+      </text>
+      <choice GotoID="Work" IfHaveActiveQuest="The Hegemon of Fire" IfNotFinishedQuestStep="Accept Savistato's proposal">Is there any work you have.</choice>
+      <choice GotoID="Questions" IfFinishedQuest="The Hegemon of Fire">I have questions, councillor.</choice>
+      <choice GotoID="Resolved" IfHaveActiveQuest="The Hegemon of Fire" IfFinishedQuestStep="The prisoner">I have handled the situation.</choice>
+      <choice GotoID="Greetings" IfNotHaveQuest="The Hegemon of Fire">I am =player.formalAddressTerm=.</choice>
+      <choice GotoID="End">live and drink, high councillor.</choice>
+    </node>
+    <node ID="Greetings">
+      <text IfFinishedQuest="The Avenkyri" Priority="1">
+        Ah! your the one Akafiol told my spouse all about.
+
+        In any case: welcome =name=, to my temporary abode.
+      </text>
+      <text>
+        Well..it's a pleasure to meet you then.
+
+        Apologies you caught me off guard: welcome =name=, to my temporary abode.
+      </text>
+      <choice GotoID="Work" StartQuest="The Hegemon of Fire">Is there any work you have.</choice>
+      <choice GotoID="End" StartQuest="The Hegemon of Fire">live and drink, high councillor.</choice>
+    </node>
+    <node ID="Questions">
+      <text>
+        Of course, =name=.
+
+        I'll do what I can to answer.
+      </text>
+      <choice GotoID="Curse">Do you always speak with such a calm tone?</choice>
+      <choice GotoID="What">What do you do here?</choice>
+      <choice GotoID="Variants">Why are there three variants of Syrenals?</choice>
+      <choice GotoID="End">I forgot what I was going to ask.</choice>
+    </node>
+    <node ID="Resolved">
+      <text IfFinishedQuestStep="Investigate">
+        So I've heard..
+
+        I would've prefered it have been resolved more..favourably.
+      </text>
+      <text>
+        So I've heard..
+
+        =name=, when I said 'clear their name' I meant to find evidence, not..
+      </text>
+      <text IfFinishedQuestStep="Investigate">
+        So I've heard, =name=.
+
+        And what will sought within a explicit note written by the local vexara herself..
+      </text>
+      <choice GotoID="End" CompleteQuestStep="Return to Savistato">I've handled it in the way I sought fit.</choice>
+    </node>
+    <node ID="What" Inherits="Questions">
+      <text>
+        I'm a high councillor of Syrenalia, originally of the Council of Light under the leadership of The Hegemon of Fire.
+      </text>
+      <choice GotoID="Questions">I have other questions.</choice>
+      <choice GotoID="End">Thanks councillor, live and drink.</choice>
+    </node>
+    <node ID="Variants" Inherits="Questions">
+      <text>
+        We were all born as part of Dorator's orbit, however we all came from separate moons.
+
+        Eilasalian, such as I, Einfieran, such as Varinesa Talfiera of course, and Octusarian such as Vanatiel, monarch of the Council of Light.
+      </text>
+      <choice GotoID="Eilasalian">Tell me about those of Eilasalia.</choice>
+      <choice GotoID="Einfieran">Tell me about those of Einfiera.</choice>
+      <choice GotoID="Octusarian">Tell me about those of Octusaria.</choice>
+      <choice GotoID="Questions">I have other questions.</choice>
+      <choice GotoID="End">Thanks councillor, live and drink.</choice>
+    </node>
+    <node ID="Curse" Inherits="Variants">
+      <text>
+        Oh such a particularly chosen question.
+
+        We of Eilasalia have always seen such language as harsh, brought with strife.
+
+        The Talvix of Einfiera often enjoy such vibrant flavour of words.
+
+        However, my counter kindred of Octusaria on the other hand, lets just say: have less restraint.
+      </text>
+      <choice GotoID="Apology">You don't have to be an asshole about it.</choice>
+    </node>
+    <node ID="Apology">
+      <text>
+        Oh I apologize if that sounded as though I was denigrating my kindred.
+
+        To properly answer your question: no I don't use such colourful language.
+
+        Do you have any other questions, =name=?
+      </text>
+      <choice GotoID="Questions">I do, yes.</choice>
+      <choice GotoID="End">No that is all, live and Drink councillor.</choice>
+    </node>
+    <node ID="Eilasalian" Inherits="Variants">
+      <text>
+        We are the vibrant charm of the living sun.
+
+        Calm, loving, but unfortunatly just as ambitious as any other.
+      </text>
+    </node>
+    <node ID="Einfieran" Inherits="Variants">
+      <text>
+        They are fiery spirits of the volcanic moon, waiting to be unleashed.
+
+        Excitement seeking, and fierce. To face one is to witness their flame.
+      </text>
+    </node>
+    <node ID="Octusarian" Inherits="Variants">
+      <text>
+        The penumbral moon, contained many of vampiric delights. Fortunately syrenals have no blood.
+
+        Their tongues are sharp, and their presence comes with enjoyment.
+
+        And whilst representing most of the axilarium's vexara: their more harsher personality coincides with dedication.
+      </text>
+    </node>
+    <node ID="Work">
+      <text>
+        Technically speaking: The local axilarium are holding a Talfieran civil volunteer.
+
+        I know that the charges are falsified, and need some way to clear their name.
+      </text>
+      <choice GotoID="End" CompleteQuestStep="Accept Savistato's proposal">I'll see what I can do, councillor.</choice>
+      <choice GotoID="End">I'll contemplate my decision.</choice>
+    </node>
+    <node ID="SlynthRequest">
+      <text>Slynth was it, I don't believe I've heard of them? Are you asking if they might reside here?</text>
+    </node>
+    <node ID="SlynthRequestAccept">
+      <text>Of course, =name=. I'll see what I can do in regards to holding council, do inform these slynth of my efforts.</text>
+      <choice Target="End">You have my thanks, councillor.</choice>
+    </node>
+    <node ID="SlynthRequestReject">I'd love to, =name=. However the other councillors have been keeping me busy with things around here.</node>
+    <node ID="SlynthAbout">I've yet to await news. Have these slynth decided on their journey?</node>
+    <node ID="SlynthArrived">
+      <text>
+        Ah, yes..
+
+        I can relatively reasonably say: they've safetly arrived without issue.
+      </text>
+      <choice GotoID="Start">My thanks, councillor.</choice>
+    </node>
+    <node ID="SlynthSettled">
+      <text>
+        Ah, yes..
+
+        These slynth as you and they call themselves are settling in at a reasonable manner of speaking.
+
+        Please be patient with those the illiatari arrested, I'm doing what I can to release them.
+      </text>
+      <choice GotoID="Start">My thanks again, councillor.</choice>
+    </node>
+  </conversation>
+
+  <!--SyrnlCyber-->
+
+  <conversation ID="DRVVelegor">
+    <node ID="Start">
+      <text>
+        Yes, =player.apparentSpecies=..?
+
+        What can Doctor, V Velegor do for one such as =player.reflexive=?
+      </text>
+      <choice GotoID="End">live and drink, doctor..</choice>
+    </node>
+  </conversation>
+
+  <!--SyrnlRF-->
+
+  <conversation ID="Xelastyr">
+    <node ID="Start">
+      <text>
+        Speak your will, what's your reasoning =player.apparentSpecies=?
+      </text>
+      <choice GotoID="End">I have none, live and drink champion.</choice>
+    </node>
+  </conversation>
+
+  <!--Talfieran-->
+
+  <conversation ID="Alvaneia">
+    <node ID="Start">
+      <text>
+        Always a tale burning upon the flame.~
+        May the flame's sun bring you to heart's desire.~
+        Need the eloquence of an open flame?
+      </text>
+      <choice GotoID="End">Live and drink, Alvaneia.</choice>
+    </node>
+  </conversation>
+
+  <conversation ID="TFN_Fiera">
+    <node ID="Start">
+      <text>
+        Anything I can do for you love?~
+        You seem particularly curious about something.
+      </text>
+      <choice GotoID="End">Live and drink, Fiera.</choice>
+    </node>
+  </conversation>
+
+  <conversation ID="TFN_Hellshot">
+    <node ID="Start">
+      <text>
+        Goddamn fucking sensors need looked at..~
+        May they see Hell!~
+        Need to get around to tuning this fucking rifle..~
+        Plenty of fire to burn.
+      </text>
+      <choice GotoID="Questions">I have some questions.</choice>
+      <choice GotoID="End">...</choice>
+    </node>
+    <node ID="Questions">
+      <text>
+        Just fucking ask already!~
+        Speak your will then.
+      </text>
+      <choice GotoID="End">On second thought, nevermind..</choice>
+    </node>
+  </conversation>
+
+  <conversation ID="Varinesa">
+    <node ID="Start">
+      <text>
+        Been awhile since I've spoken to..
+
+        Oh..hello..whoever you are..
+      </text>
+      <choice GotoID="End">Live and drink, Varinesa.</choice>
+    </node>
+  </conversation>
+
+  <!--The Avenkyri-->
+
+  <!--AvenkyrAkafiol-->
+
+  <conversation ID="Akafiol">
+    <node ID="Start">
+      <text IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akafiol">
+        {{emote|*With a curious look as you approach: Akafiol licks the sides of her beak*}}
+
+        Aren't you a lovely thing.
+      </text>
+      <text IfHaveActiveQuest="The Avenkyri" IfFinishedQuestStep="Meet Akafiol">
+        {{emote|*Akafiol lifts her head patiently with curiosity as you approach*}}
+
+        Did you forget anything, or just need the company of a gentle giant?
+      </text>
+      <text IfNotHaveQuest="The Avenkyri">
+        {{emote|*Akafiol looks to you with hunger in her eyes*}}
+      </text>
+      <text IfFinishedQuest="The Avenkyri">
+        {{emote|*Akafiol lifts her head patiently with a comforting smile as you approach*}}
+      </text>
+      <choice GotoID="Uneasy" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akafiol">Don't get any ideas!</choice>
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akafiol">..I don't think we've met?</choice>
+      <choice GotoID="Hunger" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akafiol">If your hungry: I don't think I have anything that'd suit you.</choice>
+      <choice GotoID="Uneasy" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akafiol">Umm..on second thought: I'll keep my distance..</choice>
+      <choice GotoID="Rest" IfHaveActiveQuest="The Avenkyri" IfFinishedQuestStep="Meet Akafiol">Was just checking on you, gentle giant.</choice>
+      <choice GotoID="Pet">May I pet you?</choice>
+      <choice GotoID="End" IfNotHaveQuest="The Avenkyri">On second thought..</choice>
+    </node>
+    <node ID="Uneasy">
+      <text>
+        {{emote|*She chuckles, placing a paw on the end of her beak with a slight blush*}}
+
+        Need not let my instinctual voderai hunger trouble you.
+
+        I'm a gentle beast, born from avyrialus blood.
+      </text>
+      <choice GotoID="WhoAreYou">..I don't think we've met?</choice>
+      <choice GotoID="End">Uh..huh..so you say..</choice>
+    </node>
+    <node ID="Hunger">
+      <text>
+        {{emote|*She gives a brief smirk as she lowers her head to yours, giving a soft lick to your cheek*}}
+
+        The combination of avyrialus, and voderai make for a..particular pair of personality.
+
+        {{emote|*You hear a loud purr coming from her, as she gives a warm smile*}}
+      </text>
+      <choice GotoID="Uneasy">Well then, as long as you don't eat me: we're alright.</choice>
+      <choice GotoID="WhoAreYou">..I don't think we've met?</choice>
+      <choice GotoID="Pet">May I pet you?</choice>
+    </node>
+    <node ID="Pet">
+      <text IfHaveActiveQuest="The Avenkyri">
+        Need little to ask for a gentle beast, with an insatiable hunger.
+
+        {{emote|*As you begin to rub the ridges of her beak, she purrs louder as she softly nuzzles against your hand*}}
+      </text>
+      <text IfNotHaveQuest="The Avenkyri">
+        {{emote|*She cautiously lowers her head as you place your hand on her beak*}}
+
+        {{emote|*As you begin to rub the ridges of her beak, you hear a soft purr*}}
+      </text>
+      <text IfFinishedQuest="The Avenkyri">
+        {{emote|*She lowers her head to you, nuzzling against you with a loud purr*}}
+
+        {{emote|*As you begin to rub the ridges of her beak, she looks to you with a affectionate smile.*}}
+      </text>
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akafiol">..I don't think we've properly introduced ourselves?</choice>
+      <choice GotoID="rest">There there, good giant avian wolf cat.</choice>
+    </node>
+    <node ID="WhoAreYou">
+      <text>
+        Avenkyr Akafiol, Swallow habit if you're curious about the meaning.
+      </text>
+      <choice GotoID="rest" CompleteQuestStep="Meet Akafiol">Alright, see you around.</choice>
+    </node>
+    </node>
+    <node ID="rest">
+      <text>
+        {{emote|*With a grin: she lays back down curling up in a ball, before resting her head upon her tail*}}
+      </text>
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akafiol">Wait, I forgot to ask: what's your name?</choice>
+      <choice GotoID="End" IfFinishedQuest="The Avenkyri">Live and remain ever hungry, swallow habit.</choice>
+      <choice GotoID="End" IfHaveActiveQuest="The Avenkyri" IfFinishedQuestStep="Meet Akafiol">Live and remain ever hungry, voderai.</choice>
+      <choice GotoID="End" IfNotHaveQuest="The Avenkyri">Live and remain ever hungry..</choice>
+    </node>
+  </conversation>
+
+  <!--AvenkyrAkailios-->
+  
+  <conversation ID="Akailios">
+    <node ID="Start">
+      <text IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akailios">
+        You seem..relatively friendly?
+      </text>
+      <text IfHaveActiveQuest="The Avenkyri" IfFinishedQuestStep="Meet Akailios">
+        Anything else you need?
+      </text>
+      <text IfNotHaveQuest="The Avenkyri">
+        {{emote|*Akailios looks to you with curiosity*}}
+      </text>
+      <text IfFinishedQuest="The Avenkyri">
+        If you need anyone to talk to: I'm here.
+      </text>
+      <choice GotoID="WhatAreYou" IfHaveActiveQuest="The Avenkyri">..what are voderai?</choice>
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akailios">..I don't think we've met?</choice>
+      <choice GotoID="End" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akailios">I'll keep that in mind..</choice>
+      <choice GotoID="End" IfHaveActiveQuest="The Avenkyri" IfFinishedQuestStep="Meet Akailios">No, your fine.</choice>
+      <choice GotoID="End" IfFinishedQuest="The Avenkyri">I'll be alright, Akailios.</choice>
+    </node>
+    <node ID="WhatAreYou">
+      <text>
+        One could say we are 'avian wolf cats', latter two being personality distinctions between voderaskids such as I, and voderaskidalys such as Suizva.
+        
+        Voderai share many forms, it means little.
+      </text>
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akailios">..I don't think we've met?</choice>
+      <choice GotoID="End">Alright, thanks for telling me.</choice>
+    </node>
+    <node ID="WhoAreYou">
+      <text>
+        Akailios, mother, sister.
+
+        {{emote|*she looks to suizva, and the others before returning her attention to you.*}}
+        
+        Whatever comforts you. Voderai adopt their family.
+      </text>
+      <choice GotoID="End" CompleteQuestStep="Meet Akailios">Alright, I'll keep that in mind.</choice>
+    </node>
+  </conversation>
+
+  <!--AvenkyrAkzato-->
+
+  <conversation ID="Akzato">
+    <node ID="Start">
+      <text IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akzato">
+        Child of lesser soul, make any attempts and you'll meet my horns.
+        
+        If your here for other reasons, then determine them.
+      </text>
+      <text IfHaveActiveQuest="The Avenkyri" IfFinishedQuestStep="Meet Akzato">
+        Are you bothering me for any particular reason, child?.
+      </text>
+      <text IfNotHaveQuest="The Avenkyri">
+        {{emote|*Akzato gives you a cautious glare*}}
+      </text>
+      <text IfFinishedQuest="The Avenkyri">
+        What is it child?
+      </text>
+      <choice GotoID="AkzatoDelas">I'd like to ask if visit the wetseer?</choice>
+      <choice GotoID="AkzatoDiary">I found this book laying around, do you know anything of it?</choice>
+      <choice GotoID="AkzatoGlyphs">Your diary seems to have glyphs of which the Barathrum is interested in.</choice>
+      <choice GotoID="Child" IfHaveActiveQuest="The Avenkyri">Why do you call me child?</choice>
+      <choice GotoID="Feathers" IfHaveActiveQuest="The Avenkyri">your feathers are a obsidian shade, buffed by crimson gold.</choice>
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akzato">..I don't think we've met?</choice>
+      <choice GotoID="End">I mean not to bother, live and drink.</choice>
+    </node>
+    <node ID="AkzatoDelas">
+      <text>
+        Wet insight, Delastraos?
+
+        That's a particularly chosen subject?
+      </text>
+      <choice GotoID="AkzatoDelas2">How so?</choice>
+      <choice GotoID="End">On second thought, nevermind.</choice>
+    </node>
+    <node ID="AkzatoDelas2">
+      <text>
+        Is this a serious matter?
+      </text>
+      <choice GotoID="AkzatoDelas3">Barathrum thinks she can help decipher the glyphs.</choice>
+      <choice GotoID="End">On second thought, nevermind.</choice>
+    </node>
+    <node ID="AkzatoDelas3">
+      <text>
+        {{emote|*Akzato gives a frustrated sigh.*}}
+
+        I'm not doing this for your amusement.
+
+        Though if you think she'll learn the meaning of those glyphs: then I'll go see her.
+      </text>
+      <choice GotoID="End">Thanks, Akzato.</choice>
+    </node>
+    <node ID="AkzatoDiary">
+      <text>
+        {{emote|*Akzato's feathers tense up.*}}
+
+        Child of lesser soul, hand it over!
+      </text>
+      <text IfHavePart="MentalMirror" Priority="2">
+        {{emote|*You feel a slight of psionic power, as Akzato's feathers tense up.*}}
+
+        Return my diary, or else!
+      </text>
+      <text IfHavePart="Telepathy" Priority="1">
+        {{emote|*You feel a force of psionic power, and Akzato speaks with will as her feathers tense up.*}}
+
+        {{emote|*Return my diary, or else!*}}
+      </text>
+      <choice GotoID="AkzatoRefuse">What if I don't?</choice>
+      <choice GotoID="AkzatoDiary2">Here then.</choice>
+    </node>
+    <node ID="AkzatoDiary2">
+      <text>
+        {{emote|*Akzato grabs the book from your hand, tapping the pommel of her sword.*}}
+
+        Keep away from my things..that includes my old diary.
+      </text>
+      <choice GotoID="AkzatoGlyphs">The Barathrumites seem to have a interest in those glyphs, though.</choice>
+      <choice GotoID="End">If you'd prefer.</choice>
+    </node>
+    <node ID="AkzatoGlyphs">
+      <text>
+        {{emote|*Akzato gives a brief hiss, before handing her diary back to you.*}}
+
+        Then may he figure out the meaning of my writings. Although he'd get little from it alone.
+      </text>
+      <choice GotoID="End">Thanks, Akzato.</choice>
+    </node>
+    <node ID="AkzatoRefuse">
+      <text>
+        {{emote|*Akzato places a forepaw around the grip of her sword.*}}
+
+        Trivial..
+      </text>
+      <choice GotoID="AkzatoDiary2">In that case: here.</choice>
+      <choice GotoID="End">
+        <text>*Walk away*</text>
+        <part Name="StartFight" />
+      </choice>
+    </node>
+    <node ID="Child">
+      <text>
+        I..studied within the Azkuvalian libraries amongst the scholars, since before..Dorator, our..former planet..we were betrayed..
+      </text>
+      <choice GotoID="Betrayal">Betrayed? By who?</choice>
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akzato">..I don't think we've met?</choice>
+      <choice GotoID="End">I apologise for prying, sorry for your loss.</choice>
+    </node>
+    <node ID="Betrayal">
+      <text>
+        {{emote|*Akzato stares in the distance, with a expression of sadness, and spite*}}
+
+        By..Arekane..Arkane..
+      </text>
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akzato">..I don't think we've met?</choice>
+      <choice GotoID="End">I apologise prying, sorry for your loss.</choice>
+    </node>
+    <node ID="Feathers">
+      <text>
+        {{emote|*Akzato looks to you with visible spite*}}
+
+        My feathers..? Child of lesser soul, in spite of your 'inquiry': I'm not 'male', I'm a hermophoditic bitch and half-blood rinat!
+        
+        I'm not about to stand next to Arikal to prove a point, though you seem to lack knowledge of our biological versatility..
+      </text>
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akzato">..I don't think we've met?</choice>
+      <choice GotoID="End">I apologise for my statement, sorry for bothering.</choice>
+    </node>
+    <node ID="WhoAreYou">
+      <text>
+        Akzato. Who I am means little, though like any arinat or rinate in general: don't piss me off and we'll be fine.
+      </text>
+      <choice GotoID="End" CompleteQuestStep="Meet Akzato">I'll keep that in mind.</choice>
+    </node>
+  </conversation>
+
+  <!--AvenkyrArikal-->
+
+  <conversation ID="Arikal">
+    <node ID="Start">
+      <text IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Arikal">
+        Stay at will. Make any attempts, and the answer is known!
+      </text>
+      <text IfHaveActiveQuest="The Avenkyri" IfFinishedQuestStep="Meet Arikal">
+        What is it they say? That lion stalk their prey, as the thunder before the storm? Make any attempts, and I'll show you prey..
+      </text>
+      <text IfNotHaveQuest="The Avenkyri">
+        {{emote|*Arikal hisses as you approach*}}
+      </text>
+      <text IfFinishedQuest="The Avenkyri">
+        Trust is only given within reason =name=, I won't hesitate if you try anything.
+      </text>
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Arikal">..I don't think we've met?</choice>
+      <choice GotoID="Attitude">What's with your attitude?</choice>
+      <choice GotoID="End">I'll just leave you be then.</choice>
+    </node>
+    <node ID="Attitude">
+      <text>
+        {{emote|*Arikal taps his left holster with his fore paw*}}
+
+        Any issue with it?
+      </text>
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Arikal">..I don't think we've met?</choice>
+      <choice GotoID="End">
+        <text>Why yes. Yes there is.</text>
+        <part Name="StartFight" />
+      </choice>
+      <choice GotoID="End">No..I apologise for prying.</choice>
+    </node>
+    <node ID="WhoAreYou">
+      <text>
+        Arikal. Anything else is irrelevant to you.
+      </text>
+      <choice GotoID="End" CompleteQuestStep="Meet Arikal">Fair enough.</choice>
+    </node>
+  </conversation>
+
+  <!--AvenkyrJavska-->
+
+  <conversation ID="Javska" Inherits="Kazvate">
+    <node ID="Start">
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Arikal">..I don't think we've met?</choice>
+      <choice GotoID="Kazvate">Can you clarify?</choice>
+    </node>
+    <node ID="WhoAreYou">
+      <text>
+        Javska! Kazva!~
+        Javska! Kazvate!
+      </text>
+      <choice GotoID="Kazvate" CompleteQuestStep="Meet Javska">I don't understand what your meaning, but alright then.</choice>
+      <choice GotoID="End" CompleteQuestStep="Meet Javska">I'll just assume that's your name then?</choice>
+    </node>
+    <node ID="Barkchirper" Inherits="Start">
+      <text>
+        {{emote|*chirps and barks*}}
+      </text>
+    </node>
+    <node ID="Growl" Inherits="Start">
+      <text>
+        {{emote|*anxious growling*}}~
+        {{emote|*cautious growling*}}~
+        {{emote|*hisses and growls*}}~
+        {{emote|*irritated growling*}}
+      </text>
+    </node>
+    <node ID="Hiss" Inherits="Start">
+      <text>
+        {{emote|*anxious hissing*}}~
+        {{emote|*cautious hissing*}}~
+        {{emote|*hisses and growls*}}~
+        {{emote|*irritated hissing*}}
+      </text>
+    </node>
+    <node ID="Speak">
+      <text>
+        Kazva! Yes!~
+        Kazvate! Yes!
+      </text>
+      <choice GotoID="Barkchirper">Let's talk about something else?</choice>
+    </node>
+    <node ID="Kazvate">
+      <text>
+        Kazva! Eat!~
+        Kazva! Drink!~
+        Kazva! Kazvate!~
+        Kazvate! Kazva!
+      </text>
+      <choice GotoID="Speak">Can you actually speak?</choice>
+      <choice GotoID="Growl">Alright then?</choice>
+      <choice GotoID="Hiss">That doesn't help.</choice>
+    </node>
+  </conversation>
+
+  <!--AvenkyrSuizva-->
+
+  <conversation ID="Suizva">
+    <node ID="Start">
+      <text IfHavePart="Carapace" Priority="1">
+        {{emote|*frantically barks and chirps in excitement*}}
+
+        Akwu icefa! Turtle! Shell!
+      </text>
+      <text>
+        {{emote|*Suizva gives a few barks and chirps as you approach*}}
+      </text>
+      <choice GotoID="Turtleshell" IfHavePart="Carapace">Turtle shell?</choice>
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Suizva">..I don't think we've met?</choice>
+      <choice GotoID="Cat" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Suizva">Are you supposed to be some kind of cat?</choice>
+      <choice GotoID="End" IfFinishedQuest="The Avenkyri">Live and drink, Suizva.</choice>
+    </node>
+    <node ID="Turtleshell">
+      <text>
+        {{emote|*Suizva's feathers fluff out, as she sits before you*}}
+
+        Akwu icefa!
+      </text>
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Suizva">..I don't think we've met?</choice>
+      <choice GotoID="Cat" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Suizva">Are you supposed to be some kind of cat?</choice>
+      <choice GotoID="End">I guess so..?</choice>
+    </node>
+    <node ID="WhoAreYou">
+      <text>
+        {{emote|*Suizva jumps and rolls onto her back, stretched out as her tail motions side to side*}}
+
+        Suizva!
+      </text>
+      <choice GotoID="Posture">Why are you laying like that?</choice>
+    </node>
+    <node ID="Posture">
+      <text>
+        {{emote|*Suizva then growls a bit, before patting her belly as she gets back up*}}
+
+        I..found a container filled with a various fruits?
+      </text>
+      <choice GotoID="Little" CompleteQuestStep="Meet Suizva">Fair little one.</choice>
+      <choice GotoID="End" CompleteQuestStep="Meet Suizva">Fair enough.</choice>
+    <node ID="Little">
+      <text>
+        {{emote|*Suizva looks to you with visible anxiety before scampering off*}}
+
+        I'm not little, I'm just small..!
+      </text>
+      <choice GotoID="End">I meant no offense..</choice>
+    </node>
+    <node ID="Cat" IfHaveActiveQuest="The Avenkyri">
+      <text>
+        {{emote|*Suizva rubs up against your ankles, making an audible purr*}}
+      </text>
+      <choice GotoID="WhoAreYou">..I don't think we've met?</choice>
+      <choice GotoID="End">I guess so..?</choice>
+    </node>
+  </conversation>
+
+  <!--Vanilla Characters-->
+
+  <!--Aloysius-->
+
+  <conversation ID="Aloysius" load="Merge">
+    <choice IfHaveBlueprint="AkzatoDiary" GotoID="AkzatoAloy">I found this book laying around, do you know anything of it?</choice>
+    <node ID="AkzatoAloy">
+      <text>
+        No. I have never seen that book in my entire life.
+
+        Besides, what's even in it?
+      </text>
+      <choice GotoID="AkzatoDiary">*Hand the book over.*</choice>
+    </node>
+    <node ID="AkzatoDiary">
+      <text>
+        {{emote|*Aloysius skims through the pages*}}
+
+        Oh heavens what did I just read!
+      </text>
+      <choice GotoID="AkzatoDiary2">...</choice>
+    </node>
+    <node ID="AkzatoDiary2">
+      <text>
+        {{emote|*Aloysius immediately hands the book back*}}
+
+        Get this blasted diary out of my sight!
+      </text>
+      <choice GotoID="End">Live and drink in peace, Aloysius.</choice>
+    </node>
+  </conversation>
+
+  <!--Barathrum-->
+
+  <conversation ID="Barathrum" load="Merge">
+    <choice IfHaveBlueprint="AkzatoDiary" GotoID="AkzatoBarathrum">I found this book laying around, it contains a page filled with glyphs.</choice>
+    <node ID="AkzatoBarathrum">
+      <text>
+        May I see them, nestling?
+      </text>
+      <choice GotoID="AkzatoDiary">*Hand the book over.*</choice>
+    </node>
+    <node ID="AkzatoDiary">
+      <text>
+        {{emote|*Barathrum skims through the pages*}}
+
+        Ah yes..
+      </text>
+      <choice GotoID="AkzatoDiary2">...</choice>
+    </node>
+    <node ID="AkzatoDiary2">
+      <text>
+        {{emote|*Barathrum pauses for a moment, handing the book back*}}
+
+        These glyphs are archaic in origin. Might you find a copy of where they originated do bring it to me.
+
+        If not, I hear amongst reports that someone gifted with visions has moved into a cave nearby. Perhaps you'll find your answers there.
+      </text>
+      <choice GotoID="End">I'll see what I can do, live and drink Barathrum.</choice>
+    </node>
+  </conversation>
+
+  <!--Dardi-->
+
+  <conversation ID="Dardi" load="Merge">
+    <choice IfHaveBlueprint="AkzatoDiary" GotoID="AkzatoDardi">I found this book laying around, do you know anything of it?</choice>
+    <node ID="AkzatoDardi">
+      <text>
+        Oh! Does it contain recipes? Let me take a look.
+      </text>
+      <choice GotoID="AkzatoDiary">*Hand the book over.*</choice>
+    </node>
+    <node ID="AkzatoDiary">
+      <text>
+        {{emote|*Dardi skims through the pages*}}
+        
+        Peculiar glyphs..something something, Azkuvalian..
+      </text>
+      <choice GotoID="AkzatoDiary2">...</choice>
+    </node>
+    <node ID="AkzatoDiary2">
+      <text>
+        {{emote|*Dardi pauses for a moment, handing the book back*}}
+
+        Nope. No recipes, however the author's apparent knowledge somewhat intrigues me.
+
+        I'd like to know if the mentioned substances could be of potential use in future recipes.
+      </text>
+      <choice GotoID="End">I'll see what I can do, live and drink Dardi.</choice>
+    </node>
+  </conversation>
+
+  <!--Hortensa-->
+
+  <conversation ID="Hortensa" load="Merge">
+    <choice IfHaveBlueprint="AkzatoDiary" GotoID="AkzatoHortensa">I found this book laying around, do you know anything of it?</choice>
+    <node ID="AkzatoHortensa">
+      <text>
+        Oh, no. I do not know anything about it.
+
+        Though might I take a look at it?
+      </text>
+      <choice GotoID="AkzatoDiary">*Hand the book over.*</choice>
+    </node>
+    <node ID="AkzatoDiary">
+      <text>
+        {{emote|*Hortensa skims through the pages*}}
+
+        Coagulates when fertilized..burnt mouth..tarazila venom lethality ranges..
+      </text>
+      <choice GotoID="AkzatoDiary2">...</choice>
+    </node>
+    <node ID="AkzatoDiary2">
+      <text>
+        {{emote|*Hortensa smiles, and hands the book back*}}
+
+        Thank you, =player.offspringTerm= for letting me read it.
+
+        If I were to obtain such substances, it would be fascinating to study them further!
+      </text>
+      <choice GotoID="End">I'll see what I can do, live and drink, Hortensa.</choice>
+    </node>
+  </conversation>
+
+  <!--Iseppa-->
+
+  <conversation ID="Iseppa" load="Merge">
+    <choice IfHaveBlueprint="AkzatoDiary" GotoID="AkzatoIseppa">I found this book laying around, do you know anything of it?</choice>
+    <node ID="AkzatoIseppa">
+      <text>
+        {{emote|*Iseppa yawns*}}
+
+        May I see it?
+      </text>
+      <choice GotoID="AkzatoDiary">*Hand the book over.*</choice>
+    </node>
+    <node ID="AkzatoDiary">
+      <text>
+        {{emote|*Iseppa skims through the pages*}}
+
+        Some well drawn artwork..
+      </text>
+      <choice GotoID="AkzatoDiary2">...</choice>
+    </node>
+    <node ID="AkzatoDiary2">
+      <text>
+        {{emote|*Iseppa yawns again, handing the book back*}}
+
+        This appears to be a diary, written by this Akzato. Perhaps it may be wise to return it to her?
+      </text>
+      <choice GotoID="End">I'll see what I can do, live and drink.</choice>
+    </node>
+  </conversation>
+
+  <!--Jacobo-->
+
+  <conversation ID="Jacobo" load="Merge">
+    <choice IfHaveBlueprint="AkzatoDiary" GotoID="AkzatoJacobo">I found this book laying around, do you know anything of it?</choice>
+    <node ID="AkzatoJacobo">
+      <text>
+        I'd be glad to look through it, if you'll allow.
+      </text>
+      <choice GotoID="AkzatoDiary">*Hand the book over.*</choice>
+    </node>
+    <node ID="AkzatoDiary">
+      <text>
+        {{emote|*Jacobo skims through the pages*}}
+
+        Azkuvalian..Arekena Azkedara..
+      </text>
+      <choice GotoID="AkzatoDiary2">...</choice>
+    </node>
+    <node ID="AkzatoDiary2">
+      <text>
+        {{emote|*Jacobo reflects for a moment, handing the book back*}}
+
+        I'm curious about that cannon, gifted to the author. There seems to be some significance to it's origin.
+
+        I think I've heard of these leiskwings being seen preying upon travelers and pilgrims on the way to the Stilt. I'd advise watching the skies in case.
+      </text>
+      <choice GotoID="End">I will, live and drink.</choice>
+    </node>
+  </conversation>
+
+  <!--Mafeo-->
+
+  <conversation ID="Mafeo" load="Merge">
+    <choice IfHaveBlueprint="AkzatoDiary" GotoID="AkzatoMafeo">I found this book laying around, do you know anything of it?</choice>
+    <node ID="AkzatoMafeo">
+      <text>
+        I'm curious, =player.formalAddressTerm=. If you may, can I examine it?
+      </text>
+      <choice GotoID="AkzatoDiary">*Hand the book over.*</choice>
+    </node>
+    <node ID="AkzatoDiary">
+      <text>
+        {{emote|*Mafeo skims through the pages*}}
+
+        Azkuvalian..leiskwings..
+      </text>
+      <choice GotoID="AkzatoDiary2">...</choice>
+    </node>
+    <node ID="AkzatoDiary2">
+      <text>
+        {{emote|*Mafeo pauses for a moment, handing the book back*}}
+
+        I fear in my recent travels, that I have heard the echoing calls of these leiskwings.
+
+        I'm betting they shriek as a method to subdue their unwary prey.
+      </text>
+      <choice GotoID="End">I'll keep that in mind. Live and drink, Mafeo.</choice>
+    </node>
+  </conversation>
+
+  <!--Neek-->
+
+  <conversation ID="Neek" load="Merge">
+    <choice IfHaveBlueprint="AkzatoDiary" GotoID="AkzatoNeek">I found this book laying around, do you know anything of it?</choice>
+    <node ID="AkzatoNeek">
+      <text>
+        It's sort of like this. You find book in a ruin. You read the book and show it to others.
+      </text>
+      <choice GotoID="AkzatoDiary">*Hand the book over.*</choice>
+    </node>
+    <node ID="AkzatoDiary">
+      <text>
+        {{emote|*Neek skims through the pages bearing a blank look.*}}
+      </text>
+      <choice GotoID="AkzatoDiary2">...</choice>
+    </node>
+    <node ID="AkzatoDiary2">
+      <text>
+        {{emote|*Neek hands the book back.*}}
+
+        What's *list of all profanity written in the book*?
+      </text>
+      <choice GotoID="Start">...</choice>
+      <choice GotoID="End">Live and drink, friend.</choice>
+    </node>
+  </conversation>
+
+  <!--Otho-->
+
+  <conversation ID="Otho" load="Merge">
+    <choice IfHaveBlueprint="AkzatoDiary" GotoID="AkzatoOtho">I found this book laying around, do you know anything of it?</choice>
+    <node ID="AkzatoOtho">
+      <text>
+        {{emote|*Otho takes the book and skims through the pages*}}
+
+        These glyphs..
+      </text>
+      <choice GotoID="AkzatoDiary">...</choice>
+    </node>
+    <node ID="AkzatoDiary">
+      <text>
+        {{emote|*Otho copies the glyphs onto a sheet of paper, before looking back to you*}}
+
+        Where did you find this book?
+      </text>
+      <choice GotoID="AkzatoDiary2">Within some ruins, occupied by voderai.</choice>
+    </node>
+    <node ID="AkzatoDiary2">
+      <text>
+        I don't recognize the dates listed, however if the era written is as old as it is.
+
+        I feel as though Barathrum may be interested in these glyphs.
+      </text>
+      <choice GotoID="AkzatoDiary3">You want me to inform him?</choice>
+    </node>
+    <node ID="AkzatoDiary3">
+      <text>
+        Yes, =factionaddress:Barathrumites=. The book appears to be a diary, however the tear in that last page is concerning.
+
+        Please be sure to find the book's owner, before handing it over to Barathrum. I'm sure this Akzato would appreciate it.
+      </text>
+      <choice GotoID="End">I'll see to it then, Steward.</choice>
+    </node>
+  </conversation>
+
+  <!--Q Girl-->
+
+  <conversation ID="Q Girl" load="Merge">
+    <choice IfHaveBlueprint="AkzatoDiary" GotoID="AkzatoQGirl">I found this diary laying around, do you know anything of it?</choice>
+    <node ID="AkzatoQGirl">
+      <text>
+        Quetzal! Maybe it's filled with poems? Oh! Or romantic fanfiction, perhaps?
+
+        Yes, yes! If I may look at it.
+      </text>
+      <choice GotoID="AkzatoDiary">*Hand the book over.*</choice>
+    </node>
+    <node ID="AkzatoDiary">
+      <text>
+        {{emote|*Q Girl skims through the pages*}}
+
+        Fascinating glyphs..a time spent under religous study..aww how quetzal..
+      </text>
+      <choice GotoID="AkzatoDiary2">...</choice>
+    </node>
+    <node ID="AkzatoDiary2">
+      <text>
+        {{emote|*Q Girl hands the book back*}}
+
+        Quetzal! That was such a compelling read! A poetic combination of study, betrayal, self-indulgance, love, and action!
+
+        Do find it's rightful owner however, I worry she may be missing it.
+      </text>
+      <choice GotoID="End">I'll see what I can do, live and drink Q Girl.</choice>
+    </node>
+  </conversation>
+
+  <!--Sparafucile-->
+
+  <conversation ID="Sparafucile" load="Merge">
+    <choice IfHaveBlueprint="AkzatoDiary" GotoID="AkzatoSpara">I found this book laying around, do you know anything of it?</choice>
+    <node ID="AkzatoSpara">
+      <text>
+        {{emote|*Sparafucile holds out a open hand.*}}
+      </text>
+      <choice GotoID="AkzatoDiary">*Hand the book over.*</choice>
+    </node>
+    <node ID="AkzatoDiary">
+      <text>
+        {{emote|*Sparafucile skims through the pages, briefly pointing to a few pages.*}}
+      </text>
+      <choice GotoID="AkzatoDiary2">...</choice>
+    </node>
+    <node ID="AkzatoDiary2">
+      <text>
+        {{emote|*Sparafucile shakes =pronouns.possessive= head, handing the book back.*}}
+      </text>
+      <choice UseID="FarewellSpara" />
+    </node>
+  </conversation>
+
+  <!--Voderai-->
+
+  <conversation ID="Akesata">
+    <node ID="Start">
+      <text>
+        Whatever your business here is, make it quick.
+        
+        My voderai sister, isn't fond of unexpected company.
+      </text>
+      <choice GotoID="Sister">Sister?</choice>
+      <choice GotoID="AkeRinate">..your a rinat?</choice>
+      <choice GotoID="Questions">I have questions.</choice>
+      <choice GotoID="End">Apologies for intruding..</choice>
+    </node>
+    <node ID="Questions" Inherits="Start">
+      <text>
+        {{emote|*Akesata listens patiently*}}
+      </text>
+      <choice GotoID="What">What do you do here?</choice>
+      <choice GotoID="End">I forgot what I was going to ask.</choice>
+    </node>
+    <node ID="What">
+      <text>
+        I act as Delastraos' lead hunter.
+
+        I as with our sisters, keep the surrounding area safe and occasionally indulge in our habits.
+        
+        Whilst you may presume the local avyrialus pack is viewed as prey: we've been co-existing for half a century.
+      </text>
+      <choice GotoID="Avyrialus">Avyrialus?</choice>
+      <choice GotoID="Questions">I have other questions.</choice>
+      <choice GotoID="End">I see..apologies for intruding..</choice>
+    </node>
+    <node ID="Avyrialus">
+      <text>
+        They're just oversized loves. Large, gentle, and sweet. Pay no mind to their stingers.
+
+        I often keep their puffs, and centurylings company and feed. Sharing my milk, and caring for them as though they were my own.
+      </text>
+      <choice GotoID="DoratorAge">Puffs and centurylings?</choice>
+      <choice GotoID="Questions">I have other questions.</choice>
+      <choice GotoID="End">I see..apologies for intruding..</choice>
+    </node>
+    <node ID="DoratorAge">
+      <text>
+        Given all that originated from Dorator has a particularly high life expectancy:
+
+        Our youth are divided accordingly: puffs are the youngest ranging between 0-6, and centurylings are as the name suggests.
+
+        From that: it takes 900 additional years for us to be considered elders, in spite of our max-age being nearly immortal.
+      </text>
+      <choice GotoID="Questions">I have other questions.</choice>
+      <choice GotoID="End">I see..apologies for intruding..</choice>
+    </node>
+    <node ID="AkeRinate">
+      <text>
+        The case of my birth, bears no impact on my sister's protection.
+
+        Whilst I may be horned, fanged, silver and scarlet feathered: I am still bonded to her by birth.
+      </text>
+      <choice GotoID="Sister">Sister?</choice>
+      <choice GotoID="Questions">I have other questions.</choice>
+      <choice GotoID="End">I see..apologies for intruding..</choice>
+    </node>
+    <node ID="Sister">
+      <text>
+        My mother found Delastraos in the midst of Dorator's freezing winters when we were puffs.
+
+        Of course her being a rinat, and Delastraos being voderai complicated things.
+      </text>
+      <choice GotoID="Sister2">*continue listening*</choice>
+      <choice GotoID="End">I see..apologies for intruding..</choice>
+    </node>
+    <node ID="Sister2" AllowEscape="false">
+      <text>
+        So she as mothers do, she carefully picked her up by the tip of her beak and brought her home.
+
+        She sat her next to me, all fluffed and afraid that I as the 5 year of age rinat tried to talk to her.
+      </text>
+      <choice GotoID="Sister3">*continue listening*</choice>
+    </node>
+    <node ID="Sister3" AllowEscape="false">
+      <text>
+        It didn't take long for Delastraos to talk to me, and for the next 95 years of our youth: we lived our lives as family.
+
+        After we matured a fair bit that's when she met Javinex, whom I shouldn't need to trouble you with.
+      </text>
+      <choice GotoID="Javinex">No, please continue.</choice>
+      <choice GotoID="Questions">I have other questions.</choice>
+      <choice GotoID="End">No, I understand.</choice>
+    </node>
+    <node ID="Javinex" AllowEscape="false">
+      <text>
+        If you insist.
+
+        Javinex the youthful devil of the pack father at the time had approached her with a proposal.
+      </text>
+      <choice GotoID="Javinex2">*continue listening*</choice>
+    </node>
+    <node ID="Javinex2" AllowEscape="false">
+      <text>
+        They dated for some months before Javinex organised an unprompted wedding.
+        
+        Some months later, Ansiamia was born and Javinex's demeanor worsened.
+      </text>
+      <choice GotoID="Javinex3">*continue listening*</choice>
+    </node>
+    <node ID="Javinex3" AllowEscape="false">
+      <text>
+        After 12 years he began blaming Delastraos for Ansiamia's colouration and lack of horns.
+
+        To which I as with a exile of both: Javinex and our pack, helped Delastraos and Ansiamia find safety to which here we are now.
+      </text>
+      <choice GotoID="TheExile">Who was the exile?</choice>
+      <choice GotoID="End">I understand, thanks for bringing this to light.</choice>
+    </node>
+    <node ID="TheExile" AllowEscape="false">
+      <text>
+        An old voderaskid hunter friend of ours, claimed to have been related to Delastraos so we let her join.
+
+        She had attempted to swallow Delastraos one night, so we exiled her.
+      </text>
+      <choice GotoID="Questions">I have other questions.</choice>
+      <choice GotoID="End">I understand, thanks for bringing this to light.</choice>
+    </node>
+  </conversation>
+
+  <conversation ID="Ansiamia">
+    <node ID="Start">
+      <text IfNotReputationAtLeast="Liked">
+        {{emote|*Ansiamia stares at you with distrust*}}
+      </text>
+      <text IfReputationAtLeast="Liked">
+        {{emote|*Ansiamia stares at you with curiosity*}}
+      </text>
+      <choice GotoID="Silent">Your a bit smaller than most voderai.</choice>
+      <choice GotoID="End">...live and drink, little one.</choice>
+    </node>
+    <node ID="Silent">
+      <text>
+        {{emote|*Ansiamia continues to stare*}}
+      </text>
+      <choice GotoID="Start">...</choice>
+      <choice GotoID="End">...live and drink, little one.</choice>
+    </node>
+  </conversation>
+
+  <conversation ID="Delastraos">
+    <node ID="Start">
+      <text IfNotReputationAtLeast="Liked">
+        {{emote|*Delastraos looks to you, with a unwavering glare*}}
+      </text>
+      <text IfReputationAtLeast="Liked">
+        If your here for my vision, I'm not in the mood.~
+        I've a little flower to care for, try not to bother her.
+      </text>
+      <choice GotoID="Questions" IfReputationAtLeast="Liked">I have questions.</choice>
+      <choice GotoID="Wetseer">I require your forsight, will you grant it?</choice>
+      <choice GotoID="WhoAreYou">Who are you?</choice>
+      <choice GotoID="Drink">...live and drink.</choice>
+    </node>
+    <node ID="Questions" Inherits="Start">
+      <text>
+        {{emote|*Delastraos listens patiently*}}
+      </text>
+      <choice GotoID="Daughter">Tell me of Ansiamia.</choice>
+      <choice GotoID="What">What do you do here?</choice>
+      <choice GotoID="End">I forgot what I was going to ask.</choice>
+    </node>
+    <node ID="Daughter">
+      <text>
+        She's my sweet, little, delicate flower.
+
+        Any other pointless questions?
+      </text>
+      <choice GotoID="Questions">I do.</choice>
+      <choice GotoID="Drink">That is all, live and drink.</choice>
+    </node>
+    <node ID="Wetseer">
+      <text>
+        I sense in my nerves your not asking on your own behalf.
+
+        You know someone, who has knowledge of something?
+
+        Let them come here, and we'll handle it accordingly.
+      </text>
+      <choice GotoID="Questions" IfReputationAtLeast="Liked">I have other questions.</choice>
+      <choice GotoID="Drink">Very well, live and drink.</choice>
+    </node>
+    <node ID="WhoAreYou">
+      <text IfNotReputationAtLeast="Liked">
+        {{emote|*She continues to glare, ignoring your question*}}
+      </text>
+      <text IfReputationAtLeast="Liked">
+        Delastraos, lost in Dorator's winter storms, and adopted by rinats.
+
+        Any other pointless questions?
+      </text>
+      <choice GotoID="Questions" IfReputationAtLeast="Liked">I do.</choice>
+      <choice GotoID="Drink" IfReputationAtLeast="Liked">That is all, live and drink.</choice>
+      <choice GotoID="Drink" IfNotReputationAtLeast="Liked">...live and drink.</choice>
+    </node>
+    <node ID="What">
+      <text>
+        If my name doesn't give indications: I'm the wet seer, or wet insight to be more precise.
+
+        The meaning is of little note.
+      </text>
+      <choice GotoID="Questions">I have other questions.</choice>
+      <choice GotoID="Drink">That is all, live and drink.</choice>
+    </node>
+    <node ID="Drink">
+      <text>
+        {{emote|*Delastraos's expression forms a sarcastic smirk*}}
+
+        You forgot to add: piss.
+      </text>
+      <choice GotoID="End">...</choice>
+    </node>
+  </conversation>
+
+  <!--Wyrms of Aizalvaran-->
+
+  <!--Andekitalia-->
+
+  <conversation ID="Andekitalia">
+    <node ID="Start">
+      <text IfNotHaveQuest="Andekitalia, Harbingers of Chaos">
+        {{emote|*violent hissing*}}
+
+        Who dares trespass within a vault of the firstborn, Andekitalia, Harbingers of Chaos, daughters of Talcius, diety of chaos demands an answer!?
+      </text>
+      <text IfHaveActiveQuest="Andekitalia, Harbingers of Chaos" IfNotFinishedQuestStep="Favour for Andekitalia">
+        {{emote|*violent hissing*}}
+
+        =player.ApparentSpecies=, what reasoning is there to disturb Andekitalia, Harbingers of Chaos, daughters of Talcius, diety of chaos!?
+      </text>
+      <text IfFinishedQuest="Andekitalia, Harbingers of Chaos" IfFinishedQuestStep="Favour for Andekitalia">
+        {{emote|*Andekitalia looks to you with a mocking hiss, clawing against their shrine*}}
+
+        Child of lesser soul? What can Andekitalia do, for you? Not that oaths have meaning, for Andekitalia swears to none.
+      </text>
+      <choice GotoID="Portal" IfHaveActiveQuest="Andekitalia, Harbingers of Chaos" IfNotFinishedQuestStep="Guardian of Dorator">I've come seaking the portal of which you guard, harbingers.</choice>
+      <choice GotoID="Speech">Why are are you talking in third person?</choice>
+      <choice GotoID="Disturbance" IfNotHaveQuest="Andekitalia, Harbingers of Chaos" IfHaveActiveQuest="Andekitalia, Harbingers of Chaos" IfNotFinishedQuestStep="Favour for Andekitalia">I apologise, for my intrusion!</choice>
+      <choice GotoID="End" IfNotHaveQuest="Andekitalia, Harbingers of Chaos">
+        <text>!!!</text>
+        <part Name="StartFight" />
+      </choice>
+    </node>
+    <node ID="Disturbance">
+      <text>
+        {{emote|*A lengthy smirk is expressed as Andekitalia's celestial pupils narrow, and forked tongue licks the roof of their maw*}}
+
+        Why, ekluat akuit shirask? You haven't intrude upon Andekitalia's dwelling with purpose.
+      </text>
+      <choice GotoID="Portal" IfHaveActiveQuest="Andekitalia, Harbingers of Chaos" IfNotFinishedQuestStep="Guardian of Dorator">My purpose is the portal of which you guard, harbingers.</choice>
+      <choice GotoID="Speech">Why are are you talking in third person?</choice>
+      <choice GotoID="NoPromise">So your not going to kill me..?</choice>
+      <choice GotoID="NoPromise">Oh..can I leave then?</choice>
+    </node>
+    <node ID="Speech">
+      <text>
+        {{emote|*Andekitalia looks to you with confusion and rhyme*}}
+
+        Andekitalia is many. Andekitalia as all eidrati, shares many personalities within a singular form.
+      </text>
+      <choice GotoID="Portal" IfHaveActiveQuest="Andekitalia, Harbingers of Chaos" IfNotFinishedQuestStep="Guardian of Dorator">In any case, I've come seaking the portal of which you guard, harbingers.</choice>
+      <choice GotoID="End">I see..</choice>
+    </node>
+    <node ID="Portal">
+      <text>
+        {{emote|*Andekitalia lurches forward, impaling the sides of their burrow's shrine with their claws*}}
+
+        Child of lesser soul. That is such a divine desire, of which I cannot grant with ease.
+      </text>
+      <choice GotoID="Demands">What are your demands, harbingers?</choice>
+      <choice GotoID="End">
+        <text>Then out of my way!</text>
+        <part Name="StartFight" />
+      </choice>
+    </node>
+    <node ID="Demands">
+      <text>
+        {{emote|*Andekitalia stretches their wings wide, as their body wraps around their shrine*}}
+
+        Greed is of little note, such a insult to claim Andekitalia has demands. However Azkuvalian zealots often tempt Andekitalia..
+      </text>
+      <choice GotoID="End" CompleteQuestStep="Guardian of Dorator">I'll see what I can do.</choice>
+      <choice GotoID="End">
+        <text>In that case, out of my way!</text>
+        <part Name="StartFight" />
+      </choice>
+    </node>
+    <node ID="NoPromise">
+      <text>
+        {{emote|*Andekitalia lurches forward, impaling the sides of their burrow's shrine with their claws*}}
+
+        Child of lesser soul. I fear you don't know Andekitalia's kind's existence, we are children of chaos ; we make no promises.
+      </text>
+      <choice GotoID="End">
+        <text>Shit..I take back my question!</text>
+        <part Name="StartFight" />
+      </choice>
+    </node>
+  </conversation>
+
+</conversations>

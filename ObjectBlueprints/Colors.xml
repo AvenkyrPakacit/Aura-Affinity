@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<colors>
+
+  <shaders>
+    <shader Name="aizalvaran" Type="alternation" Colors="M-m-r-R-r-m-M" ShowInPicker="true" />
+    <shader Name="arkhos" Type="sequence" Colors="m-M-b-B-c-C" ShowInPicker="true" />
+    <shader Name="ashilesian" Type="alternation" Colors="M-m-g-G-g-m-M" ShowInPicker="true" />
+    <shader Name="azkuvalian" Type="alternation" Colors="B-b-c-C-c-b-B" ShowInPicker="true" />
+    <shader Name="cyr" Type="sequence" Colors="b-B-c-C-g-G" ShowInPicker="true" />
+    <shader Name="daemina" Type="sequence" Colors="w-W-o-O-r-R" ShowInPicker="true" />
+    <shader Name="dasdarfoxan" Type="alternation" Colors="Y-r-y-R-y-r-Y" ShowInPicker="true" />
+    <shader Name="doratorian" Type="alternation" Colors="Y-y-W-K-W-y-Y" ShowInPicker="true" />
+    <shader Name="eilasalian" Type="alternation" Colors="W-M-w-m-w-M-W" ShowInPicker="true" />
+    <shader Name="eilsavian" Type="alternation" Colors="Y-g-y-G-y-g-Y" ShowInPicker="true" />
+    <shader Name="eiltaresian" Type="alternation" Colors="Y-c-y-C-y-c-Y" ShowInPicker="true" />
+    <shader Name="einfieran" Type="alternation" Colors="W-o-w-O-w-o-W" ShowInPicker="true" />
+    <shader Name="kata" Type="sequence" Colors="o-O-r-R-m-M" ShowInPicker="true" />
+    <shader Name="octusarian" Type="alternation" Colors="w-m-W-M-W-m-w" ShowInPicker="true" />
+    <shader Name="syrenalian" Type="sequence" Colors="W-G-g-w-o-O-W-M-m-w" ShowInPicker="true" />
+    <shader Name="veidancyri" Type="alternation" Colors="w-W-o-O-r-R-m-M-b-B-c-C-g-G" ShowInPicker="true" />
+    <shader Name="veinat" Type="sequence" Colors="r-R-m-M-b-B" ShowInPicker="true" />
+  </shaders>
+
+</colors>

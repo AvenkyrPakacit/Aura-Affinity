@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quests>
+
+  <!--Syrenalian-->
+
+  <quest Name="The Hegemon of Fire" Level="40"
+         Accomplishment="You helped Savistato clear the name of a prisoner."
+         Hagiograph="In the month of =month= of =year=, =name= convened with the Syrenalian High Council, and released a prisoner of war."
+         HagiographCategory="VisitsLocation">
+    <step Name="Accept Savistato's proposal" XP="2500">
+      <text>Accept Savistato's proposal.</text>
+    </step>
+    <step Name="Investigate" XP="5000" Optional="true">
+      <text>Find a way to clear the prisoner's name.</text>
+    </step>
+    <step Name="The prisoner" XP="5000">
+      <text>Handle the situation between the axilarium and the prisoner.</text>
+    </step>
+    <step Name="Return to Savistato" XP="15000">
+			<text>Return to Savistato with news.</text>
+		</step>
+  </quest>
+
+  <!--The Avenkyri-->
+
+  <quest Name="The Avenkyri" Level="40"
+         Accomplishment="You found and spoke with each of the Avenkyri."
+         Hagiograph="In the month of =month= of =year=, =name= met with the children of Daemina, and was spared from the duaghter of avyrialus and voderai's voracious appetite."
+         HagiographCategory="VisitsLocation">
+    <step Name="Find the Avenkyri" XP="2500">
+      <text>Find the location of the Avenkyri.</text>
+    </step>
+    <step Name="Meet Akafiol" XP="5000">
+      <text>Find and speak with Akafiol.</text>
+    </step>
+    <step Name="Meet Akailios" XP="5000">
+      <text>Find and speak with Akailios.</text>
+    </step>
+    <step Name="Meet Akzato" XP="5000">
+      <text>Find and speak with Akzato.</text>
+    </step>
+    <step Name="Meet Arikal" XP="5000">
+      <text>Find and speak with Arikal.</text>
+    </step>
+    <step Name="Meet Suizva" XP="5000">
+      <text>Find and speak with Suizva.</text>
+    </step>
+    <step Name="Learn about Daemina" XP="15000">
+			<text>Inquire about Daemina's location.</text>
+		</step>
+  </quest>
+
+  <!--Wyrms of Aizalvaran-->
+
+  <quest Name="Andekitalia, Harbingers of Chaos" Level="40"
+         Accomplishment="You've bargained with Andekitalia, and found a archaic portal."
+         Hagiograph="In the month of =month= of =year=, =name= traveled to Aizalvaran, scoured the mountains and slain the greater wyrm, Andekitalia."
+         HagiographCategory="Slays">
+    <step Name="Find the greater wyrm's sanctuary" XP="2500">
+      <text>Find the lair of Andekitalia.</text>
+    </step>
+    <step Name="Guardian of Dorator" XP="5000">
+      <text>Speak with or slay the greater wyrm, whom resides over the portal.</text>
+    </step>
+    <step Name="Favour for Andekitalia" XP="5000" Optional="true">>
+      <text>Eliminate the Azkuvalian zealots who've been disturbing Andekitalia.</text>
+    </step>
+    </step>
+    <step Name="Investigate the portal" XP="15000">
+			<text>Investigate the portal.</text>
+		</step>
+  </quest>
+
+</quests>

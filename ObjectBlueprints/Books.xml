@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<books>
+
+  <!--AzkuvalianRecital-->
+
+  <book ID="Azkuvalian_Lyrics" Title="{{azkuvalian|Azkuvalian}} Scripture">
+    <page>
+    Akatylian verse:
+    Children of lesser soul.
+    Witness forth the flame of light!
+    Let forth the light of fate.
+    See as it burns the light!
+    Upon the fire of sin.
+    Upon the flame of heresy!
+    Witness forth.
+    Eternal light!
+    </page>
+    <page>
+    Techpriest verse:
+    May the flame bear witness.
+    Upon the flame's return!
+    Sanctity falls as light sees flame.
+    May the gods bear witness!
+    To the flame of heresy's fall.
+    That Arkane sees his fate!
+    As it will be forever known.
+    Arekena of the metalic flame!
+    </page>
+    <page>
+    Thatylian verse:
+    The metal shines.
+    With fiery light!
+    As sin burns upon the flame.
+    Beckon forth!
+    The light of fire.
+    As it sings with eternal life!
+    May the gods bear witness.
+    For their fate is forever known!
+    </page>
+    <page>
+    Xyatylian verse:
+    Heresy's flame upon damnation's curse.
+    Sanctity falls upon the flame's return!
+    Mortality's disgrace, axitari swine.
+    Gods forsaken, do they not understand?
+    A single damned thing of their forsaken fate?
+    May the gods see to it!
+    For it shall be ensured.
+    The light of fire, beckons a new flame!
+    </page>
+  </book>
+
+  <book ID="AzkuvalianSermon" Title="AzkuvalianSermon">
+    <page>Children of lesser soul.</page>
+    <page>Witness forth the flame of light!</page>
+    <page>Let forth the light of fate.</page>
+    <page>See as it burns the light!</page>
+    <page>Upon the fire of sin.</page>
+    <page>Upon the flame of heresy!</page>
+    <page>Witness forth.</page>
+    <page>Eternal light!</page>
+    <page>May the flame bear witness.</page>
+    <page>Upon the flame's return!</page>
+    <page>Sanctity falls as light sees flame.</page>
+    <page>May the gods bear witness!</page>
+    <page>To the flame of heresy's fall.</page>
+    <page>That Arkane sees his fate!</page>
+    <page>As it will be forever known.</page>
+    <page>Arekena of the metalic flame!</page>
+    <page>The metal shines.</page>
+    <page>With fiery light!</page>
+    <page>As sin burns upon the flame.</page>
+    <page>Beckon forth!</page>
+    <page>The light of fire.</page>
+    <page>As it sings with eternal life!</page>
+    <page>May the gods bear witness.</page>
+    <page>For their fate is forever known!</page>
+    <page>Heresy's flame upon damnation's curse.</page>
+    <page>Sanctity falls upon the flame's return!</page>
+    <page>Mortality's disgrace, axitari swine.</page>
+    <page>Gods forsaken, do they not understand?</page>
+    <page>A single damned thing of their forsaken fate?</page>
+    <page>May the gods see to it!</page>
+    <page>For it shall be ensured.</page>
+    <page>The light of fire, beckons a new flame!</page>
+  </book>
+
+  <!--Books-->
+
+  <book ID="AkzatoDiary" Title="torn diary" Format="Auto" Margins="1,2,2,2">
+    <page>
+    Chyrasyl, 13, 120ae.
+    Arrived at the grand library on Azkuvalia.
+    Found a book, with some particular glyphs.
+    </page>
+    <page>
+    {{emote|*The page is filled with glyphs written in a pattern you can't decipher*}}
+    </page>
+    <page>
+    Chyrasyl, 20, 120ae.
+    Child of lesser soul.
+    Such a degrading thing to be refered to as.
+    </page>
+    <page>
+    Chyrasyl, 24, 120ae.
+    Who are the gods, the Azkuvalian refer to?
+    Is it those of the Syrenalians? The one Daemina betrothed, namesake of my place of birth?
+    Or is it tied to their metalic constructs?
+    </page>
+    <page>
+    Chyrasyl, 28, 120ae.
+    Why are the Akatylians so, calm?
+    Why are the Thatylians so, direct?
+    Why are the Xyatylians so, harsh?
+    </page>
+    <page>
+    Chavyr, 2, 120ae.
+    I was approached by one of the techpriests today.
+    I told him to fuck himself, after he began flirting with me.
+    </page>
+    <page>
+    Chavyr, 3, 120ae.
+    That techpriest came to where I was staying along with his chosen,
+    and lets just say: my blade handled the issue.
+    </page>
+    <page>
+    Chavyr, 14, 120ae.
+    I saw Arekena, Azkedara talking to a group of acolytes.
+    They didn't seem to be fond of Arekane, Arkane's rise to power.
+    I'll try to speak with her tommorow.
+    </page>
+    <page>
+    Chavyr, 15, 120ae.
+    I spoke with Arekena, Azkedara about what I overheard.
+    In part it seemed as though she'd almost berate me,
+    however, it seems I have some business to handle.
+    </page>
+    <page>
+    Chavyr, 31, 120ae.
+    Given recent events:
+    Arekena, Azkedara has offered to house me under her care,
+    in part whilst she handle's Arekane, Arkane's fanatics.
+    </page>
+    <page>
+    Chara, 3, 120ae.
+    Arikal, my arkaedus half brother.
+    Such a delightful individual, as much as he's a jackass.
+    </page>
+    <page>
+    Chara, 3, 120ae.
+    The scholars are holding a fast, this coming week.
+    Hopefully their request for me to partake doesn't lead to anything.
+    </page>
+    <page>
+    Chara, 13, 120ae.
+    Arekena, Azkedara came to me the other night, and we made out.
+    Today, she came and handed me her cerimonial archcannon,
+    before she left on some journey alongside her rogues.
+    </page>
+    <page>
+    Chara, 29, 120ae.
+    Arikal showed up with his usual attitude the other night,
+    and I lost control of myself.
+    I'm starting to question why I was fasting in the first damn place.
+    </page>
+    <page>
+    Chara, 30, 120ae.
+    Arikal's alright, all things considered of course.
+    The reformation process Daemina had taught me is done,
+    and his egg is back at his place, hopefully he understands.
+    </page>
+    <page>
+    Chara, 31, 120ae.
+    Arikal relatively expectedly came to visit again.
+    There was some select words spoken.
+    </page>
+    <page>
+    {{emote|*There's a distinct claw mark where half the page remained*}}
+
+    Why did I bother attending their sermons,
+    what reasoning was there, for my presence?
+    </page>
+    <page>
+    Akcha, 2, 131ae.
+    Due to certain events: I as well most of those I'm close to are now residing on Syrenalia.
+    This fucking artificial planet.
+    </page>
+    <page>
+    Akcha, 4, 131ae.
+    Arikal has us staying in the company of a queen.
+    Whom he's been trying to seduce, for some fucking idiotic reason.
+    </page>
+    <page>
+    Akcha, 6, 131ae.
+    Eilyndara's her name, and she came to me with a glass of her piss.
+    Relevant thing of note: syrenalian urine coagulates when fertilized.
+    In relation: Syrenalian biology has no physical difference ; they're equally capable regardless.
+    So not as different from me and my body, with the exception of them being incapable of self-fertilisation.
+    </page>
+    <page>
+    Akcha, 7, 131ae.
+    Since I brought it up on the previous page:
+    On my 100th hatchday: I was dreaming, and there was a full set of 3 eggs.
+    Suizva had woken me up, and had a friend of hers whom was a gutchirper, or in other words: a voderaskidaly medical assistant.
+    After he diagnosed the caused: he whispered to Suizva which filled her with joy.
+    Akailios, whom was tending to them: after they had hatched, brought me flowers congratulating me for what were vaguely biological clones of myself.
+    </page>
+    <page>
+    Akcha, 8, 131ae.
+    As much as I appreciate drinking this fruit flavoured piss.
+    I think she's flirting with me, because of Arikal's stubborness.
+    </page>
+    <page>
+    Akcha, 10, 131ae.
+    Trivial that was the reason, and Arikal's pissed as usual.
+    </page>
+    <page>
+    Akcha, 15, 131ae.
+    I went to see Fiera Talfiera sing at a local bar or whatever they want to call it.
+    She walked up to me afterwards, and I'm currently staying at her place.
+    </page>
+    <page>
+    Akcha, 16, 131ae.
+    Syrenalian akordox, and their physical distinctions to their non-half mortal equivalents.
+    We went out and spent a bit of time together, and as much as I appreciate the design of syrenalian clothing, dresses included.
+    Her combed tail is lovely.
+    </page>
+    <page>
+    Einfernax, 19, 131ae.
+    {{emote|*There's a well-drawn sketch of a fiery heart with a depiction of a arinate inside.*}}
+    Mutually anxious, rough but lovely.
+    </page>
+    <page>
+    Akcha, 20, 131ae.
+    Lovely bitch, stole my diary.
+    Speaking of which: this safeguarding thing, seems to have a lot of similaries to the reformation/rebirth process.
+    Except being more of a cautionary measure, in the random case.
+    </page>
+    <page>
+    Akcha, 21, 131ae.
+    Stole her dress, she seems to be enjoying seeing me walk around in it.
+    </page>
+    <page>
+    Einfernax, 22, 131ae.
+    Invited Twylia over, and gods the look of Akzato's face was cute.
+    She seemed hesitant to speak with her, given their mother's mutual ties.
+    Akcha, 22, 131ae.
+    It was something to meet the daughter of the former high queen of Octusaria.
+    I get they come from a penumbral moon where a number of things are vampiric, though why the edged tongue?
+    </page>
+    <page>
+    Einfernax, 25, 131ae.
+    Made a special drink for Akzato, hopefully a little tarazila venom isn't too much.
+    Akcha, 25, 131ae.
+    Your piss burnt my mouth, also next time: half the amount of venom you poured into it, 2.5 is still lethal and 1.5 can impact the circulatory system.
+    I'm going to guess the stun spears the illiatari have, aren't for public use?
+    </page>
+    <page>
+    Akcha, 30, 131ae.
+    Fiera combed my mane during a bath, simply said: it felt nice.
+    </page>
+    <page>
+    Einferix, 1, 131ae.
+    Was in bed with Akzato this morning, and she was fast asleep cuddled up to me with her arms wrapped tightly around.
+    I began to pet her, and gods how her purring vibrated through my chest.
+    She woke up briefly to lovingly bite my neck before falling back to sleep.
+    Even a bit of a meow here and there, in between the chirps.
+    Isn't there a saying relating to a voderai's meow?
+    Eichal, 1, 131ae.
+    "If you hear a voderai bark, then approach with ease. If you hear a voderai chirp, then calmly approach. If you hear a voderai meow, then approach cautiously." - Akfiasaki
+    My elder half-blood sister's father.
+    </page>
+    <page>
+    Eichal, 2, 131ae.
+    Some jackass unleashed 8 pairs of leiskwings into the city.
+    These fucking wyverns are meant to be one of Dorator's "apex predators", and a single shot from Azkesalityr, immediatly downs one of them.
+    The local vexara, wasn't that fond of seeing Arekena, Azkedara's archcannon, though she seemed to appreciate the help.
+    </page>
+    <page>
+    Eichal, 3, 131ae.
+    Fiera came into the bedroom the other night holding Suizva in her arms.
+    Suizva needed a motherly sister's comfort, and mentioned Akailios was busy comforting Akafiol.
+    </page>
+    <page>
+    Eichal, 4, 131ae.
+    So Akafiol and a high councillor are dating.
+    Am I supposed to be surprised that Savistato is letting his spouse date Akafiol?
+    </page>
+    <page>
+    Eichal, 5, 131ae.
+    Savistato arrived, and Akafiol's alright.
+    The illiatari was here a few hours, but at least he got them to leave.
+    </page>
+    <page>
+    Eichal, 10, 131ae.
+    Fiera got ahold of Varinesa, and we're now on her whatever the hell it's called.
+    There's no reasoning for this thing to have as many fucking weapons as it does.
+    Her and Arikal have been fighting, for the past few days.
+    Arikal dated her a fair bit, whilst he was volunteering.
+    </page>
+    <page>
+    Eichal, 11, 131ae.
+    Waking up in the middle of the night to hear Arikal getting his ass kicked, is always a lovely thing.
+    He came into the room with scorched feathers, and it almost looked like he was smiling.
+    </page>
+    <page>
+    Eichal, 14, 131ae.
+    Varinesa invited me to her room the other night, and had me chose between a selection of her clothes.
+    I'm still wearing them, and Hellshot said I look hot in them.
+    I don't care much for mercenaries though, regardless of affiliation.
+    </page>
+    <page>
+    ?, ?, ?ae.
+    We've arrived somewhere, I have no idea where and I could care less.
+    Varinesa gave me some equipment, and Arikal's already waiting outside.
+    </page>
+  </book>
+
+  <book ID="AlvaneiaUFS" Title="{{einfieran|Upon the Flame's Sun}}">
+    <page>
+    A flame kindled from the depths of Hell.
+    An angel of fire bursts forth upon the world.
+    An eye blazing with hellish flame.
+    For the Hand of Kata, fires his hellish shot.
+    </page>
+    <page>
+    The alluring light burns with passionate flame.
+    A song echoes the flame that burns within the heart.
+    A fiery heart that beckons the love of those around.
+    For even a mere spark can set a world alight.
+    </page>
+  </book>
+
+  <!--Stories-->
+
+  <book ID="Azkesalityr" Title="{{azkuvalian|Azkesalityr}}">
+    <page>
+    Forged by the techpriests of the primordial moon, echoes a sounding shot.
+    For hence upon the Arekena of the Xyatylian hierarchy, bends the fabric of metalic light.
+    Beckoning a new flame, she called upon fate's sin to blast the cindering light to damnation.
+    </page>
+    <page>
+    Since the times of her rule, Arekena Azkedara recants her title.
+    She raised her cannon high, gifting it to a beloved member of her flock of rogues.
+    For henceforth, she takes aim against the heresy of her Akatylian brother.
+    </page>
+  </book>
+
+  <book ID="Kaliskato" Title="{{dasdarfoxan|Kaliskato}}">
+    <page>
+    Latched with time, bound by many.
+    Catch the find, lost to many.
+    Hatch the kind, seen to many.
+    </page>
+    <page>
+    Once gifted to a Kalavylian high chieftein, Kaliskato was weilded with passion.
+    In spite of the chieftein's benign dishonesty, the axe remained truthful.
+    For the chieftein had kept his tribe safe, and protected their peaceful travels until their untimely end by an Akdaran warband.
+    </page>
+  </book>
+
+  <book ID="Valykaityr" Title="{{eiltaresian|Valykaityr}}">
+    <page>
+    Thine frozen shard of Eiltaresian glass, forms upon a wide point and narrowly edged within permafrost.
+    Thine frozen shaft imbued by crystaline mana.
+    Thine frozen spirit, once of thee Valykaityr, sworn velyte born and breed as thine queen's protector.
+    </page>
+    <page>
+    Rise upon thee Korshek, for thy valour and wisdom.
+    Stand before thine sisters, and bring grace unto thee glacial wastes.
+    Stand upon thee frozen bastions, as thine spear lunges forth as thine queen's shield.
+    </page>
+  </book>
+
+  <book ID="Zanivira" Title="{{eilsavian|Zanivira}}">
+    <page>
+    Metal cases the guilded barrel.
+    Metal flares from the guilded stock.
+    Metal sings from the rotary chambers.
+    </page>
+    <page>
+    This rifle was commissioned by a Ceran Laxieran trademaster.
+    It has sung countless shells, as fire sang from it's chambers.
+    It has all but weathered from usage, as it was polished with care.
+    </page>
+  </book>
+
+</books>

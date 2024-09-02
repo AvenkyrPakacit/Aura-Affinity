@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<naming>
+
+ <namestyles>
+
+    <!--AA Divine-->
+
+    <namestyle Name="AADivine" HyphenationChance="0" TwoNameChance="0" Format="TitleCase">
+      <scopes>
+        <scope Name="Culture" Culture="Divine" Priority="50" Combine="true" />
+        <scope Name="Faction" Faction="AADivine" Priority="100" Combine="false" />
+        <scope Name="Species" Species="imaata" Priority="50" Combine="true" />
+      </scopes>
+      <prefixes Amount="1">
+        <prefix Name="a" />
+        <prefix Name="a'" Weight="6"/>
+        <prefix Name="al" />
+        <prefix Name="ch" Weight="6"/>
+        <prefix Name="da" Weight="3"/>
+        <prefix Name="e" />
+        <prefix Name="ei" />
+        <prefix Name="i" />
+        <prefix Name="i'" />
+        <prefix Name="ka" Weight="6"/>
+        <prefix Name="ma" />
+        <prefix Name="se" Weight="6"/>
+        <prefix Name="ta" />
+      </prefixes>
+      <infixes Amount="1-5">
+        <infix Name="a" />
+        <infix Name="'a" />
+        <infix Name="ak" />
+        <infix Name="at" Weight="2"/>
+        <infix Name="'c" />
+        <infix Name="d" />
+        <infix Name="e" />
+        <infix Name="ea" />
+        <infix Name="em" />
+        <infix Name="er" />
+        <infix Name="f" />
+        <infix Name="i" />
+        <infix Name="'i" />
+        <infix Name="ia" />
+        <infix Name="ii" />
+        <infix Name="im" />
+        <infix Name="in" />
+        <infix Name="'j" />
+        <infix Name="'l'" />
+        <infix Name="lc" />
+        <infix Name="le" />
+        <infix Name="'m'" />
+        <infix Name="m" />
+        <infix Name="mi" Weight="2"/>
+        <infix Name="'r" />
+        <infix Name="ra" />
+        <infix Name="ri" />
+        <infix Name="rn" />
+        <infix Name="'s'" />
+        <infix Name="t" />
+        <infix Name="th" />
+        <infix Name="te" />
+        <infix Name="ui" />
+        <infix Name="vi" />
+        <infix Name="x" />
+        <infix Name="yr" />
+        <infix Name="'z'" />
+        <infix Name="zk" />
+      </infixes>
+      <postfixes Amount="1">
+        <postfix Name="a" />
+        <postfix Name="'a" />
+        <postfix Name="al" />
+        <postfix Name="ax" />
+        <postfix Name="az" />
+        <postfix Name="ex" Weight="6"/>
+        <postfix Name="i" />
+        <postfix Name="ia" />
+        <postfix Name="ko" />
+        <postfix Name="or" />
+        <postfix Name="'t" Weight="18"/>
+        <postfix Name="ta" Weight="6"/>
+        <postfix Name="us" />
+      </postfixes>
+    </namestyle>
+
+    <!--Aizalvaran-->
+
+    <namestyle Name="Aizalvaran Hero Epithet">
+      <scopes>
+        <scope Name="Main" Type="Epithet" Special="Hero" Faction="Eidrati" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Aizalvaran" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Birthright*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Birthright">
+          <value Name="Elderscale" Weight="2" />
+          <value Name="Firescale" />
+          <value Name="Frostscale" />
+          <value Name="Thunderscale" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Aizalvaran Hero Title">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Eidrati" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Title" Special="Hero" Culture="Aizalvaran" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Title*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Title">
+          <value Name="Guardians of Chaos" />
+          <value Name="Devourers of Chaos" />
+          <value Name="Harbingers of Chaos" />
+          <value Name="Protectors of Chaos" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Aizalvaran" HyphenationChance="10" TwoNameChance="20" Format="TitleCase">
+      <scopes>
+        <scope Name="Subtype1" Subtype="Blade of Eidrati" Priority="100" Combine="false" />
+        <scope Name="Subtype2" Subtype="Eidrati Harbinger" Priority="100" Combine="false" />
+        <scope Name="Subtype3" Subtype="Eidrati Priest" Priority="100" Combine="false" />
+        <scope Name="Subtype4" Subtype="Ekluat akuit Shirask" Priority="100" Combine="false" />
+        <scope Name="Culture" Culture="Aizalvaran" Priority="50" Combine="true" />
+        <scope Name="Faction" Faction="Eidrati" Priority="100" Combine="false" />
+        <scope Name="Species" Species="eidrati" Priority="50" Combine="true" />
+      </scopes>
+      <prefixes Amount="1">
+        <prefix Name="akve" Weight="4"/>
+        <prefix Name="ande" Weight="4"/>
+        <prefix Name="ashe" Weight="4"/>
+        <prefix Name="kala" Weight="2"/>
+        <prefix Name="kali" Weight="2"/>
+        <prefix Name="kila" Weight="2"/>
+        <prefix Name="talc" Weight="3"/>
+        <prefix Name="tali" Weight="3"/>
+        <prefix Name="tila" Weight="3"/>
+      </prefixes>
+      <infixes Amount="1">
+        <infix Name="ake" Weight="2"/>
+        <infix Name="ate" Weight="2"/>
+        <infix Name="ave" Weight="2"/>
+        <infix Name="kat" Weight="4" />
+        <infix Name="ket" Weight="4" />
+        <infix Name="kit" Weight="4" />
+        <infix Name="vel" Weight="3" />
+        <infix Name="ven" Weight="3" />
+        <infix Name="vet" Weight="3" />
+      </infixes>
+      <postfixes Amount="1">
+        <postfix Name="alia" Weight="4"/>
+        <postfix Name="alyn" Weight="4"/>
+        <postfix Name="asyl" Weight="4"/>
+        <postfix Name="sadi" Weight="3"/>
+        <postfix Name="sali" Weight="3"/>
+        <postfix Name="satl" Weight="3"/>
+        <postfix Name="vata" Weight="2"/>
+        <postfix Name="vatl" Weight="2"/>
+        <postfix Name="viyr" Weight="2"/>
+      </postfixes>
+    </namestyle>
+    
+    <!--Ashilesian-->
+
+    <namestyle Name="Ashilesian" HyphenationChance="10" TwoNameChance="20" Format="TitleCase">
+      <scopes>
+        <scope Name="Culture" Culture="Ashilesian" Priority="50" Combine="true" />
+        <scope Name="Faction" Faction="Ashayashian" Priority="100" Combine="false" />
+        <scope Name="Species" Species="ashayashi" Priority="50" Combine="true" />
+      </scopes>
+      <prefixes Amount="1">
+        <prefix Name="ak" />
+      </prefixes>
+      <infixes Amount="1">
+        <infix Name="aka" />
+        <infix Name="oak" />
+      </infixes>
+      <postfixes Amount="1">
+        <postfix Name="ek" />
+      </postfixes>
+    </namestyle>
+
+    <!--Azkuvalian-->
+
+    <namestyle Name="Azkuvalian" TwoNameChance="80" Format="TitleCase">
+      <scopes>
+        <scope Name="Culture" Culture="Azkuvalian" Priority="50" Combine="true" />
+        <scope Name="Faction" Faction="Azkuvalian" Priority="100" Combine="false" />
+        <scope Name="Species" Species="azkuvalian" Priority="50" Combine="true" />
+        <scope Name="Subtype1" Subtype="Akatylian Rogue Diciple" Priority="100" Combine="false" />
+        <scope Name="Subtype2" Subtype="Thatylian Rogue Mechanist" Priority="100" Combine="false" />
+        <scope Name="Subtype3" Subtype="Xyatylian Rogue Battlemage" Priority="100" Combine="false" />
+        <scope Name="Subtype4" Subtype="Xyatylian Rogue Techpriest" Priority="100" Combine="false" />
+      </scopes>
+      <prefixes Amount="1">
+        <prefix Name="aj'" />
+        <prefix Name="ar" Weight="2" />
+        <prefix Name="ath'" />
+        <prefix Name="az" />
+        <prefix Name="va" />
+      </prefixes>
+      <infixes Amount="0-4">
+        <infix Name="a" Weight="2" />
+        <infix Name="e" Weight="2" />
+        <infix Name="da" />
+        <infix Name="i" />
+        <infix Name="im" />
+        <infix Name="is" />
+        <infix Name="it" />
+        <infix Name="k" />
+        <infix Name="ka" />
+        <infix Name="ke" />
+        <infix Name="li" />
+        <infix Name="nd" />
+        <infix Name="sa" />
+        <infix Name="t" />
+        <infix Name="th" />
+        <infix Name="yr" />
+      </infixes>
+      <postfixes Amount="1">
+        <postfix Name="ak" />
+        <postfix Name="er" />
+        <postfix Name="ita" />
+        <postfix Name="na" Weight="2" />
+        <postfix Name="ne" Weight="2" />
+        <postfix Name="ra" />
+        <postfix Name="yr" />
+      </postfixes>
+    </namestyle>
+    
+    <namestyle Name="Azkuvalian Hero Epithet">
+      <scopes>
+        <scope Name="Main" Type="Epithet" Special="Hero" Faction="Azkuvalian" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Azkuvalian" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Rank*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Rank">
+          <value Name="Angel" />
+          <value Name="Arch-Angel" />
+          <value Name="Messiah" />
+          <value Name="Prophet" />
+          <value Name="Saint" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Azkuvalian Hero Title">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Azkuvalian" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Title" Special="Hero" Culture="Azkuvalian" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Title*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Title">
+          <value Name="the Protector" />
+          <value Name="the Guardian" />
+          <value Name="the Merciful" />
+          <value Name="the Wrathful" />
+          <value Name="the Divine" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <!--Doratorian-->
+
+    <namestyle Name="Avyrialus Hero Epithet">
+      <scopes>
+        <scope Name="Main" Type="Epithet" Special="Hero" Faction="Avyrialus" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Doratorian" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Rank*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Rank">
+          <value Name="Pack Caretaker" />
+          <value Name="Pack Charmer" />
+          <value Name="Pack Parent" />
+          <value Name="Pack Flirt" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Avyrialus Hero Title">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Avyrialus" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Title" Special="Hero" Culture="Doratorian" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Disposition*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Disposition">
+          <value Name="the Desired" />
+          <value Name="the Lover" />
+          <value Name="the Lustful" />
+          <value Name="the Rested" />
+          <value Name="the Tired" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Doratorian" TwoNameChance="40" Format="TitleCase">
+      <scopes>
+        <scope Name="Culture" Culture="Doratorian" Priority="50" Combine="true" />
+        <scope Name="Species1" Species="avyrialus" Priority="50" Combine="true" />
+        <scope Name="Species2" Species="rinate" Priority="50" Combine="true" />
+        <scope Name="Species3" Species="kazvate" Priority="50" Combine="true" />
+        <scope Name="Species4" Species="vaskate" Priority="50" Combine="true" />
+        <scope Name="Species4" Species="voderai" Priority="50" Combine="true" />
+        <scope Name="Subtype1" Subtype="Arinate" Priority="100" Combine="false" />
+        <scope Name="Subtype2" Subtype="Kazvate" Priority="100" Combine="false" />
+        <scope Name="Subtype3" Subtype="Veidancyri" Priority="100" Combine="false" />
+        <scope Name="Subtype4" Subtype="Voderai Arkai" Priority="100" Combine="false" />
+      </scopes>
+      <prefixes Amount="1">
+        <prefix Name="ak" Weight="5" />
+        <prefix Name="al" />
+        <prefix Name="am" />
+        <prefix Name="an" />
+        <prefix Name="ar" Weight="3" />
+        <prefix Name="av" />
+        <prefix Name="ax" />
+        <prefix Name="da" />
+        <prefix Name="de" />
+        <prefix Name="ja" Weight="2" />
+        <prefix Name="ka" />
+        <prefix Name="pa" />
+        <prefix Name="ri" />
+        <prefix Name="su" />
+        <prefix Name="va" />
+      </prefixes>
+      <infixes Amount="1-3">
+        <infix Name="a" Weight="5" />
+        <infix Name="ac" />
+        <infix Name="am" />
+        <infix Name="e" />
+        <infix Name="eik" />
+        <infix Name="en" />
+        <infix Name="fi" />
+        <infix Name="fia" />
+        <infix Name="i" Weight="3" />
+        <infix Name="ice" />
+        <infix Name="ik" />
+        <infix Name="ili" />
+        <infix Name="in" />
+        <infix Name="ir" Weight="2" />
+        <infix Name="isa" />
+        <infix Name="k" />
+        <infix Name="ki" />
+        <infix Name="kra" />
+        <infix Name="las" />
+        <infix Name="mi" />
+        <infix Name="n" />
+        <infix Name="ri" />
+        <infix Name="s" Weight="2" />
+        <infix Name="sa" Weight="3" />
+        <infix Name="se" />
+        <infix Name="si" />
+        <infix Name="stra" />
+        <infix Name="wu" />
+        <infix Name="z" Weight="3" />
+      </infixes>
+      <postfixes Amount="0-1">
+        <postfix Name="al" Weight="2" />
+        <postfix Name="ca" />
+        <postfix Name="fa" />
+        <postfix Name="ia" />
+        <postfix Name="it" />
+        <postfix Name="ka" Weight="3" />
+        <postfix Name="ki" />
+        <postfix Name="li" />
+        <postfix Name="na" />
+        <postfix Name="ol" />
+        <postfix Name="ol" Weight="3" />
+        <postfix Name="ti" />
+        <postfix Name="to" />
+        <postfix Name="va" />
+        <postfix Name="yr" />
+      </postfixes>
+    </namestyle>
+
+    <namestyle Name="Rinate Hero Epithet">
+      <scopes>
+        <scope Name="Main" Type="Epithet" Special="Hero" Faction="Rinate" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Doratorian" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Rank*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Rank">
+          <value Name="Elder Hunter" />
+          <value Name="Pack Fiend" />
+          <value Name="Prowler" />
+          <value Name="Hunter" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Rinate Hero Title">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Rinate" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Title" Special="Hero" Culture="Doratorian" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Disposition*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Disposition">
+          <value Name="the Razorbeaked" />
+          <value Name="the Clawed" />
+          <value Name="the Fanged" />
+          <value Name="the Fierce" />
+          <value Name="the Horned" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Vaskate Hero Epithet">
+      <scopes>
+        <scope Name="Main" Type="Epithet" Special="Hero" Faction="Vaskate" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Doratorian" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Rank*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Rank">
+          <value Name="Cute Beak" />
+          <value Name="Drunk Beak" />
+          <value Name="Feather Beak" />
+          <value Name="Shine Beak" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Vaskate Hero Title">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Vaskate" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Title" Special="Hero" Culture="Doratorian" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Disposition*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Disposition">
+          <value Name="the Drinker" />
+          <value Name="the Drunk" />
+          <value Name="the Drunken Thief" />
+          <value Name="the Theif" />
+          <value Name="the Twin Tailed" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Voderai Hero Epithet">
+      <scopes>
+        <scope Name="Main" Type="Epithet" Special="Hero" Faction="Voderai" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Doratorian" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Rank*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Rank">
+          <value Name="Chirphowler" />
+          <value Name="Charmbeak" />
+          <value Name="Chirptail" />
+          <value Name="Elder" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Voderai Hero Title">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Voderai" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Title" Special="Hero" Culture="Doratorian" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Disposition*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Disposition">
+          <value Name="the Hungering" />
+          <value Name="the Swallower" />
+          <value Name="the Voracious" />
+          <value Name="the Devourer" />
+          <value Name="the Eater" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <!--Eiltaresian-->
+
+    <namestyle Name="Eiltaresian" HyphenationChance="10" TwoNameChance="20" Format="TitleCase">
+      <scopes>
+        <scope Name="Culture" Culture="Eiltaresian" Priority="50" Combine="true" />
+        <scope Name="Faction" Faction="VeidancyrArkhos" Priority="100" Combine="false" />
+        <scope Name="Species" Species="korshek" Priority="50" Combine="true" />
+      </scopes>
+      <prefixes Amount="1">
+        <prefix Name="ar" Weight="2" />
+        <prefix Name="va" />
+      </prefixes>
+      <infixes Amount="1">
+        <infix Name="it" />
+        <infix Name="ka" />
+        <infix Name="kh" />
+        <infix Name="kr" />
+        <infix Name="ly" />
+        <infix Name="y" />
+      </infixes>
+      <postfixes Amount="1">
+        <postfix Name="os" />
+        <postfix Name="st" />
+        <postfix Name="yr" />
+      </postfixes>
+    </namestyle>
+
+    <!--Syrenalian-->
+
+    <namestyle Name="Syrenalian" TwoNameChance="100" Format="TitleCase">
+      <scopes>
+        <scope Name="Culture" Culture="Syrenalian" Priority="50" Combine="true" />
+        <scope Name="Species1" Species="eilasalian" Priority="50" Combine="true" />
+        <scope Name="Species2" Species="einfieran" Priority="50" Combine="true" />
+        <scope Name="Species3" Species="octusarian" Priority="50" Combine="true" />
+        <scope Name="Subtype1" Subtype="Axilari Veteran" Priority="100" Combine="false" />
+        <scope Name="Subtype2" Subtype="Syrenalian Councillor" Priority="100" Combine="false" />
+        <scope Name="Subtype3" Subtype="Syrenalian Scientist" Priority="100" Combine="false" />
+        <scope Name="Subtype4" Subtype="Talvix Syrenal" Priority="100" Combine="false" />
+      </scopes>
+      <prefixes Amount="1">
+        <prefix Name="ae" />
+        <prefix Name="al" />
+        <prefix Name="ea" />
+        <prefix Name="ei" />
+        <prefix Name="fi" />
+        <prefix Name="ix" />
+        <prefix Name="ka" />
+        <prefix Name="oc" />
+        <prefix Name="ta" />
+        <prefix Name="tw" />
+        <prefix Name="va" Weight="3" />
+        <prefix Name="ve" Weight="2" />
+        <prefix Name="xe" />
+      </prefixes>
+      <infixes Amount="1-2">
+        <infix Name="at" />
+        <infix Name="eg" />
+        <infix Name="ei" />
+        <infix Name="el" />
+        <infix Name="era" />
+        <infix Name="fie" />
+        <infix Name="i" />
+        <infix Name="l" Weight="2" />
+        <infix Name="la" />
+        <infix Name="na" />
+        <infix Name="ne" Weight="2" />
+        <infix Name="oz" />
+        <infix Name="re" />
+        <infix Name="ri" Weight="2" />
+        <infix Name="samn" />
+        <infix Name="ska" />
+        <infix Name="st" Weight="3" />
+        <infix Name="sta" />
+        <infix Name="ta" />
+        <infix Name="thyr" />
+        <infix Name="ti" />
+        <infix Name="tr" />
+        <infix Name="tu" />
+        <infix Name="va" />
+        <infix Name="vi" Weight="2" />
+        <infix Name="vina" />
+        <infix Name="y" />
+        <infix Name="yr" />
+        <infix Name="zta" />
+      </infixes>
+      <postfixes Amount="0-1">
+        <postfix Name="al" />
+        <postfix Name="ia" Weight="3" />
+        <postfix Name="is" />
+        <postfix Name="la" Weight="2" />
+        <postfix Name="li" />
+        <postfix Name="or" />
+        <postfix Name="ra" />
+        <postfix Name="sa" />
+        <postfix Name="to" />
+        <postfix Name="us" />
+        <postfix Name="yr" />
+      </postfixes>
+    </namestyle>
+
+    <namestyle Name="Syrenalian Hero Epithet">
+      <scopes>
+        <scope Name="Main" Type="Epithet" Special="Hero" Faction="Syrenalian" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Syrenalian" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Rank*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Rank">
+          <value Name="Elder Councillor" />
+          <value Name="High Councillor" />
+          <value Name="Councillor" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Syrenalian Hero Title">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Syrenalian" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Title" Special="Hero" Culture="Syrenalian" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Title*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Title">
+          <value Name="the Ambitious" />
+          <value Name="the Kind" />
+          <value Name="the Prideful" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="SyrnlCyber Hero Epithet">
+      <scopes>
+        <scope Name="Main" Type="Epithet" Special="Hero" Faction="SyrnlCyber" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Syrenalian" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Occupation*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Occupation">
+          <value Name="Doctor" />
+          <value Name="Experimentor" />
+          <value Name="Overseer" />
+          <value Name="Scientist" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="SyrnlCyber Hero Title">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="SyrnlCyber" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Title" Special="Hero" Culture="Syrenalian" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Title*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Title">
+          <value Name="the Informed" />
+          <value Name="the Knowledgeable" />
+          <value Name="the Mastermind" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="SyrnlRF Hero Epithet">
+      <scopes>
+        <scope Name="Main" Type="Epithet" Special="Hero" Faction="SyrnlRF" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Syrenalian" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Rank*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Rank">
+          <value Name="Exarch" />
+          <value Name="Daminat" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="SyrnlRF Hero Title">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="SyrnlRF" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Title" Special="Hero" Culture="Syrenalian" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Title*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Title">
+          <value Name="the Unrelenting" />
+          <value Name="the Unstoppable" />
+          <value Name="the Unyielding" />
+          <value Name="the Resolute" />
+          <value Name="the Fierce" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Talfieran Hero Epithet">
+      <scopes>
+        <scope Name="Main" Type="Epithet" Special="Hero" Faction="Talfieran" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Syrenalian" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Rank*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Rank">
+          <value Name="Emberlight" />
+          <value Name="Fireborn" />
+          <value Name="Starflame" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Talfieran Hero Title">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Talfieran" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Title" Special="Hero" Culture="Syrenalian" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Title*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Title">
+          <value Name="the Dancer of Flames" />
+          <value Name="the Hell Omen" />
+          <value Name="the Mender of Flames" />
+          <value Name="the Singer of Flames" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+</naming>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+  <!--Statues-->
+
+  <object Name="Akafiol Statue" Inherits="Statue">
+    <part Name="Render" DisplayName="statue of {{doratorian|Akafiol}}" Tile="creatures/sw_oboroqoru_statue.bmp" RenderLayer="6" RenderString="A" ColorString="&amp;y" DetailColor="g" Occluding="true" />
+    <part Name="Physics" Owner="Avenkyr"/>
+    <stat Name="Hitpoints" Value="1200" />
+    <part Name="Description" Short="." />
+    <part Name="Shrine" />
+    <part Name="SmartuseTwiddles" />
+    <tag Name="Worshippable" />
+    <tag Name="WorshippedAs" Value="Child of Daemina" />
+    <tag Name="WorshipFaction" Value="Avenkyr" />
+    <tag Name="WorshipPower" Value="5" />
+    <tag Name="WorshipColorString" Value="&amp;M" />
+    <tag Name="WorshipDetailColor" Value="K" />
+  </object>
+
+  <object Name="Akailios Statue" Inherits="Statue">
+    <part Name="Render" DisplayName="statue of {{doratorian|Akailios}}" Tile="creatures/sw_oboroqoru_statue.bmp" RenderLayer="6" RenderString="V" ColorString="&amp;y" DetailColor="g" Occluding="true" />
+    <part Name="Physics" Owner="Avenkyr"/>
+    <stat Name="Hitpoints" Value="1200" />
+    <part Name="Description" Short="." />
+    <part Name="Shrine" />
+    <part Name="SmartuseTwiddles" />
+    <tag Name="Worshippable" />
+    <tag Name="WorshippedAs" Value="Child of Daemina" />
+    <tag Name="WorshipFaction" Value="Avenkyr" />
+    <tag Name="WorshipPower" Value="4" />
+    <tag Name="WorshipColorString" Value="&amp;M" />
+    <tag Name="WorshipDetailColor" Value="K" />
+  </object>
+
+  <object Name="Akzato Statue" Inherits="Statue">
+    <part Name="Render" DisplayName="statue of {{doratorian|Akzato}}" Tile="creatures/sw_oboroqoru_statue.bmp" RenderLayer="6" RenderString="R" ColorString="&amp;y" DetailColor="g" Occluding="true" />
+    <part Name="Physics" Owner="Avenkyr"/>
+    <stat Name="Hitpoints" Value="1200" />
+    <part Name="Description" Short="." />
+    <part Name="Shrine" />
+    <part Name="SmartuseTwiddles" />
+    <tag Name="Worshippable" />
+    <tag Name="WorshippedAs" Value="Child of Daemina" />
+    <tag Name="WorshipFaction" Value="Avenkyr" />
+    <tag Name="WorshipPower" Value="1" />
+    <tag Name="WorshipColorString" Value="&amp;M" />
+    <tag Name="WorshipDetailColor" Value="K" />
+  </object>
+
+  <object Name="Arikal Statue" Inherits="Statue">
+    <part Name="Render" DisplayName="statue of {{doratorian|Arikal}}" Tile="creatures/sw_oboroqoru_statue.bmp" RenderLayer="6" RenderString="A" ColorString="&amp;y" DetailColor="g" Occluding="true" />
+    <part Name="Physics" Owner="Avenkyr"/>
+    <stat Name="Hitpoints" Value="1200" />
+    <part Name="Description" Short="." />
+    <part Name="Shrine" />
+    <part Name="SmartuseTwiddles" />
+    <tag Name="Worshippable" />
+    <tag Name="WorshippedAs" Value="Child of Daemina" />
+    <tag Name="WorshipFaction" Value="Avenkyr" />
+    <tag Name="WorshipPower" Value="2" />
+    <tag Name="WorshipColorString" Value="&amp;M" />
+    <tag Name="WorshipDetailColor" Value="K" />
+  </object>
+
+  <object Name="Daemina Statue" Inherits="Statue">
+    <part Name="Render" DisplayName="statue of {{doratorian|Daemina}}" Tile="creatures/sw_oboroqoru_statue.bmp" RenderLayer="6" RenderString="A" ColorString="&amp;y" DetailColor="g" Occluding="true" />
+    <part Name="Physics" Owner="Avenkyr"/>
+    <stat Name="Hitpoints" Value="1200" />
+    <part Name="Description" Short="The holy mother of voderai, the enloper of {{doratorian|Dorator,}} {{aizalvaran|Arch-Daeminakurnaz}} and {{syrenalian|Syrenalian}} diety of existence. Her guilded, elderly feathers shine as gold to light." />
+    <part Name="Shrine" />
+    <part Name="SmartuseTwiddles" />
+    <tag Name="Worshippable" />
+    <tag Name="WorshippedAs" Value="Daemina" />
+    <tag Name="WorshipFaction" Value="Avenkyr" />
+    <tag Name="WorshipPower" Value="10" />
+    <tag Name="WorshipColorString" Value="&amp;M" />
+    <tag Name="WorshipDetailColor" Value="K" />
+  </object>
+
+  <object Name="Pakacit Statue" Inherits="Statue">
+    <part Name="Render" DisplayName="statue of {{doratorian|Pakacit}}" Tile="creatures/sw_oboroqoru_statue.bmp" RenderLayer="6" RenderString="A" ColorString="&amp;y" DetailColor="g" Occluding="true" />
+    <part Name="Physics" Owner="Avenkyr"/>
+    <stat Name="Hitpoints" Value="1200" />
+    <part Name="Description" Short="{{doratorian|Child of Daemina.}} Haunted by life. Eternal witness. To death's rebirth." />
+    <part Name="Shrine" />
+    <part Name="SmartuseTwiddles" />
+    <tag Name="Worshippable" />
+    <tag Name="WorshippedAs" Value="Child of Daemina" />
+    <tag Name="WorshipFaction" Value="Avenkyr" />
+    <tag Name="WorshipPower" Value="6" />
+    <tag Name="WorshipColorString" Value="&amp;M" />
+    <tag Name="WorshipDetailColor" Value="K" />
+  </object>
+
+  <object Name="Suizva Statue" Inherits="Statue">
+    <part Name="Render" DisplayName="statue of {{doratorian|Suizva}}" Tile="creatures/sw_oboroqoru_statue.bmp" RenderLayer="v" RenderString="A" ColorString="&amp;y" DetailColor="g" Occluding="true" />
+    <part Name="Physics" Owner="Avenkyr"/>
+    <stat Name="Hitpoints" Value="1200" />
+    <part Name="Description" Short="." />
+    <part Name="Shrine" />
+    <part Name="SmartuseTwiddles" />
+    <tag Name="Worshippable" />
+    <tag Name="WorshippedAs" Value="Child of Daemina" />
+    <tag Name="WorshipFaction" Value="Avenkyr" />
+    <tag Name="WorshipPower" Value="3" />
+    <tag Name="WorshipColorString" Value="&amp;M" />
+    <tag Name="WorshipDetailColor" Value="K" />
+  </object>
+
+</objects>
