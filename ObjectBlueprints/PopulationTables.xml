@@ -5,90 +5,9 @@
 
   <!--Avyrialus Packs-->
 
-  <population Name="Avyrialus_Pack">
-    <group Name="Creatures" Style="pickeach">
-      <object Chance="100" Number="1" Blueprint="Avyrialus_Pack_Leader" />
-      <object Chance="90" Number="1-3" Blueprint="Avyrialus_Pack" />
-      <object Chance="80" Number="1-2" Blueprint="Avyrialus_Hunter" />
-      <object Chance="70" Number="1" Blueprint="Avyrialus_Elder_Hunter" />
-      <object Chance="60" Number="0-2" Blueprint="Avyrialus_Feral" />
-      <object Chance="50" Number="0-1" Blueprint="Avyrialus_Elder_Feral" />
-    </group>
-  </population>
-
   <!-- Rinate Packs -->
 
-  <population Name="Arinate_Pack">
-    <group Name="Creatures" Style="pickeach">
-      <object Chance="100" Number="1" Blueprint="Arinate_Pack_Leader" />
-      <object Chance="90" Number="1-3" Blueprint="Arinate_Pack" />
-      <object Chance="80" Number="1-2" Blueprint="Arinate_Hunter" />
-      <object Chance="70" Number="1" Blueprint="Arinate_Elder_Hunter" />
-      <object Chance="60" Number="0-2" Blueprint="Arinate_Feral" />
-      <object Chance="50" Number="0-1" Blueprint="Arinate_Elder_Feral" />
-    </group>
-  </population>
-
-  <population Name="Rinate_Pack">
-    <group Name="Creatures" Style="pickeach">
-      <object Chance="100" Number="1" Blueprint="Rinate_Pack_Leader" />
-      <object Chance="90" Number="1-3" Blueprint="Rinate_Pack" />
-      <object Chance="80" Number="1-2" Blueprint="Rinate_Hunter" />
-      <object Chance="70" Number="1" Blueprint="Rinate_Elder_Hunter" />
-      <object Chance="60" Number="0-2" Blueprint="Rinate_Feral" />
-      <object Chance="50" Number="0-1" Blueprint="Rinate_Elder_Feral" />
-    </group>
-  </population>
-
-  <population Name="Rinate_Large_Pack">
-    <group Name="Pack" Style="pickeach">
-      <table Name="Arinate_Pack" />
-      <table Name="Rinate_Pack" />
-    </group>
-  </population>
-
   <!-- Voderai Packs -->
-
-  <population Name="Voderai_Pack">
-    <group Name="Creatures" Style="pickeach">
-      <object Chance="100" Number="1" Blueprint="Voderai_Pack_Leader" />
-      <object Chance="90" Number="1-3" Blueprint="Voderai_Pack" />
-      <object Chance="80" Number="1-2" Blueprint="Voderai_Hunter" />
-      <object Chance="70" Number="1" Blueprint="Voderai_Elder_Hunter" />
-      <object Chance="60" Number="0-2" Blueprint="Voderai_Feral" />
-      <object Chance="50" Number="0-1" Blueprint="Voderai_Elder_Feral" />
-    </group>
-  </population>
-
-  <population Name="Voderai_Arkai_Pack">
-    <group Name="Creatures" Style="pickeach">
-      <object Chance="100" Number="1" Blueprint="Voderai_Arkai_Pack_Leader" />
-      <object Chance="90" Number="1-3" Blueprint="Voderai_Arkai_Pack" />
-      <object Chance="50" Number="1" Blueprint="Voderai_Arkai_Elder_Feral" />
-      <object Chance="70" Number="1" Blueprint="Voderai_Arkai_Elder_Hunter" />
-      <object Chance="80" Number="1-2" Blueprint="Voderai_Arkai_Hunter" />
-      <object Chance="60" Number="0-2" Blueprint="Voderai_Arkai_Feral" />
-    </group>
-  </population>
-
-  <population Name="Voderai_Daly_Pack">
-    <group Name="Creatures" Style="pickeach">
-      <object Chance="100" Number="1" Blueprint="Voderai_Daly_Pack_Leader" />
-      <object Chance="90" Number="1-3" Blueprint="Voderai_Daly_Pack" />
-      <object Chance="50" Number="0-1" Blueprint="Voderai_Daly_Elder_Feral" />
-      <object Chance="70" Number="1" Blueprint="Voderai_Daly_Elder_Hunter" />
-      <object Chance="60" Number="0-2" Blueprint="Voderai_Daly_Feral" />
-      <object Chance="80" Number="1-2" Blueprint="Voderai_Daly_Hunter" />
-    </group>
-  </population>
-
-  <population Name="Voderai_Large_Pack">
-    <group Name="Pack" Style="pickeach">
-      <table Name="Voderai_Pack" />
-      <table Name="Voderai_Arkai_Pack" />
-      <table Name="Voderai_Daly_Pack" />
-    </group>
-  </population>
 
   <!-- Deep Jungle -->
 

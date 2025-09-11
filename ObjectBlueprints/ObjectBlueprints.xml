@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+  <object Name="KazvateBody" Inherits="Humanoid">
+    <part Name="Body" Anatomy="KazvateTails" />
+    <mutation Name="HeightenedSmell" Level="1" />
+  </object>
+  <object Name="VoderaiBody" Inherits="Humanoid">
+    <part Name="Body" Anatomy="TailedBiped" />
+    <mutation Name="HeightenedSmell" Level="1" />
+  </object>
+  <object Name="SyrenalianBody" Inherits="Humanoid">
+    <part Name="Body" Anatomy="TailedBiped" />
+  </object>
+</objects>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<mutations>
-
-  <category Name="Physical" load="Merge">
-    <mutation Name="Chaos Ray" Cost="6" MaxSelected="1" Class="AU_ChaosRay" Exclusions="" BearerDescription="the chaos-handed" Tile="Mutations/freezing_ray.bmp" />
-  </category>
-
-</mutations>

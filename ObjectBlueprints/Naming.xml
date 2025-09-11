@@ -318,11 +318,7 @@
         <scope Name="Species2" Species="rinate" Priority="50" Combine="true" />
         <scope Name="Species3" Species="kazvate" Priority="50" Combine="true" />
         <scope Name="Species4" Species="vaskate" Priority="50" Combine="true" />
-        <scope Name="Species4" Species="voderai" Priority="50" Combine="true" />
-        <scope Name="Subtype1" Subtype="Arinate" Priority="100" Combine="false" />
-        <scope Name="Subtype2" Subtype="Kazvate" Priority="100" Combine="false" />
-        <scope Name="Subtype3" Subtype="Veidancyri" Priority="100" Combine="false" />
-        <scope Name="Subtype4" Subtype="Voderai Arkai" Priority="100" Combine="false" />
+        <scope Name="Species5" Species="voderai" Priority="50" Combine="true" />
       </scopes>
       <prefixes Amount="1">
         <prefix Name="ak" Weight="5" />
@@ -501,6 +497,82 @@
         </templatevar>
       </templatevars>
     </namestyle>
+	
+	<!--Arinate-->
+	
+	<namestyle Name="AANamingArinate" TwoNameChance="40" Format="TitleCase">
+      <scopes>
+        <scope Name="Subtype1" Subtype="Arinate Uwakati" Priority="50" Combine="true" />
+        <scope Name="Subtype2" Subtype="Arinate Cseiklasca" Priority="50" Combine="true" />
+        <scope Name="Subtype3" Subtype="Arinate Veskaskwe" Priority="50" Combine="true" />
+        <scope Name="Subtype4" Subtype="Arinate Akammika" Priority="50" Combine="true" />
+      </scopes>
+      <prefixes Amount="1">
+        <prefix Name="ak" Weight="5" />
+        <prefix Name="al" />
+        <prefix Name="am" />
+        <prefix Name="an" />
+        <prefix Name="ar" Weight="3" />
+        <prefix Name="av" />
+        <prefix Name="ax" />
+        <prefix Name="da" />
+        <prefix Name="de" />
+        <prefix Name="ja" Weight="2" />
+        <prefix Name="ka" />
+        <prefix Name="pa" />
+        <prefix Name="ri" />
+        <prefix Name="su" />
+        <prefix Name="va" />
+      </prefixes>
+      <infixes Amount="1-3">
+        <infix Name="a" Weight="5" />
+        <infix Name="ac" />
+        <infix Name="am" />
+        <infix Name="e" />
+        <infix Name="eik" />
+        <infix Name="en" />
+        <infix Name="fi" />
+        <infix Name="fia" />
+        <infix Name="i" Weight="3" />
+        <infix Name="ice" />
+        <infix Name="ik" />
+        <infix Name="ili" />
+        <infix Name="in" />
+        <infix Name="ir" Weight="2" />
+        <infix Name="isa" />
+        <infix Name="k" />
+        <infix Name="ki" />
+        <infix Name="kra" />
+        <infix Name="las" />
+        <infix Name="mi" />
+        <infix Name="n" />
+        <infix Name="ri" />
+        <infix Name="s" Weight="2" />
+        <infix Name="sa" Weight="3" />
+        <infix Name="se" />
+        <infix Name="si" />
+        <infix Name="stra" />
+        <infix Name="wu" />
+        <infix Name="z" Weight="3" />
+      </infixes>
+      <postfixes Amount="0-1">
+        <postfix Name="al" Weight="2" />
+        <postfix Name="ca" />
+        <postfix Name="fa" />
+        <postfix Name="ia" />
+        <postfix Name="it" />
+        <postfix Name="ka" Weight="3" />
+        <postfix Name="ki" />
+        <postfix Name="li" />
+        <postfix Name="na" />
+        <postfix Name="ol" />
+        <postfix Name="ol" Weight="3" />
+        <postfix Name="ti" />
+        <postfix Name="to" />
+        <postfix Name="va" />
+        <postfix Name="yr" />
+      </postfixes>
+    </namestyle>
 
     <!--Eiltaresian-->
 
@@ -534,13 +606,11 @@
     <namestyle Name="Syrenalian" TwoNameChance="100" Format="TitleCase">
       <scopes>
         <scope Name="Culture" Culture="Syrenalian" Priority="50" Combine="true" />
-        <scope Name="Species1" Species="eilasalian" Priority="50" Combine="true" />
-        <scope Name="Species2" Species="einfieran" Priority="50" Combine="true" />
-        <scope Name="Species3" Species="octusarian" Priority="50" Combine="true" />
-        <scope Name="Subtype1" Subtype="Axilari Veteran" Priority="100" Combine="false" />
-        <scope Name="Subtype2" Subtype="Syrenalian Councillor" Priority="100" Combine="false" />
-        <scope Name="Subtype3" Subtype="Syrenalian Scientist" Priority="100" Combine="false" />
-        <scope Name="Subtype4" Subtype="Talvix Syrenal" Priority="100" Combine="false" />
+        <scope Name="Species" Species="syrenalian" Priority="50" Combine="true" />
+        <scope Name="Subtype1" Subtype="Syrenalian Councillor" Priority="50" Combine="true" />
+        <scope Name="Subtype2" Subtype="Eilasalian Medic" Priority="50" Combine="true" />
+        <scope Name="Subtype3" Subtype="Talfieran Volunteer" Priority="50" Combine="true" />
+        <scope Name="Subtype4" Subtype="Octusarian Scientist" Priority="50" Combine="true" />
       </scopes>
       <prefixes Amount="1">
         <prefix Name="ae" />
@@ -741,5 +811,7 @@
         </templatevar>
       </templatevars>
     </namestyle>
+
+  </namestyles>
 
 </naming>
