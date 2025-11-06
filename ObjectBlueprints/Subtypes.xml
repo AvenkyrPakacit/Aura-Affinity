@@ -36,8 +36,8 @@
     </subtype>
 	</category>
   </class>
-  
-  <class ID="AAST_Arinate" ChargenTitle="choose your title" SingularTitle="title">
+
+  <class ID="AAST_Rinate" ChargenTitle="choose your title" SingularTitle="title">
     <category Name="Title" DisplayName="{{eilasalian|Eilasalia}}">
     <subtype Name="Arinate Uwakati" Gear="StartingGear_SHCouncillor" Tile="Assets_Content_Textures_Creatures_sw_snapjaw.bmp" DetailColor="O">
       <stat Name="Ego" Bonus="2" />
@@ -65,7 +65,7 @@
         <skills>
           <skill Name="Survival" />
       </skills>
-      <extrainfo>You are a {{doratorian|Arinate}} scientist of a {{doratorian|arinate pack}}.</extrainfo>
+      <extrainfo>You are a {{doratorian|Arinate}} Akammika of a {{doratorian|arinate pack}}.</extrainfo>
     </subtype>
 	</category>
   </class>

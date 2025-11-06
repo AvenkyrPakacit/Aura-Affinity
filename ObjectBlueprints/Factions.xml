@@ -157,7 +157,6 @@
     <feeling About="*" Value="-50" />
     <waterritual
       Skill="Discipline"
-      skill="Persuasion_RebukeRobot"
     />
     <interests>
       <interest Tags="avyrialus,lair" />
@@ -194,8 +193,6 @@
     <feeling About="*" Value="0" />
     <waterritual
       Skill="ShortBlades"
-      Skill="Discipline"
-      Skill="Endurance"
     />
     <interests>
       <interest Tags="avyrialus,lair" />
@@ -397,9 +394,6 @@
     <feeling About="*" Value="0" />
     <waterritual
       skill="Persuasion_RebukeRobot"
-      Skill="HeavyWeapons"
-      Skill="Pistol"
-      Skill="Rifles"
     />
     <interests>
       <interest Tags="robot,lair" />
@@ -430,10 +424,7 @@
     <feeling About="Talfieran" Value="-100" />
     <feeling About="*" Value="0" />
     <waterritual
-      Skill="HeavyWeapons"
       Skill="LongBlades"
-      Skill="Pistol"
-      Skill="Rifles"
     />
     <interests>
       <interest Tags="tech" />
@@ -463,9 +454,7 @@
     <feeling About="SyrnlRF" Value="-100" />
     <feeling About="*" Value="0" />
     <waterritual
-      Skill="HeavyWeapons"
       Skill="Pistol"
-      Skill="Rifles"
     />
     <interests>
       <interest Tags="tech" />
@@ -497,7 +486,6 @@
     <feeling About="*" Value="0" />
     <waterritual
       Skill="LongBlades"
-      skill="Shield"
     />
     <interests>
       <interest Tags="azkuvalian,lair" />
@@ -520,7 +508,6 @@
   >
     <waterritual
       Liquid="convalessence"
-      Skill="Self-discipline"
       skill="Tactics"
     />
   </faction>
@@ -533,7 +520,6 @@
   >
     <waterritual
       Skill="Discipline"
-      skill="Persuasion_RebukeRobot"
     />
   </faction>
 
@@ -545,7 +531,6 @@
   >
     <waterritual
       skill="Acrobatics"
-      Skill="Physic"
     />
   </faction>
 
@@ -558,7 +543,6 @@
     <waterritual
       Liquid="blood"
       skill="Multiweapon Fighting"
-      Skill="Single Weapon Fighting"
     />
   </faction>
 
@@ -570,7 +554,6 @@
   >
     <waterritual
       skill="Bow and Rifle"
-      Skill="Pistol"
     />
   </faction>
 

@@ -23,7 +23,7 @@
     <extrainfo>Positive reputation with Vaskate and Kazvate Packs</extrainfo>
   </genotype>-->
 
-  <!--<genotype Name="AAGT_Rinate" MutationPoints="12" StatPoints="44" AllowedMutationCategories="*"
+  <genotype Name="AAGT_Rinate" MutationPoints="12" StatPoints="44" AllowedMutationCategories="*"
     RandomWeight="10" DisplayName="Rinate" Subtypes="AAST_Rinate" Class="" Tile="Assets_Content_Textures_Creatures_sw_snapjaw.bmp"
     DetailColor="R" BodyObject="VoderaiBody" BaseHPGain="1-4" BaseSPGain="50" BaseMPGain="1" Species="rinate"
     IsMutant="true" CharacterBuilderModules="">
@@ -44,7 +44,7 @@
       <reputation With="Voderai" Value="450" />
     </reputations>
     <extrainfo>Positive reputation with Rinate Packs</extrainfo>
-  </genotype> Loading freeze bug-->
+  </genotype>
 
   <genotype Name="AAGT_Syrenalian" MutationPoints="12" StatPoints="44" AllowedMutationCategories="*"
     RandomWeight="10" DisplayName="Syrenalian" Subtypes="AAST_Syrenal" Class="" Tile="Assets_Content_Textures_Creatures_sw_snapjaw.bmp"
