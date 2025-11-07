@@ -1,0 +1,1944 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+  <!--Base creature objects-->
+
+  <object Name="BaseAkatyl" Inherits="BaseHumanoid">
+    <part Name="Corpse" CorpseChance="10" CorpseBlueprint="Human Corpse" />
+    <part Name="Render" DisplayName="[base akatyl]" RenderString="a" DetailColor="y" ColorString="&amp;w" Tile="creatures/sw_mopango_villager.bmp" />
+    <part Name="AISelfPreservation" Threshold="50" />
+    <mutation Name="Beak" Level="1" />
+    <mutation Name="Wings" Level="10" />
+    <stat Name="Strength" sValue="16,1d4" />
+    <stat Name="Agility" sValue="22,1d4" />
+    <stat Name="Toughness" sValue="24,1d4" />
+    <stat Name="Intelligence" sValue="20,1d4" />
+    <stat Name="Willpower" sValue="15,1d4" />
+    <stat Name="Ego" sValue="15,1d4" />
+    <stat Name="Hitpoints" Value="100" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="RandomGender" Value="female,male" />
+    <tag Name="Culture" Value="Azkuvalian" />
+    <tag Name="Species" Value="azkuvalian" />
+    <part Name="ConversationScript" ConversationID="MopangoStranger" />
+    <xtagTextFragments PoeticFeatures="many wings,small bill" Activity="proselytizing" VillageActivity="praying,reading scriptures" SacredThing="the Light of Fire" />
+  </object>
+
+  <object Name="BaseAkatyl_Faithful" Inherits="BaseAkatyl">
+    <part Name="Brain" Hostile="false" Factions="Azkuvalian-100" />
+    <part Name="Description" Short="Devouted to the divinity of the Light of Fire, the akatylian =pronouns.sibling= remains faithful with the hierarchy." />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+
+  <object Name="BaseAkatyl_Rogue" Inherits="BaseAkatyl">
+    <part Name="Brain" Hostile="false" Factions="VeidancyriCyr-100" />
+    <part Name="Description" Short="Forsaken by Arekane Arkane's leadership over her brothers and sisters, =pronouns.subjective= devoutly follows the path of Arekena Azkedara." />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+
+  <object Name="BaseArinate" Inherits="BaseHumanoid">
+    <part Name="Body" Anatomy="TailedBiped" />
+    <part Name="Brain" Factions="Rinate-100" />
+    <stat Name="Strength" sValue="18,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="16,1d3,(t-1)d1" />
+    <stat Name="Toughness" sValue="19,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="20,1d3,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="14,1d3,(t-1)d2-1" />
+    <stat Name="Ego" sValue="14,1d3,(t-1)d2-1" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="charmer,cunning,flirt,knowledgeable" />
+    <tag Name="HeroNameTitleMayorSyn" Value="chirphowler,elder,pack leader" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Chirphowler,Elder,Pack leader" />
+    <tag Name="Genotype" Value="AA_Rinate" />
+    <tag Name="Class" Value="rinate" />
+    <tag Name="Species" Value="rinate" />
+    <tag Name="Culture" Value="Doratorian" />
+    <inventoryobject Blueprint="Rinate_Beak" />
+    <inventoryobject Blueprint="Rinate_Horns" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Rinate" />
+    <tag Name="RandomGender" Value="dorator female,dorator fluid fem,dorator fluid masc,dorator male,dorator nonbinary,dorator plural" />
+    <part Name="Pettable" UseFactionForFeelingFloor="Rinate" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:purrs=." />
+    <part Name="SmartuseForceTwiddles" />
+    <xtagTextFragments Skin="feathery fur" PoeticFeatures="curved horns,ridged beak" YounglingNoise="*barks*,*chirps*,*purrs*" Activity="prowling the forests" VillageActivity="sparring with one another" SacredThing="excitement" />
+    <tag Name="PrimaryLimbType" Value="Hand" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_cat" />
+  </object>
+
+  <object Name="BaseArkaedus" Inherits="BaseHumanoid">
+    <part Name="Body" Anatomy="TailedBiped" />
+    <part Name="Brain" Factions="Voderai-100" />
+    <stat Name="Strength" sValue="14,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="18,1d3,(t-1)d1" />
+    <stat Name="Toughness" sValue="14,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="19,1d3,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="20,1d3,(t-1)d2-1" />
+    <stat Name="Ego" sValue="16,1d3,(t-1)d2-1" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="charmer,cunning,flirt,knowledgeable" />
+    <tag Name="HeroNameTitleMayorSyn" Value="chirphowler,elder,pack leader" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Chirphowler,Elder,Pack leader" />
+    <tag Name="Genotype" Value="AA_Voderai" />
+    <tag Name="Class" Value="voderai" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Culture" Value="Doratorian" />
+    <inventoryobject Blueprint="Voderai_Beak" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Voderai" />
+    <tag Name="RandomGender" Value="dorator female,dorator fluid fem,dorator fluid masc,dorator male,dorator nonbinary,dorator plural" />
+    <part Name="Pettable" UseFactionForFeelingFloor="Voderai" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:purrs=." />
+    <part Name="SmartuseForceTwiddles" />
+    <xtagTextFragments Skin="feathery fur" PoeticFeatures="ridged beak,versatile anatomy,voracious demeanor" YounglingNoise="*barks*,*chirps*,*purrs*" Activity="fending off one's instincts" VillageActivity="caring for one another" SacredThing="reason above all else" />
+    <tag Name="PrimaryLimbType" Value="Hand" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_cat" />
+  </object>
+
+  <!--Bases-->
+
+  <object Name="BaseAvyrialus" Inherits="BaseAnimal">
+    <part Name="Render" DisplayName="Avyrialus" Tile="Assets_Content_Textures_Creatures_sw_snapjaw.bmp" RenderString="s" ColorString="&amp;m" DetailColor="g" />
+    <part Name="Brain" Factions="Avyrialus-100" />
+    <stat Name="Strength" sValue="16,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="14,1d3,(t-1)d1" />
+    <stat Name="Toughness" sValue="14,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="18,1d3,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="19,1d3,(t-1)d2-1" />
+    <stat Name="Ego" sValue="20,1d3,(t-1)d2-1" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="charmer,cunning,flirt,knowledgeable" />
+    <tag Name="HeroNameTitleMayorSyn" Value="chirphowler,elder,pack leader" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Chirphowler,Elder,Pack leader" />
+    <tag Name="Class" Value="avyrialus" />
+    <tag Name="Species" Value="avyrialus" />
+    <tag Name="Culture" Value="Doratorian" />
+    <inventoryobject Blueprint="Voderai_Beak" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Avryialus" />
+    <tag Name="RandomGender" Value="dorator female,dorator fluid fem,dorator fluid masc,dorator male,dorator nonbinary,dorator plural" />
+    <part Name="Pettable" UseFactionForFeelingFloor="Avyrialus" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:purrs=." />
+    <part Name="SmartuseForceTwiddles" />
+    <xtagTextFragments Skin="feathery fur" PoeticFeatures="ridged beak,slender form" YounglingNoise="*barks*,*chirps*,*purrs*" Activity="enjoying heart's desire" VillageActivity="resting after a pleasent day" SacredThing="peace and love" />
+    <tag Name="PrimaryLimbType" Value="Foot" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_cat" />
+  </object>
+
+  <object Name="BaseEidrati" Inherits="BaseReptile">
+    <part Name="Render" DisplayName="[base eidrati]" RenderString="r" Tile="creatures/sw_dawnglider.bmp" DetailColor="W" ColorString="&amp;G" />
+    <part Name="Body" Anatomy="Eidrati" />
+    <part Name="Brain" Hostile="false" Calm="false" Factions="Eidrati-100" Wanders="false" />
+    <part Name="Corpse" CorpseChance="50" CorpseBlueprint="Eidrati Corpse" CorpseRequiresBodyPart="Tail" />
+    <mutation Name="Wings" Level="10" />
+    <inventoryobject Blueprint="Eidrati_Bite" Number="1" />
+    <stat Name="AcidResistance" Value="100" />
+    <stat Name="ColdResistance" Value="100" />
+    <stat Name="ElectricResistance" Value="100" />
+    <stat Name="HeatResistance" Value="100" />
+    <tag Name="RandomGender" Value="females,males,plural" />
+    <tag Name="Species" Value="eidrati" />
+    <tag Name="Gigantic" />
+    <tag Name="SeveredTailBlueprint" Value="Eidrati Tail" />
+    <tag Name="DynamicObjectsTable:Mountains_Creatures" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+
+  <object Name="BaseEilasalian" Inherits="BaseSyrenalian">
+    <stat Name="AcidResistance" Bonus="25" />
+    <stat Name="ColdResistance" Bonus="50" />
+    <stat Name="ElectricResistance" Bonus="100" />
+    <stat Name="HeatResistance" Bonus="50" />
+    <tag Name="Species" Value="eilasalian" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+
+  <object Name="BaseEinfieran" Inherits="BaseSyrenalian">
+    <stat Name="AcidResistance" Bonus="50" />
+    <stat Name="ColdResistance" Bonus="25" />
+    <stat Name="ElectricResistance" Bonus="100" />
+    <stat Name="HeatResistance" Bonus="75" />
+    <tag Name="Species" Value="einfieran" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+
+  <object Name="BaseKazvate" Inherits="BaseHumanoid">
+    <part Name="Brain" Factions="Vaskate-100" />
+    <stat Name="Strength" sValue="14,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="18,1d3,(t-1)d1" />
+    <stat Name="Toughness" sValue="14,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="19,1d3,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="20,1d3,(t-1)d2-1" />
+    <stat Name="Ego" sValue="16,1d3,(t-1)d2-1" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="charmer,cunning,flirt,knowledgeable" />
+    <tag Name="HeroNameTitleMayorSyn" Value="chirphowler,elder,pack leader" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Chirphowler,Elder,Pack leader" />
+    <tag Name="Genotype" Value="AA_Kazvate" />
+    <tag Name="Class" Value="kazvate" />
+    <tag Name="Species" Value="kazvate" />
+    <tag Name="Culture" Value="Doratorian" />
+    <inventoryobject Blueprint="Voderai_Beak" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Kazvate" />
+    <tag Name="RandomGender" Value="dorator female,dorator fluid fem,dorator fluid masc,dorator male,dorator nonbinary,dorator plural" />
+    <part Name="Pettable" UseFactionForFeelingFloor="Vaskate" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:purrs=." />
+    <part Name="SmartuseForceTwiddles" />
+    <xtagTextFragments Skin="feathery fur" PoeticFeatures="ridged beak,twin tails,voracious demeanor" YounglingNoise="*barks*,*chirps*,*purrs*" Activity="drunken habits" VillageActivity="caring for one another" SacredThing="drink and food" />
+    <tag Name="PrimaryLimbType" Value="Hand" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_cat" />
+  </object>
+
+  <object Name="BaseKorshek" Inherits="BaseHumanoid">
+    <part Name="Body" Anatomy="KorshekVelyte" />
+    <part Name="Brain" Factions="VeidancyriArkhos-100" />
+    <stat Name="Strength" sValue="18,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="16,1d3,(t-1)d1" />
+    <stat Name="Toughness" sValue="19,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="20,1d3,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="14,1d3,(t-1)d2-1" />
+    <stat Name="Ego" sValue="14,1d3,(t-1)d2-1" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="charmer,cunning,flirt,knowledgeable" />
+    <tag Name="HeroNameTitleMayorSyn" Value="chirphowler,elder,pack leader" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Chirphowler,Elder,Pack leader" />
+    <tag Name="Genotype" Value="Eiltaresian" />
+    <stat Name="ColdResistance" Value="100" />
+    <stat Name="HeatResistance" Value="-50" />
+    <tag Name="Class" Value="korshek" />
+    <tag Name="Species" Value="korshek" />
+    <tag Name="Culture" Value="Korshek" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Korshek" />
+    <xtagTextFragments Skin="cold skin" PoeticFeatures="many limbs,ridged beak" YounglingNoise="*barks*,*chirps*,*purrs*" Activity="prowling the forests" VillageActivity="sparring with one another" SacredThing="excitement" />
+    <tag Name="PrimaryLimbType" Value="Hand" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_cat" />
+  </object>
+
+  <object Name="BaseKorshekQueen" Inherits="BaseKorshek">
+    <part Name="Brain" Hostile="false" Factions="VeidancyriArkhos-100" />
+    <part Name="Description" Short="." />
+    <mutation Name="MultipleArms" Level="1" />
+    <tag Name="RandomGender" Value="female,females" />
+    <tag Name="Role" Value="Leader" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+
+  <object Name="BaseKorshekVelyr" Inherits="BaseKorshek">
+    <part Name="Body" Anatomy="KorshekVelyr" />
+    <part Name="Brain" Hostile="false" Factions="VeidancyriArkhos-100" />
+    <part Name="Description" Short="." />
+    <tag Name="RandomGender" Value="male,males" />
+    <tag Name="Role" Value="Minion" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+
+  <object Name="BaseKorshekVelyte" Inherits="BaseKorshek">
+    <part Name="Brain" Hostile="false" Factions="VeidancyriArkhos-100" />
+    <part Name="Description" Short="." />
+    <tag Name="RandomGender" Value="female,females" />
+    <tag Name="Role" Value="Skirmisher" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+
+  <object Name="BaseKorshekVisage" Inherits="BaseKorshek">
+    <part Name="Body" Anatomy="KorshekVisage" />
+    <part Name="Brain" Hostile="false" Factions="VeidancyriArkhos-100" />
+    <part Name="Description" Short="." />
+    <tag Name="RandomGender" Value="female,females" />
+    <tag Name="Role" Value="Artillery" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+
+  <object Name="BaseOctusarian" Inherits="BaseSyrenalian">
+    <stat Name="AcidResistance" Bonus="75" />
+    <stat Name="ColdResistance" Bonus="75" />
+    <stat Name="ElectricResistance" Bonus="100" />
+    <stat Name="HeatResistance" Bonus="25" />
+    <tag Name="Species" Value="octusarian" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+
+  <object Name="BaseRinate" Inherits="BaseAnimal">
+    <part Name="Render" DisplayName="Rinate" Tile="Assets_Content_Textures_Creatures_sw_snapjaw.bmp" RenderString="s" ColorString="&amp;m" DetailColor="g" />
+    <part Name="Brain" Factions="Rinate-100" />
+    <stat Name="Strength" sValue="18,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="16,1d3,(t-1)d1" />
+    <stat Name="Toughness" sValue="19,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="20,1d3,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="14,1d3,(t-1)d2-1" />
+    <stat Name="Ego" sValue="14,1d3,(t-1)d2-1" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="charmer,cunning,flirt,knowledgeable" />
+    <tag Name="HeroNameTitleMayorSyn" Value="chirphowler,elder,pack leader" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Chirphowler,Elder,Pack leader" />
+    <tag Name="Class" Value="rinate" />
+    <tag Name="Species" Value="rinate" />
+    <tag Name="Culture" Value="Doratorian" />
+    <inventoryobject Blueprint="Rinate_Beak" />
+    <inventoryobject Blueprint="Rinate_Horns" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Rinate" />
+    <tag Name="RandomGender" Value="dorator female,dorator fluid fem,dorator fluid masc,dorator male,dorator nonbinary,dorator plural" />
+    <part Name="Pettable" UseFactionForFeelingFloor="Rinate" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:purrs=." />
+    <part Name="SmartuseForceTwiddles" />
+    <xtagTextFragments Skin="feathery fur" PoeticFeatures="curved horns,ridged beak,sharp fangs" YounglingNoise="*barks*,*chirps*,*purrs*" Activity="prowling the forests" VillageActivity="sparring with one another" SacredThing="skill and will" />
+    <tag Name="PrimaryLimbType" Value="Foot" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_cat" />
+  </object>
+
+  <object Name="BaseSyrenalian" Inherits="BaseHumanoid">
+    <part Name="Render" RenderString="S" />
+    <part Name="Brain" Factions="Syrenalian-100" />
+    <stat Name="Strength" sValue="18,1d3,(t)d1" />
+    <stat Name="Agility" sValue="18,1d3,(t)d1" />
+    <stat Name="Toughness" sValue="19,1d3,(t)d1" />
+    <stat Name="Intelligence" sValue="20,1d3,(t)d1" />
+    <stat Name="Willpower" sValue="19,1d3,(t)d1" />
+    <stat Name="Ego" sValue="19,1d3,(t)d1" />
+    <intproperty Name="Bleeds" Value="0" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="knowledgeable,observant,valiant,willed" />
+    <tag Name="HeroNameTitleMayorSyn" Value="councillor,cigh councillor,monarch" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Councillor,High Councillor,Monarch" />
+    <tag Name="Genotype" Value="Syrenalian" />
+    <tag Name="Class" Value="syrenalian" />
+    <tag Name="Culture" Value="Syrenalian" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="RandomGender" Value="male,female,nonspecific,plural" />
+    <xtagTextFragments Skin="frontal stripes" PoeticFeatures="billed beaks,comed hair,comed tails,feathery shoulders,flowery arms,spinal manes" Activity="exploring the vast universe,making great discoveries" VillageActivity="entertaining one another,sparring practice,worshipping our dieties" SacredThing="leadership,philosophy" />
+    <tag Name="PrimaryLimbType" Value="Hand" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_humanoid_generic" />
+    <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_humanoid_generic_vo_die" />
+    <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_humanoid_generic_vo_hurt"/>
+    <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_humanoid_generic_vo_idle"/>
+    <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_humanoid_generic_vo_attack"/>  
+  </object>
+
+  <object Name="BaseThatyl" Inherits="BaseHumanoid">
+    <part Name="Corpse" CorpseChance="10" CorpseBlueprint="Human Corpse" />
+    <part Name="Render" DisplayName="[base thatyl]" RenderString="t" DetailColor="y" ColorString="&amp;w" Tile="creatures/sw_mopango_villager.bmp" />
+    <part Name="AISelfPreservation" Threshold="50" />
+    <mutation Name="Beak" Level="1" />
+    <mutation Name="Wings" Level="10" />
+    <stat Name="Strength" sValue="15,1d4" />
+    <stat Name="Agility" sValue="16,1d4" />
+    <stat Name="Toughness" sValue="15,1d4" />
+    <stat Name="Intelligence" sValue="24,1d4" />
+    <stat Name="Willpower" sValue="20,1d4" />
+    <stat Name="Ego" sValue="22,1d4" />
+    <stat Name="Hitpoints" Value="100" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="RandomGender" Value="female,male" />
+    <tag Name="Culture" Value="Azkuvalian" />
+    <tag Name="Species" Value="azkuvalian" />
+    <part Name="ConversationScript" ConversationID="MopangoStranger" />
+    <xtagTextFragments PoeticFeatures="flexible bill,many wings" Activity="proselytizing" VillageActivity="praying,reading scriptures" SacredThing="the Light of Fire" />
+  </object>
+
+  <object Name="BaseThatyl_Faithful" Inherits="BaseThatyl">
+    <part Name="Brain" Hostile="false" Factions="Azkuvalian-100" />
+    <part Name="Description" Short="Devouted to the divinity of the Light of Fire, the thatylian =pronouns.sibling= remains faithful with the hierarchy." />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+
+  <object Name="BaseThatyl_Rogue" Inherits="BaseThatyl">
+    <part Name="Brain" Hostile="false" Factions="VeidancyriCyr-100" />
+    <part Name="Description" Short="Forsaken by Arekane Arkane's leadership over her brothers and sisters, =pronouns.subjective= devoutly follows the path of Arekena Azkedara." />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+
+  <object Name="BaseVaskate" Inherits="BaseAnimal">
+    <part Name="Render" DisplayName="Vaskate" Tile="Assets_Content_Textures_Creatures_sw_snapjaw.bmp" RenderString="s" ColorString="&amp;m" DetailColor="g" />
+    <part Name="Brain" Factions="Vaskate-100" />
+    <stat Name="Strength" sValue="14,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="18,1d3,(t-1)d1" />
+    <stat Name="Toughness" sValue="14,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="19,1d3,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="20,1d3,(t-1)d2-1" />
+    <stat Name="Ego" sValue="16,1d3,(t-1)d2-1" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="charmer,cunning,flirt,knowledgeable" />
+    <tag Name="HeroNameTitleMayorSyn" Value="chirphowler,elder,pack leader" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Chirphowler,Elder,Pack leader" />
+    <tag Name="Class" Value="vaskate" />
+    <part Name="Body" Anatomy="VaskateTails" />
+    <tag Name="Species" Value="vaskate" />
+    <tag Name="Culture" Value="Doratorian" />
+    <inventoryobject Blueprint="Voderai_Beak" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Vaskate" />
+    <tag Name="RandomGender" Value="dorator female,dorator fluid fem,dorator fluid masc,dorator male,dorator nonbinary,dorator plural" />
+    <part Name="Pettable" UseFactionForFeelingFloor="Vaskate" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:purrs=." />
+    <part Name="SmartuseForceTwiddles" />
+    <xtagTextFragments Skin="feathery fur" PoeticFeatures="ridged beak,twin tails,voracious demeanor" YounglingNoise="*barks*,*chirps*,*purrs*" Activity="drunken habits" VillageActivity="caring for one another" SacredThing="drink and food" />
+    <tag Name="PrimaryLimbType" Value="Foot" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_cat" />
+  </object>
+
+  <object Name="BaseVoderai" Inherits="BaseAnimal">
+    <part Name="Render" DisplayName="Voderai" Tile="Assets_Content_Textures_Creatures_sw_snapjaw.bmp" RenderString="s" ColorString="&amp;m" DetailColor="g" />
+    <part Name="Brain" Factions="Voderai-100" />
+    <stat Name="Strength" sValue="14,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="18,1d3,(t-1)d1" />
+    <stat Name="Toughness" sValue="14,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="19,1d3,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="20,1d3,(t-1)d2-1" />
+    <stat Name="Ego" sValue="16,1d3,(t-1)d2-1" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="charmer,cunning,flirt,knowledgeable" />
+    <tag Name="HeroNameTitleMayorSyn" Value="chirphowler,elder,pack leader" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Chirphowler,Elder,Pack leader" />
+    <tag Name="Class" Value="voderai" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Culture" Value="Doratorian" />
+    <inventoryobject Blueprint="Voderai_Beak" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Voderai" />
+    <tag Name="RandomGender" Value="dorator female,dorator fluid fem,dorator fluid masc,dorator male,dorator nonbinary,dorator plural" />
+    <part Name="Pettable" UseFactionForFeelingFloor="Voderai" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:purrs=." />
+    <part Name="SmartuseForceTwiddles" />
+    <xtagTextFragments Skin="feathery fur" PoeticFeatures="ridged beak,versatile anatomy,voracious demeanor" YounglingNoise="*barks*,*chirps*,*purrs*" Activity="fending off one's instincts" VillageActivity="caring for one another" SacredThing="reason above all else" />
+    <tag Name="PrimaryLimbType" Value="Foot" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_cat" />
+  </object>
+
+  <object Name="BaseXyatyl" Inherits="BaseHumanoid">
+    <part Name="Corpse" CorpseChance="10" CorpseBlueprint="Human Corpse" />
+    <part Name="Render" DisplayName="[base xyatyl]" RenderString="x" DetailColor="y" ColorString="&amp;w" Tile="creatures/sw_mopango_villager.bmp" />
+    <part Name="AISelfPreservation" Threshold="25" />
+    <mutation Name="Beak" Level="1" />
+    <mutation Name="Wings" Level="10" />
+    <stat Name="Strength" sValue="24,1d4" />
+    <stat Name="Agility" sValue="20,1d4" />
+    <stat Name="Toughness" sValue="22,1d4" />
+    <stat Name="Intelligence" sValue="15,1d4" />
+    <stat Name="Willpower" sValue="16,1d4" />
+    <stat Name="Ego" sValue="15,1d4" />
+    <stat Name="Hitpoints" Value="100" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="RandomGender" Value="female,male" />
+    <tag Name="Culture" Value="Azkuvalian" />
+    <tag Name="Species" Value="azkuvalian" />
+    <part Name="ConversationScript" ConversationID="MopangoStranger" />
+    <xtagTextFragments PoeticFeatures="carapace,many wings,ridged beak" Activity="proselytizing" VillageActivity="praying,reading scriptures" SacredThing="the Light of Fire" />
+  </object>
+  <!--Character Types-->
+
+  <object Name="BaseXyatyl_Faithful" Inherits="BaseXyatyl">
+    <part Name="Brain" Hostile="false" Factions="Azkuvalian-100" />
+    <part Name="Description" Short="Devouted to the divinity of the Light of Fire, the xyatylian =pronouns.sibling= remains faithful with the hierarchy." />
+  </object>
+
+  <object Name="BaseXyatyl_Rogue" Inherits="BaseXyatyl">
+    <part Name="Brain" Hostile="false" Factions="VeidancyriCyr-100" />
+    <part Name="Description" Short="Forsaken by Arekane Arkane's leadership over her brothers and sisters, =pronouns.subjective= devoutly follows the path of Arekena Azkedara." />
+  </object>
+
+  <!--Tier 1 creatures-->
+
+  <!--Tier 2 creatures-->
+
+  <!--Tier 3 creatures-->
+
+  <!--Tier 4 creatures-->
+
+  <!--Avyrialus-->
+
+  <object Name="Avyrialus_Elder_Feral" Inherits="BaseAvyrialus">
+    <part Name="Render" DisplayName="{{R|feral avyrialus elder}}" Tile="Creatures/" RenderString="A" ColorString="&amp;R" />
+    <part Name="Description" Short="Standing amongst the prey, =pronouns.possessive= eyes glimmer with a deep desire to consume." />
+    <part Name="Brain" Hostile="True" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="0" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetC" />
+    <tag Name="Species" Value="avyrialus" />
+    <tag Name="Role" Value="Leader" />
+    <!--<part Name="Engulfing" Pull="true" EnterSaveStat="Agility" EnterSaveTarget="1d20"/>
+    <part Name="EngulfingSedentary" />
+    <part Name="EngulfingDamage" Damage="1d20" />-->
+    <part Name="Swarmer" ExtraBonus="2" />
+    <stat Name="Level" Value="50" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Avyrialus_Elder_Hunter" Inherits="BaseAvyrialus">
+    <part Name="Render" DisplayName="{{G|avyrialus elder hunter}}" Tile="Creatures/" RenderString="A" ColorString="&amp;G" />
+    <part Name="Description" Short="The elderly =pronouns.parent= cares for =pronouns.possessive= =pronouns.offspring=. Standing with =pronouns.possessive= her family, =pronouns.subjective= teaches them to hunt." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="25" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetC" />
+    <tag Name="Species" Value="avyrialus" />
+    <tag Name="Role" Value="Leader" />
+    <part Name="Swarmer" ExtraBonus="2" />
+    <stat Name="Level" Value="45" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Avyrialus_Feral" Inherits="BaseAvyrialus">
+    <part Name="Render" DisplayName="{{r|feral avyrialus}}" Tile="Creatures/" RenderString="A" ColorString="&amp;r" />
+    <part Name="Description" Short="Swallower of life. Embracer of desire. The once gentle giant now seeks only to consume." />
+    <part Name="Brain" Hostile="True" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="0" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetA" />
+    <tag Name="Species" Value="avyrialus" />
+    <tag Name="Role" Value="Skirmisher" />
+    <!--<part Name="Engulfing" Pull="true" EnterSaveStat="Agility" EnterSaveTarget="1d18"/>
+    <part Name="EngulfingSedentary" />
+    <part Name="EngulfingDamage" Damage="1d18" />-->
+    <stat Name="Level" Value="45" />
+    <part Name="Swarmer" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Avyrialus_Hunter" Inherits="BaseAvyrialus">
+    <part Name="Render" DisplayName="{{g|avyrialus hunter}}" Tile="Creatures/" RenderString="A" ColorString="&amp;g" />
+    <part Name="Description" Short="Large but youthful. =pronouns.subjective= watches for prey to bring home to =pronouns.possessive= =pronouns.offspring=." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="25" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetA" />
+    <tag Name="Species" Value="avyrialus" />
+    <tag Name="Role" Value="Skirmisher" />
+    <stat Name="Level" Value="40" />
+    <part Name="Swarmer" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Avyrialus_Pack" Inherits="BaseAvyrialus">
+    <part Name="Render" DisplayName="{{K|avyrialus pack member}}" Tile="Creatures/" RenderString="A" ColorString="&amp;K" />
+    <part Name="Description" Short="The =pronouns.sibling= to arkaedus, resembles all but wings and size. Instead =pronouns.subjective= bears a potent sting." />
+    <part Name="Brain" Hostile="false" Calm="True" />
+    <part Name="AISelfPreservation" Threshold="75" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetB" />
+    <tag Name="Species" Value="avyrialus" />
+    <tag Name="Role" Value="Minion" />
+    <stat Name="Level" Value="35" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Avyrialus_Pack_Leader" Inherits="BaseAvyrialus">
+    <part Name="Render" DisplayName="{{y|avyrialus pack leader}}" Tile="Creatures/" RenderString="A" ColorString="&amp;y" />
+    <part Name="Description" Short="Standing with pride. =pronouns.subjective= watches over =pronouns.possessive= pack as a =pronouns.parent=." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="50" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetB" />
+    <tag Name="Species" Value="avyrialus" />
+    <tag Name="Role" Value="Leader" />
+    <stat Name="Level" Value="40" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <!--Rinate-->
+
+  <object Name="Arinate_Elder_Feral" Inherits="BaseArinate">
+    <part Name="Render" DisplayName="{{R|feral arinat elder}}" Tile="Creatures/" RenderString="R" ColorString="&amp;R" />
+    <part Name="Description" Short="." />
+    <part Name="Brain" Hostile="True" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="0" />
+    <part Name="AIShootAndScoot" Duration="1d2" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetC" />
+    <tag Name="Species" Value="rinate" />
+    <tag Name="Role" Value="Leader" />
+    <!--<part Name="Engulfing" Pull="true" EnterSaveStat="Agility" EnterSaveTarget="1d18"/>
+    <part Name="EngulfingSedentary" />
+    <part Name="EngulfingDamage" Damage="1d18" />-->
+    <part Name="Swarmer" ExtraBonus="2" />
+    <stat Name="Level" Value="45" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Arinate_Elder_Hunter" Inherits="BaseArinate">
+    <part Name="Render" DisplayName="{{G|arinat elder hunter}}" Tile="Creatures/" RenderString="R" ColorString="&amp;G" />
+    <part Name="Description" Short="Horns carved by =pronouns.possessive= own hand. Fangs sharpened by =pronouns.possessive= own claws." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="25" />
+    <part Name="AIShootAndScoot" Duration="1d2" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetC" />
+    <tag Name="Species" Value="rinate" />
+    <tag Name="Role" Value="Leader" />
+    <part Name="Swarmer" ExtraBonus="2" />
+    <stat Name="Level" Value="40" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Arinate_Feral" Inherits="BaseArinate">
+    <part Name="Render" DisplayName="{{r|feral arinat}}" Tile="Creatures/" RenderString="R" ColorString="&amp;r" />
+    <part Name="Description" Short="." />
+    <part Name="Brain" Hostile="True" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="0" />
+    <part Name="AIShootAndScoot" Duration="1d1" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetA" />
+    <tag Name="Species" Value="rinate" />
+    <tag Name="Role" Value="Skirmisher" />
+    <!--<part Name="Engulfing" Pull="true" EnterSaveStat="Agility" EnterSaveTarget="1d14"/>
+    <part Name="EngulfingSedentary" />
+    <part Name="EngulfingDamage" Damage="1d14" />-->
+    <stat Name="Level" Value="40" />
+    <part Name="Swarmer" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Arinate_Hunter" Inherits="BaseArinate">
+    <part Name="Render" DisplayName="{{g|arinat hunter}}" Tile="Creatures/" RenderString="R" ColorString="&amp;g" />
+    <part Name="Description" Short="The arinat made only deadlier by =pronouns.possessive= anatomy. Wielding anything =pronouns.subjective= can find." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="25" />
+    <part Name="AIShootAndScoot" Duration="1d1" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetA" />
+    <tag Name="Species" Value="rinate" />
+    <tag Name="Role" Value="Skirmisher" />
+    <stat Name="Level" Value="35" />
+    <part Name="Swarmer" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Arinate_Pack" Inherits="BaseArinate">
+    <part Name="Render" DisplayName="{{K|arinat pack member}}" Tile="Creatures/" RenderString="R" ColorString="&amp;K" />
+    <part Name="Description" Short="The =pronouns.offspring= of arkaedus and rinat. =pronouns.sibling= of voderai and rinate." />
+    <part Name="Brain" Hostile="false" Calm="True" />
+    <part Name="AISelfPreservation" Threshold="75" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetB" />
+    <tag Name="Species" Value="rinate" />
+    <tag Name="Role" Value="Minion" />
+    <stat Name="Level" Value="30" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Arinate_Pack_Leader" Inherits="BaseArinate">
+    <part Name="Render" DisplayName="{{y|arinat pack leader}}" Tile="Creatures/" RenderString="R" ColorString="&amp;y" />
+    <part Name="Description" Short="Standing tall amongst =pronouns.possessive= half-blood family. =pronouns.subjective= bears the visage of a fierce leader." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="50" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetB" />
+    <tag Name="Species" Value="rinate" />
+    <tag Name="Role" Value="Leader" />
+    <stat Name="Level" Value="35" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Rinate_Elder_Feral" Inherits="BaseRinate">
+    <part Name="Render" DisplayName="{{R|feral rinat elder}}" Tile="Creatures/" RenderString="r" ColorString="&amp;R" />
+    <part Name="Description" Short="." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="0" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetC" />
+    <tag Name="Species" Value="rinate" />
+    <tag Name="Role" Value="Leader" />
+    <!--<part Name="Engulfing" Pull="true" EnterSaveStat="Agility" EnterSaveTarget="1d12"/>
+    <part Name="EngulfingSedentary" />
+    <part Name="EngulfingDamage" Damage="1d12" />-->
+    <part Name="Swarmer" ExtraBonus="2" />
+    <stat Name="Level" Value="40" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Rinate_Elder_Hunter" Inherits="BaseRinate">
+    <part Name="Render" DisplayName="{{G|rinat elder hunter}}" Tile="Creatures/" RenderString="r" ColorString="&amp;G" />
+    <part Name="Description" Short="elden fangs chipped, where a horn is halved. =pronouns.possessive= age and scars bear little impact upon =pronouns.possessive= fierce will." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="25" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetC" />
+    <tag Name="Species" Value="rinate" />
+    <tag Name="Role" Value="Leader" />
+    <part Name="Swarmer" ExtraBonus="2" />
+    <stat Name="Level" Value="35" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Rinate_Feral" Inherits="BaseRinate">
+    <part Name="Render" DisplayName="{{r|feral rinat}}" Tile="Creatures/" RenderString="r" ColorString="&amp;r" />
+    <part Name="Description" Short="." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="0" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetA" />
+    <tag Name="Species" Value="rinate" />
+    <tag Name="Role" Value="Skirmisher" />
+    <!--<part Name="Engulfing" Pull="true" EnterSaveStat="Agility" EnterSaveTarget="1d10"/>
+    <part Name="EngulfingSedentary" />
+    <part Name="EngulfingDamage" Damage="1d10" />-->
+    <stat Name="Level" Value="35" />
+    <part Name="Swarmer" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Rinate_Hunter" Inherits="BaseRinate">
+    <part Name="Render" DisplayName="{{g|rinat hunter}}" Tile="Creatures/" RenderString="r" ColorString="&amp;g" />
+    <part Name="Description" Short="Youthful and ambitious, the fanged voderai hunts. =pronouns.possessive= horns bear a mere scratch from a recent duel." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="25" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetA" />
+    <tag Name="Species" Value="rinate" />
+    <tag Name="Role" Value="Skirmisher" />
+    <stat Name="Level" Value="30" />
+    <part Name="Swarmer" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Rinate_Pack" Inherits="BaseRinate">
+    <part Name="Render" DisplayName="{{K|rinat pack member}}" Tile="Creatures/" RenderString="r" ColorString="&amp;K" />
+    <part Name="Description" Short="A devilish visage born from a close relative to voderai. =pronouns.subjective= bears sharpened fangs, to subdue =pronouns.possessive= prey." />
+    <part Name="Brain" Hostile="false" Calm="True" />
+    <part Name="AISelfPreservation" Threshold="75" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetB" />
+    <tag Name="Species" Value="rinate" />
+    <tag Name="Role" Value="Minion" />
+    <stat Name="Level" Value="25" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Rinate_Pack_Leader" Inherits="BaseRinate">
+    <part Name="Render" DisplayName="{{y|rinat pack leader}}" Tile="Creatures/" RenderString="r" ColorString="&amp;y" />
+    <part Name="Description" Short="=pronouns.subjective= stands before =pronouns.possessive= kindred horns arching high. =pronouns.possessive= will steadfast, before the pack." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="50" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetB" />
+    <tag Name="Species" Value="rinate" />
+    <tag Name="Role" Value="Leader" />
+    <stat Name="Level" Value="30" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <!--Voderai-->
+
+  <object Name="Voderai_Elder_Feral" Inherits="BaseVoderai">
+    <part Name="Render" DisplayName="{{R|feral voderaskid elder}}" Tile="Creatures/" RenderString="V" ColorString="&amp;R" />
+    <part Name="Description" Short="Prolonged starvation has effected =pronouns.possessive= mind. Not even =pronouns.possessive= fellow pack members are safe from =pronouns.possessive= instinctual hunger." />
+    <part Name="Brain" Hostile="True" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="0" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetC" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Role" Value="Leader" />
+    <part Name="Swarmer" ExtraBonus="2" />
+    <stat Name="Level" Value="35" />
+    <!--<part Name="Engulfing" Pull="true" EnterSaveStat="Agility" EnterSaveTarget="1d10"/>
+    <part Name="EngulfingSedentary" />
+    <part Name="EngulfingDamage" Damage="1d10" />-->
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Voderai_Elder_Hunter" Inherits="BaseVoderai">
+    <part Name="Render" DisplayName="{{G|voderaskid elder hunter}}" Tile="Creatures/" RenderString="V" ColorString="&amp;G" />
+    <part Name="Description" Short="The seasoned hunter prowls amongst =pronouns.possessive= kindred as a elderly =pronouns.parent= of the hunt. =pronouns.possessive= aged feathers glisten vibrently within the light, and =pronouns.subjective= senses prey with ease." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="25" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetC" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Role" Value="Leader" />
+    <part Name="Swarmer" ExtraBonus="2" />
+    <stat Name="Level" Value="30" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Voderai_Feral" Inherits="BaseVoderai">
+    <part Name="Render" DisplayName="{{r|feral voderaskid}}" Tile="Creatures/" RenderString="V" ColorString="&amp;r" />
+    <part Name="Description" Short="Driven to =pronouns.possessive= instict, =pronouns.subjective= hunts without thought. In a pouncing stance: =pronouns.subjective= prepares to devour!" />
+    <part Name="Brain" Hostile="True" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="0" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetA" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Role" Value="Skirmisher" />
+    <stat Name="Level" Value="30" />
+    <part Name="Swarmer" />
+    <!--<part Name="Engulfing" Pull="true" EnterSaveStat="Agility" EnterSaveTarget="1d8"/>
+    <part Name="EngulfingSedentary" />
+    <part Name="EngulfingDamage" Damage="1d8" />-->
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Voderai_Hunter" Inherits="BaseVoderai">
+    <part Name="Render" DisplayName="{{g|voderaskid hunter}}" Tile="Creatures/" RenderString="V" ColorString="&amp;g" />
+    <part Name="Description" Short="The voderai hunts and eats only to stave of =pronouns.possessive= instinct. For if =pronouns.subjective= were to give in: the prey might be =pronouns.possessive= most treasured." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="25" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetA" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Role" Value="Skirmisher" />
+    <stat Name="Level" Value="25" />
+    <part Name="Swarmer" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Voderai_Pack" Inherits="BaseVoderai">
+    <part Name="Render" DisplayName="{{K|voderaskid pack member}}" Tile="Creatures/" RenderString="V" ColorString="&amp;K" />
+    <part Name="Description" Short="=pronouns.subjective= licks =pronouns.possessive= paws, as a cat would it's. =pronouns.subjective= barks and growls, as a wolf to prey." />
+    <part Name="Brain" Hostile="false" Calm="True" />
+    <part Name="AISelfPreservation" Threshold="75" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetB" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Role" Value="Minion" />
+    <stat Name="Level" Value="20" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Voderai_Pack_Leader" Inherits="BaseVoderai">
+    <part Name="Render" DisplayName="{{y|voderaskid pack leader}}" Tile="Creatures/" RenderString="V" ColorString="&amp;y" />
+    <part Name="Description" Short="Upon a Girdle of feathery fur, the =pronouns.offspring= becomes =pronouns.parent=. With a ridged beak sharply hooked, the =pronouns.parent= becomes =pronouns.sibling=." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="50" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetB" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Role" Value="Leader" />
+    <stat Name="Level" Value="25" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Voderai_Arkai_Elder_Feral" Inherits="BaseArkaedus">
+    <part Name="Render" DisplayName="{{R|feral arkaedus elder}}" Tile="Creatures/" RenderString="A" ColorString="&amp;R" />
+    <part Name="Description" Short="With glistening feathers soaked within fresh saliva =pronouns.subjective= merely speaks with a natural hiss. But upon sensing prey =pronouns.subjective= prepares to pounce." />
+    <part Name="Brain" Hostile="True" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="0" />
+    <part Name="AIShootAndScoot" Duration="1d2" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetC" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Role" Value="Leader" />
+    <part Name="Swarmer" ExtraBonus="2" />
+    <stat Name="Level" Value="40" />
+    <!--<part Name="Engulfing" Pull="true" EnterSaveStat="Agility" EnterSaveTarget="1d14"/>
+    <part Name="EngulfingSedentary" />
+    <part Name="EngulfingDamage" Damage="1d14" />-->
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Voderai_Arkai_Elder_Hunter" Inherits="BaseArkaedus">
+    <part Name="Render" DisplayName="{{G|arkaedus elder hunter}}" Tile="Creatures/" RenderString="A" ColorString="&amp;G" />
+    <part Name="Description" Short="Cunning, resolute, and wise. =pronouns.subjective= stands tall as feathers shimmer in the light, watching forth until the prowl return." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="25" />
+    <part Name="AIShootAndScoot" Duration="1d2" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetC" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Role" Value="Leader" />
+    <part Name="Swarmer" ExtraBonus="2" />
+    <stat Name="Level" Value="35" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Voderai_Arkai_Feral" Inherits="BaseArkaedus">
+    <part Name="Render" DisplayName="{{r|feral arkaedus}}" Tile="Creatures/" RenderString="A" ColorString="&amp;r" />
+    <part Name="Description" Short="Bearing down on all four paws =pronouns.subjective= has succumbed to =pronouns.possessive instinctual hunger as =pronouns.subjective= had sought to avoid." />
+    <part Name="Brain" Hostile="True" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="0" />
+    <part Name="AIShootAndScoot" Duration="1d1" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetA" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Role" Value="Skirmisher" />
+    <stat Name="Level" Value="35" />
+    <part Name="Swarmer" />
+    <!--<part Name="Engulfing" Pull="true" EnterSaveStat="Agility" EnterSaveTarget="1d12"/>
+    <part Name="EngulfingSedentary" />
+    <part Name="EngulfingDamage" Damage="1d12" />-->
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Voderai_Arkai_Hunter" Inherits="BaseArkaedus">
+    <part Name="Render" DisplayName="{{g|arkaedus hunter}}" Tile="Creatures/" RenderString="A" ColorString="&amp;g" />
+    <part Name="Description" Short="There's a glance of hunger in =pronouns.possessive= eyes. What's on =pronouns.possessive= mind, is only known to =pronouns.reflexive=." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="25" />
+    <part Name="AIShootAndScoot" Duration="1d1" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetA" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Role" Value="Skirmisher" />
+    <stat Name="Level" Value="30" />
+    <part Name="Swarmer" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Voderai_Arkai_Pack" Inherits="BaseArkaedus">
+    <part Name="Render" DisplayName="{{K|arkaedus pack member}}" Tile="Creatures/" RenderString="A" ColorString="&amp;K" />
+    <part Name="Description" Short="=pronouns.possessive= stature stands to be of =pronouns.possessive= kindreds archaic form. Feathers speckled with colour, indicate =pronouns.subjective= is on the elderly path." />
+    <part Name="Brain" Hostile="false" Calm="True" />
+    <part Name="AISelfPreservation" Threshold="75" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetB" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Role" Value="Minion" />
+    <stat Name="Level" Value="25" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Voderai_Arkai_Pack_Leader" Inherits="BaseArkaedus">
+    <part Name="Render" DisplayName="{{y|arkaedus pack leader}}" Tile="Creatures/" RenderString="A" ColorString="&amp;y" />
+    <part Name="Description" Short="Aged with guilded colour, =pronouns.subjective= watches over =pronouns.possessive= pack. Like a =pronouns.parent= and =pronouns.sibling=, =pronouns.subjective= cares for =pronouns.possessive= adopted family." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="50" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetB" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Role" Value="Leader" />
+    <stat Name="Level" Value="30" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Voderai_Daly_Elder_Feral" Inherits="BaseVoderai">
+    <part Name="Render" DisplayName="{{R|feral voderaskidaly elder}}" Tile="Creatures/" RenderString="v" ColorString="&amp;R" />
+    <part Name="Description" Short="What level of friendliness the voderaskidaly had matters little now as =pronouns.subjective= prowls the dense flora for a means of satiation." />
+    <part Name="Brain" Hostile="True" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="0" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetC" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Role" Value="Leader" />
+    <part Name="Swarmer" ExtraBonus="2" />
+    <stat Name="Level" Value="30" />
+    <!--<part Name="Engulfing" Pull="true" EnterSaveStat="Agility" EnterSaveTarget="1d6"/>
+    <part Name="EngulfingSedentary" />
+    <part Name="EngulfingDamage" Damage="1d6" />-->
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Voderai_Daly_Elder_Hunter" Inherits="BaseVoderai">
+    <part Name="Render" DisplayName="{{G|voderaskidaly elder hunter}}" Tile="Creatures/" RenderString="v" ColorString="&amp;G" />
+    <part Name="Description" Short="Although small, =pronouns.subjective= has feed many of =pronouns.possessive= fellow voderai. The glistening of =pronouns.possessive= feathers, dedicate 1000s of years to =pronouns.possessive= age." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="25" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetC" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Role" Value="Leader" />
+    <part Name="Swarmer" ExtraBonus="2" />
+    <stat Name="Level" Value="25" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Voderai_Daly_Feral" Inherits="BaseVoderai">
+    <part Name="Render" DisplayName="{{r|feral voderaskidaly}}" Tile="Creatures/" RenderString="v" ColorString="&amp;r" />
+    <part Name="Description" Short="The size of the prey matters little, for =pronouns.possessive=. For as long as =pronouns.subjective= can consume it: =pronouns.possessive= instinctual hunger will be satisfied." />
+    <part Name="Brain" Hostile="True" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="0" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetA" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Role" Value="Skirmisher" />
+    <stat Name="Level" Value="25" />
+    <part Name="Swarmer" />
+    <!--<part Name="Engulfing" Pull="true" EnterSaveStat="Agility" EnterSaveTarget="1d3"/>
+    <part Name="EngulfingSedentary" />
+    <part Name="EngulfingDamage" Damage="1d3" />-->
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Voderai_Daly_Hunter" Inherits="BaseVoderai">
+    <part Name="Render" DisplayName="{{g|voderaskidaly hunter}}" Tile="Creatures/" RenderString="v" ColorString="&amp;g" />
+    <part Name="Description" Short="Small and fiesty, wills this =pronouns.sibling= of the hunt. =pronouns.subjective= stalks the flora, waiting to pounce upon =pronouns.possessive= next meal." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="25" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetA" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Role" Value="Skirmisher" />
+    <stat Name="Level" Value="20" />
+    <part Name="Swarmer" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Voderai_Daly_Pack" Inherits="BaseVoderai">
+    <part Name="Render" DisplayName="{{K|voderaskidaly pack member}}" Tile="Creatures/" RenderString="v" ColorString="&amp;K" />
+    <part Name="Description" Short="Small and youthful, =pronouns.subjective= plays within the flora. =pronouns.subjective= feathers whilst filled with colour, are yet fully pigmented indicating =pronouns.subjective= is far from elderly status." />
+    <part Name="Brain" Hostile="false" Calm="True" />
+    <part Name="AISelfPreservation" Threshold="75" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetB" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Role" Value="Minion" />
+    <stat Name="Level" Value="15" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Voderai_Daly_Pack_Leader" Inherits="BaseVoderai">
+    <part Name="Render" DisplayName="{{y|voderaskidaly pack leader}}" Tile="Creatures/" RenderString="v" ColorString="&amp;y" />
+    <part Name="Description" Short="Elden feathers glisten in the light. =pronouns.subjective= may be old, however =pronouns.possessive= youthful spirit remains." />
+    <part Name="Brain" Hostile="false" Calm="false" />
+    <part Name="AISelfPreservation" Threshold="50" />
+    <tag Name="InventoryPopulationTable" Value="Doratorian_SetB" />
+    <tag Name="Species" Value="voderai" />
+    <tag Name="Role" Value="Leader" />
+    <stat Name="Level" Value="20" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <!--Leiskwings-->
+
+  <object Name="Leiskwing" Inherits="BaseBird">
+    <part Name="Render" DisplayName="leiskwing" RenderString="L" Tile="Creatures/sw_flamingo_2.bmp" ColorString="&amp;Y" DetailColor="m" />
+    <part Name="Description" Short="Soaring high admist the dense foliage of the trees, echoes forth a blast of pure vocality upon the apex's unwary prey." />
+    <part Name="Brain" Hostile="True" Factions="Birds-100,Unshelled Reptiles-75" />
+    <part Name="ConversationScript" ConversationID="WaterBirds" />
+    <stat Name="Level" Value="50" />
+    <stat Name="Hitpoints" Value="250" />
+    <tag Name="Role" Value="Brute" />
+    <stat Name="AV" Value="6" />
+    <stat Name="DV" Value="4" />
+    <inventoryobject Blueprint="Leiskwing_Beak" Number="1" />
+    <tag Name="Species" Value="wyvern" />
+    <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+    <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
+  </object>
+
+  <object Name="Leiskwing_Beak" Inherits="NaturalWeapon">
+    <part Name="Render" DisplayName="{{K|ridged beak}}" />
+    <part Name="MeleeWeapon" BaseDamage="3d3" Skill="Axe" Slot="Face" />
+  </object>
+
+  <!--Tier 5 creatures-->
+
+  <!--Syrenalian-->
+
+  <object Name="Eilasalian_Councillor" Inherits="BaseEilasalian">
+    <part Name="Render" DisplayName="{{eilasalian|syrenalian councillor}}" Tile="Creatures/" RenderString="S" ColorString="&amp;M" />
+    <part Name="Description" Short="." />
+    <part Name="Brain" Hostile="false" Calm="True" />
+    <part Name="AISelfPreservation" Threshold="90" />
+    <tag Name="Role" Value="Leader" />
+    <stat Name="Level" Value="45" />
+    <tag Name="AllowIdleBehavior" />
+    <tag Name="SleepOnBed" />
+  </object>
+
+  <object Name="Einfieran_Councillor" Inherits="BaseEinfieran">
+    <part Name="Render" DisplayName="{{einfieran|syrenalian councillor}}" Tile="Creatures/" RenderString="S" ColorString="&amp;O" />
+    <part Name="Description" Short="." />
+    <part Name="Brain" Hostile="false" Calm="True" />
+    <part Name="AISelfPreservation" Threshold="70" />
+    <tag Name="Role" Value="Leader" />
+    <stat Name="Level" Value="45" />
+    <tag Name="AllowIdleBehavior" />
+    <tag Name="SleepOnBed" />
+  </object>
+
+  <object Name="Octusarian_Councillor" Inherits="BaseOctusarian">
+    <part Name="Render" DisplayName="{{octusarian|syrenalian councillor}}" Tile="Creatures/" RenderString="S" ColorString="&amp;m" />
+    <part Name="Description" Short="." />
+    <part Name="Brain" Hostile="false" Calm="True" />
+    <part Name="AISelfPreservation" Threshold="80" />
+    <tag Name="Role" Value="Leader" />
+    <stat Name="Level" Value="45" />
+    <tag Name="AllowIdleBehavior" />
+    <tag Name="SleepOnBed" />
+  </object>
+
+  <!--SyrnlCyber-->
+
+  <object Name="OTF_Scientist" Inherits="BaseOctusarian">
+    <part Name="Render" DisplayName="{{octusarian|OTF scientist}}" Tile="Creatures/" RenderString="S" ColorString="&amp;m" />
+    <part Name="Description" Short="." />
+    <part Name="Brain" Hostile="false" Calm="True" Factions="SyrnlCyber-100" />
+    <part Name="AISelfPreservation" Threshold="80" />
+    <tag Name="Role" Value="minion" />
+    <stat Name="Level" Value="45" />
+    <tag Name="AllowIdleBehavior" />
+    <tag Name="SleepOnBed" />
+  </object>
+
+  <object Name="OTF_Axilari" Inherits="BaseOctusarian">
+    <part Name="Render" DisplayName="{{octusarian|OTF axilari}}" Tile="Creatures/" RenderString="S" ColorString="&amp;m" />
+    <part Name="Description" Short="." />
+    <part Name="Brain" Hostile="false" Calm="True" Factions="SyrnlCyber-100" />
+    <part Name="AISelfPreservation" Threshold="40" />
+    <tag Name="InventoryPopulationTable" Value="Syrenalian_Variable_SetA" />
+    <tag Name="Role" Value="minion" />
+    <part Name="Swarmer" />
+    <stat Name="Level" Value="50" />
+    <tag Name="NoSleep" />
+  </object>
+
+  <object Name="OTF_Axilari_Daminat" Inherits="BaseOctusarian">
+    <part Name="Render" DisplayName="{{octusarian|OTF daminat axilari}}" Tile="Creatures/" RenderString="S" ColorString="&amp;m" />
+    <part Name="Description" Short="." />
+    <part Name="Brain" Hostile="True" Calm="false" Factions="SyrnlCyber-100" />
+    <part Name="AISelfPreservation" Threshold="20" />
+    <inventoryobject Blueprint="Daminat_Helm" Number="1" />
+    <inventoryobject Blueprint="Daminat_Platemail" Number="1" />
+    <tag Name="Role" Value="Brute" />
+    <part Name="Swarmer" />
+    <stat Name="Level" Value="70" />
+    <tag Name="NoSleep" />
+  </object>
+
+  <object Name="OTF_Axilari_Exarch" Inherits="BaseOctusarian">
+    <part Name="Render" DisplayName="{{octusarian|OTF exarch axilari}}" Tile="Creatures/" RenderString="S" ColorString="&amp;m" />
+    <part Name="Description" Short="." />
+    <part Name="Brain" Hostile="false" Calm="false" Factions="SyrnlCyber-100" />
+    <part Name="AISelfPreservation" Threshold="30" />
+    <inventoryobject Blueprint="Exarch_Axilarium_helm" Number="1" />
+    <inventoryobject Blueprint="Exarch_Axilarium_Platemail" Number="1" />
+    <part Name="AIVehiclePilot" Type="TemplarGunMech" SearchRadius="15" OnCombatStart="true" />
+    <tag Name="Role" Value="Skirmisher" />
+    <part Name="Swarmer" />
+    <stat Name="Level" Value="60" />
+    <tag Name="NoSleep" />
+  </object>
+
+  <object Name="OTF_CombatEngineer" Inherits="BaseOctusarian">
+    <part Name="Render" DisplayName="{{octusarian|OTF combat engineer}}" Tile="Creatures/" RenderString="S" ColorString="&amp;m" />
+    <part Name="Description" Short="." />
+    <part Name="Brain" Hostile="false" Calm="True" Factions="SyrnlCyber-100" />
+    <part Name="AISelfPreservation" Threshold="45" />
+    <inventoryobject Blueprint="Axilarium_Helm" Number="1" />
+    <inventoryobject Blueprint="Axilarium_Platemail" Number="1" />
+    <inventoryobject Blueprint="Octus_Interceptor" Number="1" />
+    <tag Name="Role" Value="minion" />
+    <stat Name="Level" Value="45" />
+    <!--<part Name="CyberneticsHasImplants" Implants="SyrnlCyber_RotaryBlaster" />-->
+    <tag Name="NoSleep" />
+  </object>
+
+  <object Name="OTF_CombatEngineer_Exarch" Inherits="BaseOctusarian">
+    <part Name="Render" DisplayName="{{octusarian|OTF combat engineer exarch}}" Tile="Creatures/" RenderString="S" ColorString="&amp;m" />
+    <part Name="Description" Short="." />
+    <part Name="Brain" Hostile="false" Calm="false" Factions="SyrnlCyber-100" />
+    <part Name="AISelfPreservation" Threshold="40" />
+    <inventoryobject Blueprint="Exarch_Axilarium_helm" Number="1" />
+    <inventoryobject Blueprint="Exarch_Axilarium_Platemail" Number="1" />
+    <inventoryobject Blueprint="Octus_Interceptor" Number="1" />
+    <tag Name="Role" Value="Skirmisher" />
+    <stat Name="Level" Value="50" />
+    <!--<part Name="CyberneticsHasImplants" Implants="SyrnlCyber_RotaryBlaster" />-->
+    <tag Name="NoSleep" />
+  </object>
+
+  <object Name="OTF_CombatEngineer_Daminat" Inherits="BaseOctusarian">
+    <part Name="Render" DisplayName="{{octusarian|OTF daminat combat engineer}}" Tile="Creatures/" RenderString="S" ColorString="&amp;m" />
+    <part Name="Description" Short="." />
+    <part Name="Brain" Hostile="True" Calm="false" Factions="SyrnlCyber-100" />
+    <part Name="AISelfPreservation" Threshold="35" />
+    <inventoryobject Blueprint="Daminat_Helm" Number="1" />
+    <inventoryobject Blueprint="Daminat_Platemail" Number="1" />
+    <inventoryobject Blueprint="Octus_Interceptor" Number="1" />
+    <tag Name="Role" Value="Brute" />
+    <stat Name="Level" Value="55" />
+    <!--<part Name="CyberneticsHasImplants" Implants="SyrnlCyber_RotaryBlaster" />-->
+    <tag Name="NoSleep" />
+  </object>
+
+  <object Name="OTF_Vexara" Inherits="BaseOctusarian">
+    <part Name="Render" DisplayName="{{m|OTF vexara}}" Tile="Creatures/" RenderString="S" ColorString="&amp;m" />
+    <part Name="Description" Short="." />
+    <part Name="Brain" Hostile="false" Calm="True" Factions="SyrnlCyber-100" />
+    <part Name="AISelfPreservation" Threshold="35" />
+    <inventoryobject Blueprint="Vexara_Helm" Number="1" />
+    <inventoryobject Blueprint="Vexara_Platemail" Number="1" />
+    <tag Name="Role" Value="Leader" />
+    <part Name="Swarmer" ExtraBonus="2" />
+    <stat Name="Level" Value="55" />
+    <tag Name="NoSleep" />
+  </object>
+
+  <object Name="OTF_Vexara_Daminat" Inherits="BaseOctusarian">
+    <part Name="Render" DisplayName="{{m|OTF vexara daminat}}" Tile="Creatures/" RenderString="S" ColorString="&amp;m" />
+    <part Name="Description" Short="." />
+    <part Name="Brain" Hostile="True" Calm="false" Factions="SyrnlCyber-100" />
+    <part Name="AISelfPreservation" Threshold="15" />
+    <inventoryobject Blueprint="Daminat_Helm" Number="1" />
+    <inventoryobject Blueprint="Daminat_Platemail" Number="1" />
+    <tag Name="Role" Value="Leader" />
+    <part Name="Swarmer" ExtraBonus="2" />
+    <stat Name="Level" Value="75" />
+    <tag Name="NoSleep" />
+  </object>
+
+  <object Name="OTF_Vexara_Exarch" Inherits="BaseOctusarian">
+    <part Name="Render" DisplayName="{{m|OTF vexara exarch}}" Tile="Creatures/" RenderString="S" ColorString="&amp;m" />
+    <part Name="Description" Short="." />
+    <part Name="Brain" Hostile="false" Calm="false" Factions="SyrnlCyber-100" />
+    <part Name="AISelfPreservation" Threshold="25" />
+    <inventoryobject Blueprint="Vexara_Exarch_Helm" Number="1" />
+    <inventoryobject Blueprint="Vexara_Exarch_Platemail" Number="1" />
+    <tag Name="Role" Value="Leader" />
+    <part Name="Swarmer" ExtraBonus="2" />
+    <stat Name="Level" Value="65" />
+    <tag Name="NoSleep" />
+  </object>
+
+  <!--SyrnlRF-->
+
+  <!--Talfieran-->
+
+  <!--Tier 6 creatures-->
+
+  <!--Azkuvalians-->
+
+  <object Name="AkatylAcolyte" Inherits="BaseAkatyl_Faithful">
+    <part Name="Render" DisplayName="akatylian acolyte" ColorString="&amp;Y" TileColor="&amp;R" RenderString="t" Tile="Creatures/sw_templar_squire.bmp" DetailColor="Y" />
+    <part Name="Brain" Hostile="false" Calm="false" />
+  </object>
+
+  <object Name="AkatylTechPriest" Inherits="BaseAkatyl_Faithful">
+    <part Name="Render" DisplayName="akatylian techpriest" ColorString="&amp;Y" TileColor="&amp;G" RenderString="t" Tile="Creatures/sw_templar_squire.bmp" DetailColor="Y" />
+    <part Name="Preacher" Book="AzkuvalianSermon" Prefix="The priest says, &amp;W'" Frozen="The preacher mumbles inaudibly, encased in ice." inOrder="true" ChatWait="200" />
+    <!--<part Name="CyberneticsHasImplants" Implants="SyrnlCyber_RotaryBlaster" />-->
+    <part Name="RandomMutations" Mental="2-3" MentalLevel="1-8" />
+    <part Name="Brain" Hostile="True" Calm="false" />
+    <skill Name="Persuasion_RebukeRobot" />
+  </object>
+
+  <object Name="AkatylScholar" Inherits="BaseAkatyl_Faithful">
+    <part Name="Render" DisplayName="akatylian scholar" ColorString="&amp;Y" TileColor="&amp;G" RenderString="t" Tile="Creatures/sw_templar_squire.bmp" DetailColor="Y" />
+    <part Name="Brain" Hostile="false" Calm="True" />
+  </object>
+
+  <object Name="AkatylWanderer" Inherits="BaseAkatyl_Rogue">
+    <part Name="Render" DisplayName="akatylian wanderer" ColorString="&amp;Y" TileColor="&amp;G" RenderString="t" Tile="Creatures/sw_templar_squire.bmp" DetailColor="Y" />
+    <part Name="Brain" Hostile="false" Calm="True" />
+  </object>
+
+  <object Name="ThatylAcolyte" Inherits="BaseThatyl_Faithful">
+    <part Name="Render" DisplayName="thatylian acolyte" ColorString="&amp;Y" TileColor="&amp;R" RenderString="t" Tile="Creatures/sw_templar_squire.bmp" DetailColor="Y" />
+    <part Name="Brain" Hostile="false" Calm="false" />
+  </object>
+
+  <object Name="ThatylTechPriest" Inherits="BaseThatyl_Faithful">
+    <part Name="Render" DisplayName="thatylian techpriest" ColorString="&amp;Y" TileColor="&amp;W" RenderString="t" Tile="Creatures/sw_templar_squire.bmp" DetailColor="Y" />
+    <part Name="Preacher" Book="AzkuvalianSermon" Prefix="The priest says, &amp;W'" Frozen="The preacher mumbles inaudibly, encased in ice." inOrder="true" ChatWait="200" />
+    <!--<part Name="CyberneticsHasImplants" Implants="SyrnlCyber_RotaryBlaster" />-->
+    <part Name="RandomMutations" Mental="2-3" MentalLevel="1-8" />
+    <part Name="Brain" Hostile="True" Calm="false" />
+    <skill Name="Persuasion_RebukeRobot" />
+  </object>
+
+  <object Name="ThatylScholar" Inherits="BaseThatyl_Faithful">
+    <part Name="Render" DisplayName="thatylian scholar" ColorString="&amp;Y" TileColor="&amp;W" RenderString="t" Tile="Creatures/sw_templar_squire.bmp" DetailColor="Y" />
+    <part Name="Brain" Hostile="false" Calm="True" />
+  </object>
+
+  <object Name="ThatylWanderer" Inherits="BaseThatyl_Rogue">
+    <part Name="Render" DisplayName="thatylian wanderer" ColorString="&amp;Y" TileColor="&amp;W" RenderString="t" Tile="Creatures/sw_templar_squire.bmp" DetailColor="Y" />
+    <part Name="Brain" Hostile="false" Calm="True" />
+  </object>
+
+  <object Name="XyatylAcolyte" Inherits="BaseXyatyl_Faithful">
+    <part Name="Render" DisplayName="xyatylian acolyte" ColorString="&amp;Y" TileColor="&amp;R" RenderString="t" Tile="Creatures/sw_templar_squire.bmp" DetailColor="Y" />
+    <part Name="Brain" Hostile="false" Calm="false" />
+  </object>
+
+  <object Name="XyatylTechPriest" Inherits="BaseXyatyl_Faithful">
+    <part Name="Render" DisplayName="xyatylian techpriest" ColorString="&amp;Y" TileColor="&amp;R" RenderString="t" Tile="Creatures/sw_templar_squire.bmp" DetailColor="Y" />
+    <part Name="Preacher" Book="AzkuvalianSermon" Prefix="The priest says, &amp;W'" Frozen="The preacher mumbles inaudibly, encased in ice." inOrder="true" ChatWait="200" />
+    <!--<part Name="CyberneticsHasImplants" Implants="SyrnlCyber_RotaryBlaster" />-->
+    <part Name="RandomMutations" Mental="2-3" MentalLevel="1-8" />
+    <part Name="Brain" Hostile="True" Calm="false" />
+    <skill Name="Persuasion_RebukeRobot" />
+  </object>
+
+  <object Name="XyatylScholar" Inherits="BaseXyatyl_Faithful">
+    <part Name="Render" DisplayName="xyatylian scholar" ColorString="&amp;Y" TileColor="&amp;R" RenderString="t" Tile="Creatures/sw_templar_squire.bmp" DetailColor="Y" />
+    <part Name="Brain" Hostile="false" Calm="True" />
+  </object>
+
+  <object Name="XyatylWanderer" Inherits="BaseXyatyl_Rogue">
+    <part Name="Render" DisplayName="xyatylian wanderer" ColorString="&amp;Y" TileColor="&amp;R" RenderString="t" Tile="Creatures/sw_templar_squire.bmp" DetailColor="Y" />
+    <part Name="Brain" Hostile="false" Calm="True" />
+  </object>
+
+  <!--Tier 7 creatures-->
+
+  <!--Tier 8 creatures-->
+
+  <!--Tier X creatures-->
+
+  <!--Merchants-->
+
+  <!--NPCs-->
+
+  <object Name="Eilasalian_Civilian" Inherits="BaseEilasalian">
+    <part Name="Render" DisplayName="{{eilasalian|syrenalian citizen}}" Tile="Creatures/" RenderString="S" ColorString="&amp;M" />
+    <part Name="Description" Short="Standing tall with little care, =pronouns.subjective= bears a calm but ambitious will." />
+    <part Name="Brain" Hostile="false" Calm="True" />
+    <part Name="AISelfPreservation" Threshold="90" />
+    <tag Name="Role" Value="NPC" />
+    <stat Name="Level" Value="40" />
+    <tag Name="AllowIdleBehavior" />
+    <tag Name="SleepOnBed" />
+  </object>
+
+  <object Name="Einfieran_Civilian" Inherits="BaseEinfieran">
+    <part Name="Render" DisplayName="{{einfieran|syrenalian citizen}}" Tile="Creatures/" RenderString="S" ColorString="&amp;O" />
+    <part Name="Description" Short="Fire sparks from the eye of the talvix. A glancing image of =pronouns.possessive= calm embers." />
+    <part Name="Brain" Hostile="false" Calm="True" />
+    <part Name="AISelfPreservation" Threshold="70" />
+    <tag Name="Role" Value="NPC" />
+    <stat Name="Level" Value="40" />
+    <tag Name="AllowIdleBehavior" />
+    <tag Name="SleepOnBed" />
+  </object>
+
+  <object Name="Octusarian_Civilian" Inherits="BaseOctusarian">
+    <part Name="Render" DisplayName="{{octusarian|syrenalian citizen}}" Tile="Creatures/" RenderString="S" ColorString="&amp;m" />
+    <part Name="Description" Short="=pronouns.possessive= midnight eyes glow in the night. The penumbral being cares little for the light." />
+    <part Name="Brain" Hostile="false" Calm="True" />
+    <part Name="AISelfPreservation" Threshold="80" />
+    <tag Name="Role" Value="NPC" />
+    <stat Name="Level" Value="40" />
+    <tag Name="AllowIdleBehavior" />
+    <tag Name="SleepOnBed" />
+  </object>
+
+  <!--Main Characters-->
+
+  <!--Children of Daemina-->
+
+  <object Name="COD_Alacamdaca" Inherits="BaseArkaedus">
+    <part Name="Render" DisplayName="{{daemina|Alacamdaca}}" Tile="Creatures/" RenderString="A" ColorString="&amp;w" />
+    <part Name="Description" Short="Even as the Avenkyri aged, =pronouns.subjective= are still yet a young passionate soul within the vessel of the elden arkaedus." />
+    <part Name="Brain" Hostile="false" Calm="true" Factions="Avenkyr-25,VeidancyriDaemina-100" />
+    <part Name="ConversationScript" ConversationID="Alacamdaca" />
+    <part Name="AISelfPreservation" Threshold="90" />
+    <inventoryobject Blueprint="AA_Anacal" Number="1" />
+    <tag Name="Gender" Value="dorator plural" />
+    <stat Name="Level" Value="60" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="AllowIdleBehavior" />
+    <tag Name="SleepOnBed" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="GivesRep" />
+    <tag Name="staticFaction3" Value=",hate,assassinating their leader" />
+    <tag Name="staticFaction2" Value=",dislike,=pronouns.possessive= calm demeanor" />
+    <tag Name="staticFaction1" Value="Avenkyr,friend,being family" />
+    <tag Name="NoHateFactions" Value="Avenkyr,Voderai,Veidancyri" />
+    <xtagWaterRitual NoJoin="true" SellSkill="Bow and Rifle" />
+  </object>
+
+  <object Name="COD_Jakraato" Inherits="BaseArinate">
+    <part Name="Render" DisplayName="{{daemina|Jakraato}}" Tile="Creatures/" RenderString="A" ColorString="&amp;w" />
+    <part Name="Description" Short="Elden feathers mark the eikal veskerai with guilded affinity. Nonetheless =pronouns.possessive= birthright, is forsaken by arrogance." />
+    <part Name="Brain" Hostile="false" Calm="false" Factions="Avenkyr-25,VeidancyriDaemina-100" />
+    <part Name="ConversationScript" ConversationID="Jakraato" />
+    <part Name="Honorifics" Primary="Veskerai" />
+    <part Name="Titles" Primary="the Fierce" />
+    <part Name="AISelfPreservation" Threshold="10" />
+    <inventoryobject Blueprint="Syrnl_Dorataeska" Number="2" />
+    <tag Name="Gender" Value="dorator masc" />
+    <stat Name="Level" Value="60" />
+    <mutation Name="MultipleArms" Level="10" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="AllowIdleBehavior" />
+    <tag Name="SleepOnBed" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="GivesRep" />
+    <tag Name="staticFaction3" Value=",hate,slaying their champions" />
+    <tag Name="staticFaction2" Value=",dislike,=pronouns.possessive= arrogance" />
+    <tag Name="staticFaction1" Value="Avenkyr,friend,being family" />
+    <tag Name="NoHateFactions" Value="Avenkyr,Rinate,Veidancyri" />
+    <xtagWaterRitual NoJoin="true" SellSkill="LongBlades" />
+  </object>
+
+  <!--Syrenalian-->
+
+  <object Name="Savistato" Inherits="BaseEilasalian">
+    <part Name="Render" DisplayName="{{syrenalian|Savistato Ixyrozal}}" Tile="Creatures/" RenderString="S" ColorString="&amp;m" />
+    <part Name="Brain" Hostile="false" Calm="True" Factions="Syrenalian-100" />
+    <part Name="Description" Short="." />
+    <part Name="ConversationScript" ConversationID="Savistato" />
+    <part Name="Honorifics" Primary="High Councillor" />
+    <part Name="Titles" Primary="the Kind" />
+    <tag Name="Gender" Value="male" />
+    <part Name="AISelfPreservation" Threshold="90" />
+    <stat Name="Level" Value="80" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="AllowIdleBehavior" />
+    <tag Name="SleepOnBed" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="GivesRep" />
+    <tag Name="staticFaction3" Value="Avenkyr,friend,helping =pronouns.possessive= spouse and Akafiol's relationship" />
+    <tag Name="staticFaction2" Value="SyrnlCyber,hate,arresting their scientists" />
+    <tag Name="staticFaction1" Value="Talfieran,friend,representing the people" />
+    <tag Name="NoHateFactions" Value="Avenkyr,SyrnlRF,Talfieran" />
+    <xtagWaterRitual NoJoin="true" SellSkill="Persuasion" />
+  </object>
+
+  <!--SyrnlCyber-->
+
+  <object Name="DRVVelegor" Inherits="BaseOctusarian">
+    <part Name="Render" DisplayName="{{octusarian|Veitrix Velegor}}" Tile="Creatures/" RenderString="S" ColorString="&amp;m" />
+    <part Name="Brain" Hostile="false" Calm="false" Factions="SyrnlCyber-100" />
+    <part Name="Description" Short="Cybernetics form in place of a arm and leg. The observant glare of the doctor casts a shadow upon =pronouns.possessive= loyal subjects." />
+    <part Name="ConversationScript" ConversationID="DRVVelegor" />
+    <part Name="Honorifics" Primary="Doctor" />
+    <part Name="Titles" Primary="the Mastermind" />
+    <tag Name="Gender" Value="male" />
+    <part Name="AISelfPreservation" Threshold="10" />
+    <stat Name="Level" Value="80" />
+    <!--<part Name="CyberneticsHasImplants" Implants="SyrnlCyber_RotaryBlaster" />-->
+    <tag Name="Role" Value="NPC" />
+    <tag Name="NoSleep" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="GivesRep" />
+    <tag Name="staticFaction3" Value="SyrnlRF,hate,dangerous experiments" />
+    <tag Name="staticFaction2" Value="Talfieran,hate,civil rights violations" />
+    <tag Name="staticFaction1" Value=",dislike,refusing services" />
+    <tag Name="NoHateFactions" Value="Syrenalian" />
+    <xtagWaterRitual NoJoin="true" SellSkill="Tech" />
+  </object>
+
+  <object Name="Riiceeiklasyr" Inherits="BaseArinate">
+    <part Name="Render" DisplayName="{{octusarian|Riiceeiklasyr}}" Tile="Creatures/" RenderString="A" ColorString="&amp;R" />
+    <part Name="Description" Short="The eikals bear a visage that demands the will of those around as =pronouns.subjective= speak in a tone that beckons to those with little reasoning, and =pronouns.possessive= gaze is that of authority as order and lies intertwine." />
+    <part Name="Brain" Hostile="false" Calm="false" Factions="SyrnlCyber-100" />
+    <part Name="ConversationScript" ConversationID="Riiceeiklasyr" />
+    <part Name="AISelfPreservation" Threshold="20" />
+    <tag Name="Gender" Value="dorator plural" />
+    <stat Name="Level" Value="85" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="NoSleep" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="GivesRep" />
+    <tag Name="staticFaction3" Value="Avenkyr,hate,betrayal and manipulation" />
+    <tag Name="staticFaction2" Value=",dislike," />
+    <tag Name="staticFaction1" Value="SyrnlRF,friend,betraying =pronouns.possessive= pack" />
+    <tag Name="NoHateFactions" Value="SyrnlRF" />
+    <xtagWaterRitual NoJoin="true" SellSkill="ShortBlades" />
+  </object>
+
+  <!--SyrnlRF-->
+
+  <object Name="Xelastyr" Inherits="BaseEilasalian">
+    <part Name="Render" DisplayName="{{syrenalian|Vexara, Xelastyr}}" Tile="Creatures/" RenderString="S" ColorString="&amp;M" />
+    <part Name="Brain" Hostile="True" Calm="false" Factions="SyrnlRF-100" />
+    <part Name="Description" Short="&quot;Of the 3 moons, Eilasalia's champion remained.
+      They were named captain and granted a blade of light!
+      Twas only when Arekane, Arkane beckoned forth.
+      That the captain would turn on the Veidencyri, and cast forth Dorator and its 9 moons to oblivion!
+      For this sin, I recant my title as Arekena.
+      And I shall sware to my former title, to end my akatylian brother's heresy!&quot;
+      -Xyatylian Arekena, Azkedara after the betrayal in year 130ae" />
+    <part Name="ConversationScript" ConversationID="Xelastyr" />
+    <part Name="Honorifics" Primary="Daminat" />
+    <part Name="Titles" Primary="the Resolute" />
+    <tag Name="Gender" Value="female" />
+    <part Name="AISelfPreservation" Threshold="0" />
+    <stat Name="Level" Value="80" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="NoSleep" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="GivesRep" />
+    <tag Name="staticFaction3" Value="SyrnlCyber,dislike,confiscating lab equipment" />
+    <tag Name="staticFaction2" Value="Talfieran,hate,war crimes" />
+    <tag Name="staticFaction1" Value="Veidancyri,hate,the destruction of Dorator" />
+    <tag Name="NoHateFactions" Value="Azkuvalian,Syrenalian" />
+    <xtagWaterRitual NoJoin="true" SellSkill="LongBlades" />
+  </object>
+
+  <!--Talfieran-->
+
+  <object Name="Alvaneia" Inherits="BaseEinfieran">
+    <part Name="Render" DisplayName="{{einfieran|Alvaneia Talfiera}}" Tile="Creatures/" RenderString="S" ColorString="&amp;O" />
+    <part Name="Brain" Hostile="false" Calm="true" Factions="Talfieran-100" />
+    <part Name="Description" Short="Calm cinders of fire's light. Cinders of flame born to light. Words spark from written flame." />
+    <part Name="ConversationScript" ConversationID="Alvaneia" />
+    <tag Name="Gender" Value="female" />
+    <part Name="AISelfPreservation" Threshold="30" />
+    <stat Name="Level" Value="70" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="AllowIdleBehavior" />
+    <tag Name="SleepOnBed" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+
+  <object Name="TFN_Fiera" Inherits="BaseEinfieran">
+    <part Name="Render" DisplayName="{{einfieran|Fiera Talfiera}}" Tile="Creatures/" RenderString="S" ColorString="&amp;O" />
+    <part Name="Brain" Hostile="false" Calm="true" Factions="Talfieran-100" />
+    <part Name="Description" Short="&quot;The alluring light burns with passionate flame.
+      A song echoes the flame that burns within the heart.
+      A fiery heart that beckons the love of those around.
+      For even a mere spark can set a world alight.&quot;
+      -Excerpt from, Alvaneia's upon the flame's sun" />
+    <part Name="ConversationScript" ConversationID="TFN_Fiera" />
+    <part Name="Honorifics" Primary="Starflame" />
+    <part Name="Titles" Primary="the Singer of Flames" />
+    <tag Name="Gender" Value="female" />
+    <part Name="AISelfPreservation" Threshold="40" />
+    <stat Name="Level" Value="65" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="NoSleep" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="GivesRep" />
+    <tag Name="staticFaction1" Value="Avenkyr,friend,=pronouns.possessive= love and care" />
+    <tag Name="staticFaction2" Value=",friend,=pronouns.possessive= passionate singing" />
+    <tag Name="staticFaction3" Value=",hate,setting the world on fire" />
+    <tag Name="NoHateFactions" Value="Avenkyr,Syrenalian" />
+    <xtagWaterRitual NoJoin="true" SellSkill="Persuasion" />
+  </object>
+
+  <object Name="TFN_Hellshot" Inherits="BaseEinfieran">
+    <part Name="Render" DisplayName="{{kata|Kata &quot;Hellshot&quot; Shavikskala}}" Tile="Creatures/" RenderString="S" ColorString="&amp;O" />
+    <part Name="Brain" Hostile="false" Calm="false" Factions="Talfieran-100,VeidancyriKata-100" />
+    <part Name="Description" Short="&quot;A flame kindled from the depths of Hell.
+      An angel of fire bursts forth upon the world.
+      An eye blazing with hellish flame.
+      For the Hand of Kata, fires his hellish shot.&quot;
+      -Excerpt from, Alvaneia's upon the flame's sun" />
+    <part Name="ConversationScript" ConversationID="TFN_Hellshot" />
+    <part Name="Honorifics" Primary="Fireborn" />
+    <part Name="Titles" Primary="the Hell Omen" />
+    <tag Name="Gender" Value="male" />
+    <part Name="AISelfPreservation" Threshold="20" />
+    <stat Name="Level" Value="75" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="NoSleep" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="GivesRep" />
+    <tag Name="staticFaction3" Value="SyrnlCyber,hate,mercenary work" />
+    <tag Name="staticFaction2" Value="SyrnlRF,hate,conspiracy" />
+    <tag Name="staticFaction1" Value=",dislike,=pronouns.possessive= cocky attitude" />
+    <tag Name="NoHateFactions" Value="Avenkyr,Syrenalian" />
+    <xtagWaterRitual NoJoin="true" SellSkill="Bow and Rifle" />
+  </object>
+
+  <object Name="Varinesa" Inherits="BaseEinfieran">
+    <part Name="Render" DisplayName="{{einfieran|Varinesa Talfiera}}" Tile="Creatures/" RenderString="S" ColorString="&amp;O" />
+    <part Name="Brain" Hostile="false" Calm="false" Factions="Talfieran-100" />
+    <part Name="Description" Short="Divine flame is sparked upon the world. Yet she cares not for her birthright, but for those around." />
+    <part Name="ConversationScript" ConversationID="Varinesa" />
+    <tag Name="Gender" Value="female" />
+    <part Name="AISelfPreservation" Threshold="10" />
+    <stat Name="Level" Value="80" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="NoSleep" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="GivesRep" />
+    <tag Name="staticFaction3" Value="SyrnlCyber,hate,competition" />
+    <tag Name="staticFaction2" Value="SyrnlRF,hate,terrorism" />
+    <tag Name="staticFaction1" Value=",dislike,refusing services" />
+    <tag Name="NoHateFactions" Value="Avenkyr,Syrenalian" />
+    <xtagWaterRitual NoJoin="true" SellSkill="HeavyWeapons" />
+  </object>
+
+  <!--The Avenkyri-->
+
+  <object Name="AvenkyriAkafiol" Inherits="BaseArkaedus">
+    <part Name="Render" DisplayName="{{doratorian|Avenkyr Akafiol}}" Tile="Creatures/" RenderString="A" ColorString="&amp;W" />
+    <part Name="Description" Short="Glancing into the eyes of the voracious giant, one sees desire, lust, and sin, however even with her habits: the daughter of voderai and avyrialus, emits a calm, affectionate, almost maternal feeling." />
+    <part Name="Brain" Hostile="false" Calm="True" Factions="Avenkyr-100" />
+    <part Name="ConversationScript" ConversationID="Akafiol" />
+    <part Name="Honorifics" Primary="Pack Flirt" />
+    <part Name="Titles" Primary="the Swallower" />
+    <tag Name="Gender" Value="dorator female" />
+    <part Name="Pettable" UseFactionForFeelingFloor="Avenkyr" />
+    <part Name="AISelfPreservation" Threshold="60" />
+    <stat Name="Level" Value="60" />
+    <!--<part Name="Engulfing" Pull="true" EnterSaveStat="Agility" EnterSaveTarget="2d40"/>
+    <part Name="EngulfingSedentary" />
+    <part Name="EngulfingDamage" Damage="2d40" />-->
+    <tag Name="Role" Value="NPC" />
+    <tag Name="AllowIdleBehavior" />
+    <tag Name="SleepOnBed" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="GivesRep" />
+    <tag Name="staticFaction3" Value="SyrnlRF,hate,the disappearance of a high councillor after their date" />
+    <tag Name="staticFaction2" Value=",dislike,briefly swallowing their leader" />
+    <tag Name="staticFaction1" Value="Avyrialus,friend,being family" />
+    <tag Name="NoHateFactions" Value="Avyrialus,Veidancyri" />
+    <xtagWaterRitual NoJoin="true" SellSkill="Discipline" />
+  </object>
+
+  <object Name="AvenkyriAkailios" Inherits="BaseVoderai">
+    <part Name="Render" DisplayName="{{doratorian|Avenkyr Akailios}}" Tile="Creatures/" RenderString="V" ColorString="&amp;W" />
+    <part Name="Description" Short="Her tail splayed out like a fan, her name indicating she's a swallower of delight. She cares for her siblings, as though they were her puffs." />
+    <part Name="Brain" Hostile="false" Calm="True" Factions="Avenkyr-100" />
+    <part Name="ConversationScript" ConversationID="Akailios" />
+    <part Name="AISelfPreservation" Threshold="40" />
+    <tag Name="Gender" Value="dorator female" />
+    <part Name="Pettable" UseFactionForFeelingFloor="Avenkyr" />
+    <stat Name="Level" Value="40" />
+    <!--<part Name="Engulfing" Pull="true" EnterSaveStat="Agility" EnterSaveTarget="2d24"/>
+    <part Name="EngulfingSedentary" />
+    <part Name="EngulfingDamage" Damage="2d24" />-->
+    <tag Name="Role" Value="NPC" />
+    <tag Name="AllowIdleBehavior" />
+    <tag Name="SleepOnBed" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+
+  <object Name="AvenkyriAkzato" Inherits="BaseArinate">
+    <part Name="Render" DisplayName="{{doratorian|Avenkyr Akzato}}" Tile="Creatures/" RenderString="R" ColorString="&amp;o" />
+    <part Name="Description" Short="The curved horns she bears give her a fierce visage. One may mistake her dull feathers tinged with crimson gold as masculine, however her form is one of duality." />
+    <part Name="Brain" Hostile="false" Calm="false" Factions="Avenkyr-100" />
+    <part Name="ConversationScript" ConversationID="Akzato" />
+    <part Name="Honorifics" Primary="Pack Fiend" />
+    <part Name="Titles" Primary="the Razorbeaked" />
+    <part Name="AISelfPreservation" Threshold="40" />
+    <tag Name="InventoryPopulationTable" Value="InventoryAkzato" />
+    <tag Name="Gender" Value="dorator fluid fem,dorator fluid masc,dorator nonbinary" />
+    <stat Name="Level" Value="55" />
+    <!--<part Name="CyberneticsHasImplants" Implants="SyrnlCyber_RotaryBlaster" />-->
+    <mutation Name="Esper" />
+    <mutation Name="LightManipulation" Level="10" />
+    <mutation Name="MassMind" Level="10" />
+    <mutation Name="MentalMirror" Level="10" />
+    <mutation Name="SensePsychic" />
+    <mutation Name="Telepathy" />
+    <skill Name="HeavyWeapons" />
+    <skill Name="HeavyWeapons_Tank" />
+    <skill Name="HeavyWeapons_StrappingShoulders" />
+    <skill Name="HeavyWeapons_Sweep" />
+    <skill Name="LongBlades" />
+    <skill Name="LongBladesProficiency" />
+    <skill Name="LongBladesLunge" />
+    <skill Name="LongBladesSwipe" />
+    <skill Name="LongBladesImprovedAggressiveStance" />
+    <skill Name="LongBladesImprovedDefensiveStance" />
+    <skill Name="Shield" />
+    <skill Name="Shield_Block" />
+    <skill Name="Shield_Slam" />
+    <skill Name="Shield_DeftBlocking" />
+    <skill Name="Shield_SwiftBlocking" />
+    <skill Name="Shield_StaggeringBlock" />
+    <skill Name="Shield_ShieldWall" />
+    <skill Name="Tactics" />
+    <skill Name="Tactics_Hurdle" />
+    <skill Name="Tactics_Throwing" />
+    <skill Name="Tactics_Charge" />
+    <skill Name="Tactics_Kickback" />
+    <skill Name="Tactics_Juke" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="AllowIdleBehavior" />
+    <tag Name="SleepOnBed" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="GivesRep" />
+    <tag Name="staticFaction3" Value="Azkuvalian,hate,scripture burning and treason" />
+    <tag Name="staticFaction2" Value="Rinate,friend,being family" />
+    <tag Name="staticFaction1" Value="VeidancyriCyr,friend,being faithful to Arekena Azkedara" />
+    <tag Name="NoHateFactions" Value="Rinate,Veidancyri" />
+    <xtagWaterRitual NoJoin="true" SellSkill="Endurance" />
+  </object>
+
+  <object Name="AvenkyriArikal" Inherits="BaseArkaedus">
+    <part Name="Render" DisplayName="{{doratorian|Avenkyr Arikal}}" Tile="Creatures/" RenderString="A" ColorString="&amp;w" />
+    <part Name="Description" Short="The incendiery glare of a perceptive arkaedus, bears disdain for humanity's history. He cares little for mortals, and prefers peace." />
+    <part Name="Brain" Hostile="false" Calm="false" Factions="Avenkyr-100" />
+    <part Name="ConversationScript" ConversationID="Arikal" />
+    <part Name="Honorifics" Primary="Chirphowler" />
+    <part Name="Titles" Primary="the Eater" />
+    <part Name="AISelfPreservation" Threshold="20" />
+    <tag Name="Gender" Value="dorator male" />
+    <stat Name="Level" Value="50" />
+    <skill Name="Multiweapon_Fighting" />
+    <skill Name="Multiweapon_Flurry" />
+    <skill Name="Multiweapon_Proficiency" />
+    <skill Name="Multiweapon_Expertise" />
+    <skill Name="Multiweapon_Mastery" />
+    <skill Name="Pistol" />
+    <skill Name="Pistol_SteadyHands" />
+    <skill Name="Pistol_Akimbo" />
+    <skill Name="Pistol_WeakSpotter" />
+    <skill Name="Pistol_SlingAndRun" />
+    <skill Name="Pistol_DisarmingShot" />
+    <skill Name="Pistol_DeadShot" />
+    <skill Name="Pistol_EmptyTheClips" />
+    <skill Name="Pistol_FastestGun" />
+    <skill Name="ShortBlades" />
+    <skill Name="ShortBlades_Expertise" />
+    <skill Name="ShortBlades_Bloodletter" />
+    <skill Name="ShortBlades_Jab" />
+    <skill Name="ShortBlades_Hobble" />
+    <skill Name="ShortBlades_PointedCircle" />
+    <skill Name="ShortBlades_Rejoinder" />
+    <skill Name="ShortBlades_Shank" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="AllowIdleBehavior" />
+    <tag Name="SleepOnBed" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="GivesRep" />
+    <tag Name="staticFaction3" Value="Azkuvalian,hate,slaying their acolytes" />
+    <tag Name="staticFaction2" Value="Talfieran,dislike,=pronouns.possessive= attitude toward Varinesa before =pronouns.subjective= left" />
+    <tag Name="staticFaction1" Value="Voderai,friend,being family" />
+    <tag Name="NoHateFactions" Value="Voderai,Veidancyri" />
+    <xtagWaterRitual NoJoin="true" SellSkill="ShortBlades" />
+  </object>
+
+  <object Name="AvenkyriJavska" Inherits="BaseKazvate">
+    <part Name="Render" DisplayName="{{doratorian|Avenkyr Javska}}" Tile="Creatures/" RenderString="A" ColorString="&amp;w" />
+    <part Name="Description" Short="." />
+    <part Name="Brain" Hostile="false" Calm="false" Factions="Avenkyr-100" />
+    <part Name="ConversationScript" ConversationID="Javska" />
+    <part Name="Honorifics" Primary="Pack Charmer" />
+    <part Name="Titles" Primary="the Twin Tailed" />
+    <part Name="AISelfPreservation" Threshold="60" />
+    <tag Name="Gender" Value="dorator male" />
+    <part Name="Pettable" UseFactionForFeelingFloor="Avenkyr" />
+    <stat Name="Level" Value="45" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="AllowIdleBehavior" />
+    <tag Name="SleepOnBed" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="GivesRep" />
+    <tag Name="staticFaction3" Value=",dislike,besting their champion at a local drinking competition" />
+    <tag Name="staticFaction2" Value=",hate,stealing their artifacts" />
+    <tag Name="staticFaction1" Value="Vaskate,friend,being family" />
+    <tag Name="NoHateFactions" Value="Vaskate,Veidancyri" />
+    <xtagWaterRitual SellSkill="ShortBlades" />
+  </object>
+
+  <object Name="AvenkyriSuizva" Inherits="BaseVoderai">
+    <part Name="Render" DisplayName="{{doratorian|Avenkyr Suizva}}" Tile="Creatures/" RenderString="v" ColorString="&amp;W" />
+    <part Name="Description" Short="This voderaskidaly waves her tail erratically, as she prances around the place. With each sway of her tail: she emits a youthful aura." />
+    <part Name="Brain" Hostile="false" Calm="True" Factions="Avenkyr-100" />
+    <part Name="ConversationScript" ConversationID="Suizva" />
+    <part Name="AISelfPreservation" Threshold="80" />
+    <tag Name="Gender" Value="dorator female" />
+    <part Name="Pettable" UseFactionForFeelingFloor="Avenkyr" />
+    <stat Name="Level" Value="35" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="AllowIdleBehavior" />
+    <tag Name="SleepOnBed" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+
+  <!--Voderai-->
+
+  <object Name="Akesata" Inherits="BaseRinate">
+    <part Name="Render" DisplayName="{{doratorian|Akesata}}" Tile="Creatures/" RenderString="r" ColorString="&amp;Y" />
+    <part Name="Description" Short="She watches over the den like a mother her youth. For she and the wet seer she protects, albeit horned and fanged: are bonded by birth." />
+    <part Name="Brain" Hostile="false" Calm="false" Factions="Voderai-100" />
+    <part Name="ConversationScript" ConversationID="Akesata" />
+    <part Name="Honorifics" Primary="Elder" />
+    <part Name="Titles" Primary="the Hungering" />
+    <part Name="AISelfPreservation" Threshold="25" />
+    <tag Name="Gender" Value="dorator female" />
+    <part Name="Pettable" UseFactionForFeelingFloor="Voderai" />
+    <stat Name="Level" Value="50" />
+    <!--<part Name="Engulfing" Pull="true" EnterSaveStat="Agility" EnterSaveTarget="2d28"/>
+    <part Name="EngulfingSedentary" />
+    <part Name="EngulfingDamage" Damage="2d28" />-->
+    <tag Name="Role" Value="NPC" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="GivesRep" />
+    <tag Name="staticFaction3" Value="Avyrialus,friend,caring for their young" />
+    <tag Name="staticFaction2" Value="Rinate,hate,leaving Javinex's pack" />
+    <tag Name="staticFaction1" Value="Voderai,friend,keeping Delastraos safe" />
+    <tag Name="NoHateFactions" Value="Avenkyr,Avyrialus,Voderai" />
+    <xtagWaterRitual NoJoin="true" SellSkill="Tactics" />
+  </object>
+
+  <object Name="Ansiamia" Inherits="BaseVoderai">
+    <part Name="Render" DisplayName="{{doratorian|Ansiamia}}" Tile="Creatures/" RenderString="V" ColorString="&amp;b" />
+    <part Name="Description" Short="The little flower blossoms into a calm centuryling, as she retains her mother's youthful wisdom." />
+    <part Name="Brain" Hostile="false" Calm="True" Factions="Voderai-100" Wanders="false" />
+    <part Name="ConversationScript" ConversationID="Ansiamia" />
+    <part Name="AISelfPreservation" Threshold="99" />
+    <tag Name="Gender" Value="dorator female" />
+    <part Name="Pettable" UseFactionForFeelingFloor="Voderai" />
+    <part Name="GenericInventoryRestocker" Table="BepInventory" />
+    <stat Name="Level" Value="40" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="Merchant" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+
+  <object Name="Delastraos" Inherits="BaseVoderai">
+    <part Name="Render" DisplayName="{{doratorian|Delastraos}}" Tile="Creatures/" RenderString="V" ColorString="&amp;M" />
+    <part Name="Description" Short="The eyes of the wet seer have all but faded. Her gifted forsight of the past, is the distant memories of others." />
+    <part Name="Brain" Hostile="false" Calm="True" Factions="Voderai-100" Wanders="false" />
+    <part Name="ConversationScript" ConversationID="Delastraos" />
+    <part Name="AISelfPreservation" Threshold="75" />
+    <tag Name="Gender" Value="dorator female" />
+    <part Name="Pettable" UseFactionForFeelingFloor="Voderai" />
+    <stat Name="Level" Value="45" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="GivesRep" />
+    <tag Name="staticFaction3" Value="Rinate,hate,leaving Javinex's pack" />
+    <tag Name="staticFaction2" Value="Voderai,friend,keeping Ansiamia safe" />
+    <tag Name="staticFaction1" Value=",friend,understanding their past" />
+    <tag Name="NoHateFactions" Value="Avenkyr,Voderai" />
+    <xtagWaterRitual NoJoin="true" SellSkill="Shield" />
+  </object>
+
+  <!--Wyrms of Aizalvaran-->
+
+  <object Name="Akvevenvatl" Inherits="EidratiVault1">
+    <part Name="Render" DisplayName="{{aizalvaran|Akvevenvatl}}" RenderString="R" Tile="creatures/sw_dawnglider.bmp" DetailColor="M" ColorString="&amp;G" />
+    <part Name="Description" Short=".." />
+    <part Name="Brain" Hostile="false" Calm="false" Factions="Eidrati-50,VeidancyriVeinat-100" Wanders="false" />
+    <part Name="ConversationScript" ConversationID="Akvevenvatl" />
+    <part Name="Honorifics" Primary="Elderscale" />
+    <part Name="Titles" Primary="Protectors of Chaos" />
+    <tag Name="Gender" Value="plural" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="GivesRep" repValue="400" />
+    <tag Name="staticFaction3" Value=",dislike,playing tricks on them" />
+    <tag Name="staticFaction2" Value=",friend,=pronouns.possessive= riddles" />
+    <tag Name="staticFaction1" Value=",hate,devouring the stars" />
+    <tag Name="NoHateFactions" Value="Avenkyr,Veidancyri" />
+    <tag Name="NoFriendFactions" Value="Azkuvalian,SyrnlRF" />
+    <xtagWaterRitual NoJoin="true" SellSkill="Self-discipline" />
+  </object>
+
+  <object Name="Andekitalia" Inherits="EidratiVault3">
+    <part Name="Render" DisplayName="{{aizalvaran|Andekitalia}}" RenderString="M" Tile="creatures/sw_dawnglider.bmp" DetailColor="R" ColorString="&amp;G" />
+    <part Name="Description" Short="What grand intoxicating innocence weighs =pronouns.possessive= head upon the mantle of harbinger. =pronouns.Subjective= gaze upon the world as though it was =pronouns.substantivePossessive=." />
+    <part Name="Brain" Hostile="false" Calm="false" Factions="Eidrati-50,VeidancyriVeinat-100" Wanders="false" />
+    <part Name="ConversationScript" ConversationID="Andekitalia" />
+    <part Name="Honorifics" Primary="Elderscale" />
+    <part Name="Titles" Primary="Harbingers of Chaos" />
+    <tag Name="Gender" Value="females" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="GivesRep" repValue="800" />
+    <tag Name="staticFaction3" Value=",dislike,=pronouns.possessive= mocking tone" />
+    <tag Name="staticFaction2" Value=",friend,bestowing =pronouns.possessive= wisdom upon them" />
+    <tag Name="staticFaction1" Value=",hate,unleashing Hell" />
+    <tag Name="NoHateFactions" Value="Avenkyr,Veidancyri" />
+    <tag Name="NoFriendFactions" Value="Azkuvalian,SyrnlRF" />
+    <xtagWaterRitual NoJoin="true" SellSkill="Self-discipline" />
+  </object>
+
+  <object Name="AxiEidrati" Inherits="BaseEidrati">
+    <part Name="Render" DisplayName="axi eidrati" RenderString="r" Tile="creatures/sw_dawnglider.bmp" DetailColor="m" ColorString="&amp;G" />
+    <part Name="Brain" Hostile="false" Calm="true" Factions="Eidrati-100" Wanders="false" />
+    <stat Name="AV" Value="8" />
+    <stat Name="DV" Value="8" />
+    <stat Name="Level" Value="65" />
+    <stat Name="Hitpoints" Value="1000" />
+    <part Name="Description" Short="The child of chaos has awaken from =pronouns.possessive= youthful slumber. =pronouns.Possessive= maw glistens with chaotic flame." />
+    <tag Name="Role" Value="Artillery" />
+    <tag Name="Worshippable" />
+    <tag Name="WorshipPower" Value="25" />
+    <tag Name="WorshipColorString" Value="&amp;g" />
+    <tag Name="WorshipDetailColor" Value="o" />
+    <tag Name="DynamicObjectsTable:Eidrati" />
+  </object>
+
+  <object Name="Eidrati_Bite" Inherits="Bite">
+    <part Name="MeleeWeapon" BaseDamage="1d4" />
+    <part Name="TemperatureOnHit" Amount="2d20" Max="true" MaxTemp="400" OnWielderHit="false" />
+  </object>
+
+  <object Name="Eidrati Corpse" Inherits="Scaled Reptile Corpse">
+    <part Name="Render" DisplayName="eidrati corpse" />    
+    <part Name="Commerce" Value="8" />
+		<part Name="Description" Short="The fallen eidrati lays at rest, yet what remains is but one vessel." />
+    <part Name="Butcherable" OnSuccess="Eidrati Tail" />
+    <tag Name="Tier" Value="8" />
+  </object>
+
+  <object Name="EidratiGuardian1" Inherits="EidratiVault1">
+    <!--<builder Name="EidratiBirthright" />-->
+    <!--<part Name="EidratiTitle" />-->
+    <tag Name="Role" Value="Hero" />
+    <part Name="GivesRep" repValue="400" />
+    <tag Name="Noclone" />
+    <tag Name="DynamicObjectsTable:Vault" />
+  </object>
+
+  <object Name="EidratiGuardian2" Inherits="EidratiVault2">
+    <!--<builder Name="EidratiBirthright" />-->
+    <!--<part Name="EidratiTitle" />-->
+    <tag Name="Role" Value="Hero" />
+    <part Name="GivesRep" repValue="600" />
+    <tag Name="Noclone" />
+    <tag Name="DynamicObjectsTable:Vault" />
+  </object>
+
+  <object Name="EidratiGuardian3" Inherits="EidratiVault3">
+    <!--<builder Name="EidratiBirthright" />-->
+    <!--<part Name="EidratiTitle" />-->
+    <tag Name="Role" Value="Hero" />
+    <part Name="GivesRep" repValue="800" />
+    <tag Name="Noclone" />
+    <tag Name="DynamicObjectsTable:Vault" />
+  </object>
+
+  <object Name="EidratiVault1" Inherits="AxiEidrati">
+    <part Name="Render" DisplayName="Eidrati Guardian" DetailColor="M" ColorString="&amp;G" />
+    <tag Name="Worshippable" />
+    <tag Name="WorshipPower" Value="50" />
+    <tag Name="WorshipColorString" Value="&amp;G" />
+    <tag Name="WorshipDetailColor" Value="g" />
+    <tag Name="DynamicObjectsTable:Vault" />
+  </object>
+
+  <object Name="EidratiVault2" Inherits="ExiEidrati">
+    <part Name="Render" DisplayName="Eidrati Guardian" DetailColor="r" ColorString="&amp;G" />
+    <tag Name="Worshippable" />
+    <tag Name="WorshipPower" Value="75" />
+    <tag Name="WorshipColorString" Value="&amp;G" />
+    <tag Name="WorshipDetailColor" Value="g" />
+    <tag Name="DynamicObjectsTable:Vault" />
+  </object>
+
+  <object Name="EidratiVault3" Inherits="IxaEidrati">
+    <part Name="Render" DisplayName="Eidrati Guardian" DetailColor="R" ColorString="&amp;G" />
+    <tag Name="Worshippable" />
+    <tag Name="WorshipPower" Value="100" />
+    <tag Name="WorshipColorString" Value="&amp;G" />
+    <tag Name="WorshipDetailColor" Value="g" />
+    <tag Name="DynamicObjectsTable:Vault" />
+  </object>
+
+  <object Name="ExiEidrati" Inherits="BaseEidrati">
+    <part Name="Render" DisplayName="exi eidrati" RenderString="R" Tile="creatures/sw_dawnglider.bmp" DetailColor="M" ColorString="&amp;G" />
+    <part Name="Brain" Hostile="false" Calm="false" Factions="Eidrati-100" Wanders="false" />
+    <stat Name="AV" Value="16" />
+    <stat Name="DV" Value="16" />
+    <stat Name="Level" Value="70" />
+    <stat Name="Hitpoints" Value="2000" />
+    <part Name="Description" Short="The majesty of =pronouns.possessive= size beckons a chaotic will. The glistening of =pronouns.possessive= maw burns with frozen light." />
+    <tag Name="Role" Value="Brute" />
+    <tag Name="Worshippable" />
+    <tag Name="WorshipPower" Value="50" />
+    <tag Name="WorshipColorString" Value="&amp;G" />
+    <tag Name="WorshipDetailColor" Value="O" />
+    <tag Name="DynamicObjectsTable:Eidrati" />
+  </object>
+
+  <object Name="IxaEidrati" Inherits="BaseEidrati">
+    <part Name="Render" DisplayName="ixa eidrati" RenderString="m" Tile="creatures/sw_dawnglider.bmp" DetailColor="r" ColorString="&amp;G" />
+    <part Name="Brain" Hostile="true" Calm="false" Factions="Eidrati-100" Wanders="false" />
+    <stat Name="AV" Value="32" />
+    <stat Name="DV" Value="32" />
+    <stat Name="Level" Value="75" />
+    <stat Name="Hitpoints" Value="3000" />
+    <part Name="Description" Short="Upon =pronouns.possessive= lengthy body shines scales of divine will. The haze of =pronouns.possessive= breath melts the very air." />
+    <tag Name="Role" Value="Leader" />
+    <tag Name="Worshippable" />
+    <tag Name="WorshipPower" Value="75" />
+    <tag Name="WorshipColorString" Value="&amp;G" />
+    <tag Name="WorshipDetailColor" Value="W" />
+    <tag Name="DynamicObjectsTable:Eidrati" />
+  </object>
+
+  <object Name="Taliakesali" Inherits="EidratiVault2">
+    <part Name="Render" DisplayName="{{aizalvaran|Taliakesali}}" RenderString="m" Tile="creatures/sw_dawnglider.bmp" DetailColor="r" ColorString="&amp;G" />
+    <part Name="Description" Short="Splintered horns engraved with archaic symbols. =pronouns.Possessive= eyes glisten in vibrant shade as =pronouns.subjective= bear precedence upon a spindled immensity." />
+    <part Name="Brain" Hostile="false" Calm="false" Factions="Eidrati-50,VeidancyriVeinat-100" Wanders="false" />
+    <part Name="ConversationScript" ConversationID="Taliakesali" />
+    <part Name="Honorifics" Primary="Elderscale" />
+    <part Name="Titles" Primary="Guardians of Chaos" />
+    <tag Name="Gender" Value="males" />
+    <tag Name="Role" Value="NPC" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <part Name="GivesRep" repValue="600" />
+    <tag Name="staticFaction3" Value=",dislike,=pronouns.possessive= demands" />
+    <tag Name="staticFaction2" Value=",friend,watching over them" />
+    <tag Name="staticFaction1" Value=",hate,sundering the fabric of spacetime" />
+    <tag Name="NoHateFactions" Value="Avenkyr,Veidancyri" />
+    <tag Name="NoFriendFactions" Value="Azkuvalian,SyrnlRF" />
+    <xtagWaterRitual NoJoin="true" SellSkill="Self-discipline" />
+  </object>
+
+</objects>

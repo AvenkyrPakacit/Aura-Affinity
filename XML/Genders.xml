@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<genders EnableSelection="false" EnableGeneration="false" GenerateGeneric="0">
+
+  <gender
+    Name="dorator female"
+    Generic="false"
+    Subjective="she"
+    Objective="her"
+    PossessiveAdjective="her"
+    SubstantivePossessive="hers"
+    Reflexive="herself"
+    PersonTerm="individual"
+    ImmaturePersonTerm="centuryling"
+    FormalAddressTerm="doratorian"
+    OffspringTerm="puff"
+    SiblingTerm="sister"
+    ParentTerm="mother"
+  />
+
+  <gender
+    Name="dorator fluid fem"
+    Generic="false"
+    Subjective="they"
+    Objective="her"
+    PossessiveAdjective="her"
+    SubstantivePossessive="his"
+    Reflexive="themself"
+    PersonTerm="individual"
+    ImmaturePersonTerm="centuryling"
+    FormalAddressTerm="doratorian"
+    OffspringTerm="puff"
+    SiblingTerm="sister"
+    ParentTerm="mother"
+  />
+
+  <gender
+    Name="dorator fluid masc"
+    Generic="false"
+    Subjective="they"
+    Objective="his"
+    PossessiveAdjective="his"
+    SubstantivePossessive="hers"
+    Reflexive="themself"
+    PersonTerm="individual"
+    ImmaturePersonTerm="centuryling"
+    FormalAddressTerm="doratorian"
+    OffspringTerm="puff"
+    SiblingTerm="brother"
+    ParentTerm="father"
+  />
+
+  <gender
+    Name="dorator male"
+    Generic="false"
+    Subjective="he"
+    Objective="him"
+    PossessiveAdjective="his"
+    SubstantivePossessive="his"
+    Reflexive="himself"
+    PersonTerm="individual"
+    ImmaturePersonTerm="centuryling"
+    FormalAddressTerm="doratorian"
+    OffspringTerm="puff"
+    SiblingTerm="brother"
+    ParentTerm="father"
+  />
+
+  <gender
+    Name="dorator nonbinary"
+    Generic="false"
+    PseudoPlural="true"
+    Subjective="they"
+    Objective="them"
+    PossessiveAdjective="their"
+    SubstantivePossessive="theirs"
+    Reflexive="themself"
+    PersonTerm="individual"
+    ImmaturePersonTerm="centuryling"
+    FormalAddressTerm="doratorian"
+    OffspringTerm="puff"
+    SiblingTerm="sibling"
+    ParentTerm="parent"
+  />
+
+  <gender
+    Name="dorator plural"
+    Generic="false"
+    PseudoPlural="true"
+    Subjective="they"
+    Objective="them"
+    PossessiveAdjective="their"
+    SubstantivePossessive="theirs"
+    Reflexive="themselves"
+    PersonTerm="individuals"
+    ImmaturePersonTerm="centurylings"
+    FormalAddressTerm="doratorians"
+    OffspringTerm="puffs"
+    SiblingTerm="siblings"
+    ParentTerm="parents"
+  />
+
+</genders>

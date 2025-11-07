@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="utf-8"?>
+<populations>
+
+  <!--Doratorian-->
+
+  <!--Avyrialus Packs-->
+
+  <!-- Rinate Packs -->
+
+  <!-- Voderai Packs -->
+
+  <!-- Deep Jungle -->
+
+  <!-- Desert canyon -->
+
+  <!-- Hills -->
+
+  <!-- Jungle -->
+
+  <!-- Mountains -->
+
+  <!-- Salt desert -->
+
+  <!-- Salt marsh -->
+
+  <!--Equipment-->
+
+  <!--Aizalvaran-->
+
+  <!--Azkuvalian-->
+
+  <!--Doratorian-->
+
+  <population Name="Doratorian_ArmA">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Doratorian_Armplates" Number="0-2" Weight="15" />
+      <object Blueprint="Doratorian_Spaulder" Number="0-2" Weight="25" />
+      <object Blueprint="Doratorian_Vambrace" Number="0-2" Weight="60" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_ArmB">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Doratorian_Armplates" Number="0-2" Weight="15" />
+      <object Blueprint="Doratorian_Spaulder" Number="0-2" Weight="60" />
+      <object Blueprint="Doratorian_Vambrace" Number="0-2" Weight="25" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_ArmC">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Doratorian_Armplates" Number="0-2" Weight="60" />
+      <object Blueprint="Doratorian_Spaulder" Number="0-2" Weight="25" />
+      <object Blueprint="Doratorian_Vambrace" Number="0-2" Weight="15" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_BodyA">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Doratorian_Chainplate" Number="1" Weight="25" />
+      <object Blueprint="Doratorian_Girdle" Number="1" Weight="60" />
+      <object Blueprint="Doratorian_Plateguard" Number="1" Weight="15" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_BodyB">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Doratorian_Chainplate" Number="1" Weight="60" />
+      <object Blueprint="Doratorian_Girdle" Number="1" Weight="15" />
+      <object Blueprint="Doratorian_Plateguard" Number="1" Weight="25" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_BodyC">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Doratorian_Chainplate" Number="1" Weight="25" />
+      <object Blueprint="Doratorian_Girdle" Number="1" Weight="15" />
+      <object Blueprint="Doratorian_Plateguard" Number="1" Weight="60" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_PSetA">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_ArmA" />
+      <table Name="Doratorian_BodyA" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_PSetB">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_ArmB" />
+      <table Name="Doratorian_BodyB" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_PSetC">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_ArmC" />
+      <table Name="Doratorian_BodyC" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_SetA">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_ArmA" />
+      <table Name="Doratorian_BodyA" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_SetB">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_ArmB" />
+      <table Name="Doratorian_BodyB" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_SetC">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_ArmC" />
+      <table Name="Doratorian_BodyC" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_Variable_PSetA">
+    <group Name="Items" Style="pickone">
+      <table Name="Doratorian_PSetA" Number="1" Weight="4" />
+      <table Name="Doratorian_PSetB" Number="1" Weight="3" />
+      <table Name="Doratorian_PSetC" Number="1" Weight="2" />
+      <table Name="Doratorian_PSetD" Number="1" Weight="1" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_Variable_PSetB">
+    <group Name="Items" Style="pickone">
+      <table Name="Doratorian_PSetA" Number="1" Weight="2" />
+      <table Name="Doratorian_PSetB" Number="1" Weight="3" />
+      <table Name="Doratorian_PSetC" Number="1" Weight="2" />
+      <table Name="Doratorian_PSetD" Number="1" Weight="1" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_Variable_PSetC">
+    <group Name="Items" Style="pickone">
+      <table Name="Doratorian_PSetA" Number="1" Weight="1" />
+      <table Name="Doratorian_PSetB" Number="1" Weight="2" />
+      <table Name="Doratorian_PSetC" Number="1" Weight="3" />
+      <table Name="Doratorian_PSetD" Number="1" Weight="2" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_Variable_PSetD">
+    <group Name="Items" Style="pickone">
+      <table Name="Doratorian_PSetA" Number="1" Weight="1" />
+      <table Name="Doratorian_PSetB" Number="1" Weight="2" />
+      <table Name="Doratorian_PSetC" Number="1" Weight="3" />
+      <table Name="Doratorian_PSetD" Number="1" Weight="4" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_Variable_SetA">
+    <group Name="Items" Style="pickone">
+      <table Name="Doratorian_SetA" Number="1" Weight="4" />
+      <table Name="Doratorian_SetB" Number="1" Weight="3" />
+      <table Name="Doratorian_SetC" Number="1" Weight="2" />
+      <table Name="Doratorian_SetD" Number="1" Weight="1" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_Variable_SetB">
+    <group Name="Items" Style="pickone">
+      <table Name="Doratorian_SetA" Number="1" Weight="2" />
+      <table Name="Doratorian_SetB" Number="1" Weight="3" />
+      <table Name="Doratorian_SetC" Number="1" Weight="2" />
+      <table Name="Doratorian_SetD" Number="1" Weight="1" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_Variable_SetC">
+    <group Name="Items" Style="pickone">
+      <table Name="Doratorian_SetA" Number="1" Weight="1" />
+      <table Name="Doratorian_SetB" Number="1" Weight="2" />
+      <table Name="Doratorian_SetC" Number="1" Weight="3" />
+      <table Name="Doratorian_SetD" Number="1" Weight="2" />
+    </group>
+  </population>
+
+  <population Name="Doratorian_Variable_SetD">
+    <group Name="Items" Style="pickone">
+      <table Name="Doratorian_SetA" Number="1" Weight="1" />
+      <table Name="Doratorian_SetB" Number="1" Weight="2" />
+      <table Name="Doratorian_SetC" Number="1" Weight="3" />
+      <table Name="Doratorian_SetD" Number="1" Weight="4" />
+    </group>
+  </population>
+
+  <population Name="InventoryAkzato">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_PSet" />
+      <object Blueprint="HalfFullWaterskin" Number="1" />
+      <object Blueprint="Azkesalityr" Number="1" />
+      <object Blueprint="SalveTonic" Number="3-4" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_AkamalaskA">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_Variable_SetB" />
+      <table Name="StartingGear_DoratorA" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_AkamalaskB">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_Variable_PSetB" />
+      <table Name="StartingGear_DoratorB" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_AkameikalA">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_Variable_SetD" />
+      <table Name="StartingGear_DoratorA" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_AkameikalB">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_Variable_PSetD" />
+      <table Name="StartingGear_DoratorB" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_AkamkraatoA">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_Variable_SetC" />
+      <table Name="StartingGear_DoratorA" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_AkamkraatoB">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_Variable_PSetC" />
+      <table Name="StartingGear_DoratorB" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_AkammikaA">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_Variable_SetB" />
+      <table Name="StartingGear_DoratorA" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_AkammikaB">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_Variable_PSetB" />
+      <table Name="StartingGear_DoratorB" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_ChildofDaeminaA">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_Variable_SetD" />
+      <table Name="StartingGear_DoratorA" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_ChildofDaeminaB">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_Variable_PSetD" />
+      <table Name="StartingGear_DoratorB" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_CseiklascaA">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_Variable_SetA" />
+      <table Name="StartingGear_DoratorA" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_CseiklascaB">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_Variable_PSetA" />
+      <table Name="StartingGear_DoratorB" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_DoratorA">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_Common" />
+      <object Blueprint="HalfFullWaterskin" Number="1" />
+      <object Blueprint="Voderai_Beak" Number="1" />
+      <object Blueprint="Witchwood Bark" Number="3-4" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_DoratorB">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_Common" />
+      <object Blueprint="HalfFullWaterskin" Number="1" />
+      <object Blueprint="Rinate_Beak" Number="1" />
+      <object Blueprint="Rinate_Horns" Number="1" />
+      <object Blueprint="Witchwood Bark" Number="3-4" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_UwakatiA">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_Variable_SetB" />
+      <table Name="StartingGear_DoratorA" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_UwakatiB">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_Variable_PSetB" />
+      <table Name="StartingGear_DoratorB" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_VeskaskweA">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_Variable_SetB" />
+      <table Name="StartingGear_DoratorA" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_VeskaskweB">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_Variable_PSetB" />
+      <table Name="StartingGear_DoratorB" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_VeskeraiA">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_Variable_SetC" />
+      <table Name="StartingGear_DoratorA" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_VeskeraiB">
+    <group Name="Items" Style="pickeach">
+      <table Name="Doratorian_Variable_PSetC" />
+      <table Name="StartingGear_DoratorB" />
+    </group>
+  </population>
+
+  <!--Syrenalian-->
+
+  <population Name="InventoryAxilariAxe">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_AxesA" />
+      <table Name="Syrenalian_Variable_SetA" />
+    </group>
+  </population>
+
+  <population Name="InventoryAxilariCudgels">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_CudgelsA" />
+      <table Name="Syrenalian_Variable_SetA" />
+    </group>
+  </population>
+
+  <population Name="InventoryAxilariHeavy">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_HWeaponsA" />
+      <table Name="Syrenalian_SBladesA" />
+      <table Name="Syrenalian_Variable_SetA" />
+    </group>
+  </population>
+
+  <population Name="InventoryAxilariLBlade">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_LBladesA" />
+      <table Name="Syrenalian_Variable_SetA" />
+    </group>
+  </population>
+
+  <population Name="InventoryAxilariMedic">
+    <group Name="Items" Style="pickeach">
+      <table Name="InventoryAxilariPDW" />
+      <table Name="InventoryAxilariUnique" />
+    </group>
+  </population>
+
+  <population Name="InventoryAxilariPDW">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_PistolsA" />
+      <table Name="Syrenalian_SBladesA" />
+      <table Name="Syrenalian_Variable_SetA" />
+    </group>
+  </population>
+
+  <population Name="InventoryAxilariRifle">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_RiflesA" />
+      <table Name="Syrenalian_SBladesA" />
+      <table Name="Syrenalian_Variable_SetA" />
+    </group>
+  </population>
+
+  <population Name="InventoryAxilariSBlade">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_SBladesA" />
+      <table Name="Syrenalian_Variable_SetA" />
+    </group>
+  </population>
+
+  <population Name="InventoryAxilariUnique">
+    <group Name="Items" Style="pickeach">
+      <object Blueprint="SalveTonic" Number="6-8" />
+      <table Name="Injectors" Number="4-6" />
+    </group>
+  </population>
+
+  <population Name="InventoryDaminatAxe">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_AxesE" />
+      <table Name="Syrenalian_Variable_SetE" />
+    </group>
+  </population>
+
+  <population Name="InventoryDaminatCudgels">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_CudgelsE" />
+      <table Name="Syrenalian_Variable_SetE" />
+    </group>
+  </population>
+
+  <population Name="InventoryDaminatHeavy">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_HWeaponsE" />
+      <table Name="Syrenalian_SBladesE" />
+      <table Name="Syrenalian_Variable_SetE" />
+    </group>
+  </population>
+
+  <population Name="InventoryDaminatLBlade">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_LBladesE" />
+      <table Name="Syrenalian_Variable_SetE" />
+    </group>
+  </population>
+
+  <population Name="InventoryDaminatMedic">
+    <group Name="Items" Style="pickeach">
+      <table Name="InventoryDaminatPDW" />
+      <table Name="InventoryAxilariUnique" />
+    </group>
+  </population>
+
+  <population Name="InventoryDaminatPDW">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_PistolsE" />
+      <table Name="Syrenalian_SBladesE" />
+      <table Name="Syrenalian_Variable_SetE" />
+    </group>
+  </population>
+
+  <population Name="InventoryDaminatRifle">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_RiflesE" />
+      <table Name="Syrenalian_SBladesE" />
+      <table Name="Syrenalian_Variable_SetE" />
+    </group>
+  </population>
+
+  <population Name="InventoryDaminatSBlade">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_SBladesE" />
+      <table Name="Syrenalian_Variable_SetE" />
+    </group>
+  </population>
+
+  <population Name="InventoryDRVVelegor">
+    <group Name="Items" Style="pickeach">
+      <table Name="InventoryOTFUnique" />
+    </group>
+  </population>
+
+  <population Name="InventoryExarchAAxe">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_AxesC" />
+      <table Name="Syrenalian_Variable_SetC" />
+    </group>
+  </population>
+
+  <population Name="InventoryExarchACudgels">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_CudgelsC" />
+      <table Name="Syrenalian_Variable_SetC" />
+    </group>
+  </population>
+
+  <population Name="InventoryExarchAHeavy">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_HWeaponsC" />
+      <table Name="Syrenalian_SBladesC" />
+      <table Name="Syrenalian_Variable_SetC" />
+    </group>
+  </population>
+
+  <population Name="InventoryExarchALBlade">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_LBladesC" />
+      <table Name="Syrenalian_Variable_SetC" />
+    </group>
+  </population>
+
+  <population Name="InventoryExarchAMedic">
+    <group Name="Items" Style="pickeach">
+      <table Name="InventoryExarchAPDW" />
+      <table Name="InventoryAxilariUnique" />
+    </group>
+  </population>
+
+  <population Name="InventoryExarchAPDW">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_PistolsC" />
+      <table Name="Syrenalian_SBladesC" />
+      <table Name="Syrenalian_Variable_SetC" />
+    </group>
+  </population>
+
+  <population Name="InventoryExarchARifle">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_RiflesC" />
+      <table Name="Syrenalian_SBladesC" />
+      <table Name="Syrenalian_Variable_SetC" />
+    </group>
+  </population>
+
+  <population Name="InventoryExarchASBlade">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_SBladesC" />
+      <table Name="Syrenalian_Variable_SetC" />
+    </group>
+  </population>
+
+  <population Name="InventoryExarchVAxe">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_AxesD" />
+      <table Name="Syrenalian_Variable_SetD" />
+    </group>
+  </population>
+
+  <population Name="InventoryExarchVCudgels">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_CudgelsD" />
+      <table Name="Syrenalian_Variable_SetD" />
+    </group>
+  </population>
+
+  <population Name="InventoryExarchVHeavy">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_HWeaponsD" />
+      <table Name="Syrenalian_SBladesD" />
+      <table Name="Syrenalian_Variable_SetD" />
+    </group>
+  </population>
+
+  <population Name="InventoryExarchVLBlade">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_LBladesD" />
+      <table Name="Syrenalian_Variable_SetD" />
+    </group>
+  </population>
+
+  <population Name="InventoryExarchVPDW">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_PistolsD" />
+      <table Name="Syrenalian_SBladesD" />
+      <table Name="Syrenalian_Variable_SetD" />
+    </group>
+  </population>
+
+  <population Name="InventoryExarchVRifle">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_RiflesD" />
+      <table Name="Syrenalian_SBladesD" />
+      <table Name="Syrenalian_Variable_SetD" />
+    </group>
+  </population>
+
+  <population Name="InventoryExarchVSBlade">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_SBladesD" />
+      <table Name="Syrenalian_Variable_SetD" />
+    </group>
+  </population>
+
+  <population Name="InventoryOTFUnique">
+    <group Name="Items" Style="pickeach">
+      <object Blueprint="SalveTonic" Number="5-7" />
+      <table Name="Injectors" Number="5-7" />
+    </group>
+  </population>
+
+  <population Name="InventoryRiiceeiklasyr">
+    <group Name="Items" Style="pickeach">
+      <table Name="InventoryOTFUnique" />
+    </group>
+  </population>
+
+  <population Name="InventoryTFCVAlvaneia">
+    <group Name="Items" Style="pickeach">
+      <table Name="InventoryTFCVUnique" />
+    </group>
+  </population>
+
+  <population Name="InventoryTFCVFiera">
+    <group Name="Items" Style="pickeach">
+      <table Name="InventoryTFCVUnique" />
+    </group>
+  </population>
+
+  <population Name="InventoryTFCVHellshot">
+    <group Name="Items" Style="pickeach">
+      <table Name="InventoryTFCVUnique" />
+    </group>
+  </population>
+
+  <population Name="InventoryTFCVarinesa">
+    <group Name="Items" Style="pickeach">
+      <table Name="InventoryTFCVUnique" />
+    </group>
+  </population>
+
+  <population Name="InventoryTFCVUnique">
+    <group Name="Items" Style="pickeach">
+      <object Blueprint="SalveTonic" Number="4-11" />
+      <table Name="Injectors" Number="3-10" />
+    </group>
+  </population>
+
+  <population Name="InventoryVexaraAxe">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_AxesB" />
+      <table Name="Syrenalian_Variable_SetB" />
+    </group>
+  </population>
+
+  <population Name="InventoryVexaraCudgels">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_CudgelsB" />
+      <table Name="Syrenalian_Variable_SetB" />
+    </group>
+  </population>
+
+  <population Name="InventoryVexaraHeavy">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_HWeaponsB" />
+      <table Name="Syrenalian_SBladesB" />
+      <table Name="Syrenalian_Variable_SetB" />
+    </group>
+  </population>
+
+  <population Name="InventoryVexaraLBlade">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_LBladesB" />
+      <table Name="Syrenalian_Variable_SetB" />
+    </group>
+  </population>
+
+  <population Name="InventoryVexaraPDW">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_PistolsC" />
+      <table Name="Syrenalian_SBladesC" />
+      <table Name="Syrenalian_Variable_SetB" />
+    </group>
+  </population>
+
+  <population Name="InventoryVexaraRifle">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_RiflesB" />
+      <table Name="Syrenalian_SBladesB" />
+      <table Name="Syrenalian_Variable_SetB" />
+    </group>
+  </population>
+
+  <population Name="InventoryVexaraSBlade">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_SBladesB" />
+      <table Name="Syrenalian_Variable_SetB" />
+    </group>
+  </population>
+
+  <population Name="InventoryXelastyr">
+    <group Name="Items" Style="pickeach">
+      <table Name="InventoryAxilariUnique" />
+      <table Name="Syrenalian_SetE" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_Axilari">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_Syrenalian" />
+      <table Name="Syrenalian_Variable_SetA" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_EilasalianUnique">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_Axilari" />
+      <object Blueprint="SalveTonic" Number="3-4" />
+      <table Name="Injectors" Number="2-3" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_EinfieranUnique">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_Syrenalian" />
+      <object Blueprint="SalveTonic" Number="1-7" />
+      <table Name="Injectors" Number="1-7" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_ExarchAxilari">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_Syrenalian" />
+      <table Name="Syrenalian_Variable_SetC" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_ExarchVexara">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_Syrenalian" />
+      <table Name="Syrenalian_Variable_SetD" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_OctusarianUnique">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_Syrenalian" />
+      <object Blueprint="SalveTonic" Number="2-3" />
+      <table Name="Injectors" Number="3-4" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_SHCouncillor">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_Syrenalian" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_Syrenalian">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_Common" />
+      <object Blueprint="SalveTonic" Number="3-4" />
+      <table Name="Injectors" Number="2-3" />
+    </group>
+  </population>
+
+  <population Name="StartingGear_Vexara">
+    <group Name="Items" Style="pickeach">
+      <table Name="StartingGear_Syrenalian" />
+      <table Name="Syrenalian_Variable_SetB" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_ArmA">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Axilarium_Armplates" Number="1" Weight="5" />
+      <object Blueprint="Daminat_Armplates" Number="1" Weight="1" />
+      <object Blueprint="Exarch_Axilarium_Armplates" Number="1" Weight="3" />
+      <object Blueprint="Vexara_Armplates" Number="1" Weight="4" />
+      <object Blueprint="Vexara_Exarch_Armplates" Number="1" Weight="2" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_ArmB">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Axilarium_Armplates" Number="1" Weight="3" />
+      <object Blueprint="Daminat_Armplates" Number="1" Weight="1" />
+      <object Blueprint="Exarch_Axilarium_Armplates" Number="1" Weight="3" />
+      <object Blueprint="Vexara_Armplates" Number="1" Weight="4" />
+      <object Blueprint="Vexara_Exarch_Armplates" Number="1" Weight="2" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_ArmC">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Axilarium_Armplates" Number="1" Weight="1" />
+      <object Blueprint="Daminat_Armplates" Number="1" Weight="1" />
+      <object Blueprint="Exarch_Axilarium_Armplates" Number="1" Weight="3" />
+      <object Blueprint="Vexara_Armplates" Number="1" Weight="2" />
+      <object Blueprint="Vexara_Exarch_Armplates" Number="1" Weight="2" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_ArmD">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Axilarium_Armplates" Number="1" Weight="1" />
+      <object Blueprint="Daminat_Armplates" Number="1" Weight="3" />
+      <object Blueprint="Exarch_Axilarium_Armplates" Number="1" Weight="3" />
+      <object Blueprint="Vexara_Armplates" Number="1" Weight="2" />
+      <object Blueprint="Vexara_Exarch_Armplates" Number="1" Weight="4" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_ArmE">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Axilarium_Armplates" Number="0-2" Weight="1" />
+      <object Blueprint="Daminat_Armplates" Number="0-2" Weight="5" />
+      <object Blueprint="Exarch_Axilarium_Armplates" Number="0-2" Weight="3" />
+      <object Blueprint="Vexara_Armplates" Number="0-2" Weight="2" />
+      <object Blueprint="Vexara_Exarch_Armplates" Number="0-2" Weight="4" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_BodyA">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Axilarium_Platemail" Number="1" Weight="5" />
+      <object Blueprint="Daminat_Platemail" Number="1" Weight="1" />
+      <object Blueprint="Exarch_Axilarium_Platemail" Number="1" Weight="3" />
+      <object Blueprint="Vexara_Platemail" Number="1" Weight="4" />
+      <object Blueprint="Vexara_Exarch_Platemail" Number="1" Weight="2" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_BodyB">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Axilarium_Platemail" Number="1" Weight="3" />
+      <object Blueprint="Daminat_Platemail" Number="1" Weight="1" />
+      <object Blueprint="Exarch_Axilarium_Platemail" Number="1" Weight="3" />
+      <object Blueprint="Vexara_Platemail" Number="1" Weight="4" />
+      <object Blueprint="Vexara_Exarch_Platemail" Number="1" Weight="2" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_BodyC">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Axilarium_Platemail" Number="1" Weight="1" />
+      <object Blueprint="Daminat_Platemail" Number="1" Weight="1" />
+      <object Blueprint="Exarch_Axilarium_Platemail" Number="1" Weight="3" />
+      <object Blueprint="Vexara_Platemail" Number="1" Weight="2" />
+      <object Blueprint="Vexara_Exarch_Platemail" Number="1" Weight="2" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_BodyD">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Axilarium_Platemail" Number="1" Weight="1" />
+      <object Blueprint="Daminat_Platemail" Number="1" Weight="3" />
+      <object Blueprint="Exarch_Axilarium_Platemail" Number="1" Weight="3" />
+      <object Blueprint="Vexara_Platemail" Number="1" Weight="2" />
+      <object Blueprint="Vexara_Exarch_Platemail" Number="1" Weight="4" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_BodyE">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Axilarium_Platemail" Number="1" Weight="1" />
+      <object Blueprint="Daminat_Platemail" Number="1" Weight="5" />
+      <object Blueprint="Exarch_Axilarium_Platemail" Number="1" Weight="3" />
+      <object Blueprint="Vexara_Platemail" Number="1" Weight="2" />
+      <object Blueprint="Vexara_Exarch_Platemail" Number="1" Weight="4" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_HeadA">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Axilarium_Helm" Number="1" Weight="5" />
+      <object Blueprint="Daminat_Helm" Number="1" Weight="1" />
+      <object Blueprint="Exarch_Axilarium_helm" Number="1" Weight="3" />
+      <object Blueprint="Vexara_Helm" Number="1" Weight="4" />
+      <object Blueprint="Vexara_Exarch_Helm" Number="1" Weight="2" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_HeadB">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Axilarium_Helm" Number="1" Weight="3" />
+      <object Blueprint="Daminat_Helm" Number="1" Weight="1" />
+      <object Blueprint="Exarch_Axilarium_helm" Number="1" Weight="3" />
+      <object Blueprint="Vexara_Helm" Number="1" Weight="4" />
+      <object Blueprint="Vexara_Exarch_Helm" Number="1" Weight="2" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_HeadC">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Axilarium_Helm" Number="1" Weight="1" />
+      <object Blueprint="Daminat_Helm" Number="1" Weight="1" />
+      <object Blueprint="Exarch_Axilarium_helm" Number="1" Weight="3" />
+      <object Blueprint="Vexara_Helm" Number="1" Weight="4" />
+      <object Blueprint="Vexara_Exarch_Helm" Number="1" Weight="2" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_HeadD">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Axilarium_Helm" Number="1" Weight="1" />
+      <object Blueprint="Daminat_Helm" Number="1" Weight="2" />
+      <object Blueprint="Exarch_Axilarium_helm" Number="1" Weight="2" />
+      <object Blueprint="Vexara_Helm" Number="1" Weight="3" />
+      <object Blueprint="Vexara_Exarch_Helm" Number="1" Weight="3" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_HeadE">
+    <group Name="Items" Style="pickone">
+      <object Blueprint="Axilarium_Helm" Number="1" Weight="1" />
+      <object Blueprint="Daminat_Helm" Number="1" Weight="5" />
+      <object Blueprint="Exarch_Axilarium_helm" Number="1" Weight="3" />
+      <object Blueprint="Vexara_Helm" Number="1" Weight="2" />
+      <object Blueprint="Vexara_Exarch_Helm" Number="1" Weight="4" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_SetA">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_ArmA" />
+      <table Name="Syrenalian_BodyA" />
+      <table Name="Syrenalian_HeadA" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_SetB">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_ArmB" />
+      <table Name="Syrenalian_BodyB" />
+      <table Name="Syrenalian_HeadB" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_SetC">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_ArmC" />
+      <table Name="Syrenalian_BodyC" />
+      <table Name="Syrenalian_HeadC" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_SetD">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_ArmD" />
+      <table Name="Syrenalian_BodyD" />
+      <table Name="Syrenalian_HeadD" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_SetE">
+    <group Name="Items" Style="pickeach">
+      <table Name="Syrenalian_ArmE" />
+      <table Name="Syrenalian_BodyE" />
+      <table Name="Syrenalian_HeadE" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_Variable_SetA">
+    <group Name="Items" Style="pickone">
+      <table Name="Syrenalian_SetA" Number="1" Weight="5" />
+      <table Name="Syrenalian_SetB" Number="1" Weight="4" />
+      <table Name="Syrenalian_SetC" Number="1" Weight="3" />
+      <table Name="Syrenalian_SetD" Number="1" Weight="2" />
+      <table Name="Syrenalian_SetE" Number="1" Weight="1" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_Variable_SetB">
+    <group Name="Items" Style="pickone">
+      <table Name="Syrenalian_SetA" Number="1" Weight="3" />
+      <table Name="Syrenalian_SetB" Number="1" Weight="4" />
+      <table Name="Syrenalian_SetC" Number="1" Weight="3" />
+      <table Name="Syrenalian_SetD" Number="1" Weight="2" />
+      <table Name="Syrenalian_SetE" Number="1" Weight="1" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_Variable_SetC">
+    <group Name="Items" Style="pickone">
+      <table Name="Syrenalian_SetA" Number="1" Weight="2" />
+      <table Name="Syrenalian_SetB" Number="1" Weight="3" />
+      <table Name="Syrenalian_SetC" Number="1" Weight="2" />
+      <table Name="Syrenalian_SetD" Number="1" Weight="1" />
+      <table Name="Syrenalian_SetE" Number="1" Weight="1" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_Variable_SetD">
+    <group Name="Items" Style="pickone">
+      <table Name="Syrenalian_SetA" Number="1" Weight="1" />
+      <table Name="Syrenalian_SetB" Number="1" Weight="2" />
+      <table Name="Syrenalian_SetC" Number="1" Weight="3" />
+      <table Name="Syrenalian_SetD" Number="1" Weight="4" />
+      <table Name="Syrenalian_SetE" Number="1" Weight="3" />
+    </group>
+  </population>
+
+  <population Name="Syrenalian_Variable_SetE">
+    <group Name="Items" Style="pickone">
+      <table Name="Syrenalian_SetA" Number="1" Weight="1" />
+      <table Name="Syrenalian_SetB" Number="1" Weight="2" />
+      <table Name="Syrenalian_SetC" Number="1" Weight="3" />
+      <table Name="Syrenalian_SetD" Number="1" Weight="4" />
+      <table Name="Syrenalian_SetE" Number="1" Weight="5" />
+    </group>
+  </population>
+
+</populations>
