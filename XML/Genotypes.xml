@@ -27,7 +27,7 @@
   </genotype>
   <genotype Name="AA_Rinate" MutationPoints="12" StatPoints="44" AllowedMutationCategories="*"
     RandomWeight="10" DisplayName="Rinate" Subtypes="AA_Rinate" Class="" Tile="Assets_Content_Textures_Creatures_sw_snapjaw.bmp"
-    DetailColor="R" BodyObject="ArinateBody" BaseHPGain="1-4" BaseSPGain="50" BaseMPGain="1" Species="rinate">
+    DetailColor="R" BodyObject="VoderaiBody" BaseHPGain="1-4" BaseSPGain="50" BaseMPGain="1" Species="rinate">
     <stat Name="Strength" Minimum="18" Maximum="36" ChargenDescription="Your {{W|Strength}} score determines how effectively you penetrate your opponents' armor with melee attacks, how much damage your melee attacks do, your ability to resist forced movement, and your carry capacity."/>
     <stat Name="Agility" Minimum="16" Maximum="32" ChargenDescription="Your {{W|Agility}} score determines your accuracy with both melee and ranged weapons and your ability to dodge attacks."/>
     <stat Name="Toughness" Minimum="19" Maximum="38" ChargenDescription="Your {{W|Toughness}} score determines your number of hit points, your natural healing rate, and your ability to resist poison and disease."/>
