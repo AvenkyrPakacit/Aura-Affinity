@@ -6,10 +6,10 @@
   <conversation ID="Avryialus">
     <node ID="Start">
       <text>
-        {{emote|*cautious growling*}}
+        {{emote|*cautious growling*}}~
         {{emote|*cautious hissing*}}~
         {{emote|*chirps and barks*}}~
-        {{emote|*hisses and growls*}}~
+        {{emote|*hisses and growls*}}
       </text>
       <choice GotoID="End">...live and drink.</choice>
     </node>
@@ -45,37 +45,37 @@
   <conversation ID="Kazvate">
     <node ID="Start">
       <text>
-        Kazva!
+        Kazva!~
         Kazvate!~
         {{emote|*chirps and barks*}}~
-        {{emote|*hisses and growls*}}~
+        {{emote|*hisses and growls*}}
       </text>
       <choice GotoID="End">...live and drink.</choice>
     </node>
     <node ID="Start" IfSubtype="Arinate" Priority="1">
       <text>
-        Kazva!
+        Kazva!~
         Kazvate!~
         {{emote|*chirps and barks*}}~
-        {{emote|*hisses and growls*}}~
+        {{emote|*hisses and growls*}}
       </text>
       <choice GotoID="End">Feast well, =pronouns.siblingTerm=.</choice>
     </node>
     <node ID="Start" IfSubtype="Kazvate" Priority="1">
       <text>
-        Kazva!
+        Kazva!~
         Kazvate!~
         Kazva! =pronouns.SiblingTerm=!~
-        Kazvate! =pronouns.SiblingTerm=!~
+        Kazvate! =pronouns.SiblingTerm=!
       </text>
       <choice GotoID="End">Enjoy yourself, =pronouns.siblingTerm=.</choice>
     </node>
     <node ID="Start" IfSubtype="Voderai Arkai" Priority="1">
       <text>
-        Kazva!
+        Kazva!~
         Kazvate!~
         {{emote|*chirps and barks*}}~
-        {{emote|*hisses and growls*}}~
+        {{emote|*hisses and growls*}}
       </text>
       <choice GotoID="End">Live well, =pronouns.siblingTerm=.</choice>
     </node>
@@ -96,10 +96,10 @@
   <conversation ID="Rinate">
     <node ID="Start">
       <text>
-        {{emote|*irritated growling*}}
+        {{emote|*irritated growling*}}~
         {{emote|*irritated hissing*}}~
         {{emote|*chirps and barks*}}~
-        {{emote|*hisses and growls*}}~
+        {{emote|*hisses and growls*}}
       </text>
       <choice GotoID="End">...live and drink.</choice>
     </node>
@@ -135,37 +135,37 @@
   <conversation ID="Vaskate">
     <node ID="Start">
       <text>
-        Vaska!
+        Vaska!~
         Vaskate!~
         {{emote|*chirps and barks*}}~
-        {{emote|*hisses and growls*}}~
+        {{emote|*hisses and growls*}}
       </text>
       <choice GotoID="End">...live and drink.</choice>
     </node>
     <node ID="Start" IfSubtype="Arinate" Priority="1">
       <text>
-        Vaska!
+        Vaska!~
         Vaskate!~
         {{emote|*chirps and barks*}}~
-        {{emote|*hisses and growls*}}~
+        {{emote|*hisses and growls*}}
       </text>
       <choice GotoID="End">Feast well, =pronouns.siblingTerm=.</choice>
     </node>
     <node ID="Start" IfSubtype="Kazvate" Priority="1">
       <text>
-        Vaska!
+        Vaska!~
         Vaskate!~
         Vaska! Vaska!~
-        Vaska! Vaskate!~
+        Vaska! Vaskate!
       </text>
       <choice GotoID="End">Enjoy yourself, =pronouns.siblingTerm=.</choice>
     </node>
     <node ID="Start" IfSubtype="Voderai Arkai" Priority="1">
       <text>
-        Vaska!
+        Vaska!~
         Vaskate!~
         {{emote|*chirps and barks*}}~
-        {{emote|*hisses and growls*}}~
+        {{emote|*hisses and growls*}}
       </text>
       <choice GotoID="End">Live well, =pronouns.siblingTerm=.</choice>
     </node>
@@ -174,10 +174,10 @@
   <conversation ID="Voderai">
     <node ID="Start">
       <text>
-        {{emote|*anxious growling*}}
+        {{emote|*anxious growling*}}~
         {{emote|*anxious hissing*}}~
         {{emote|*chirps and barks*}}~
-        {{emote|*hisses and growls*}}~
+        {{emote|*hisses and growls*}}
       </text>
       <choice GotoID="End">...live and drink.</choice>
     </node>
