@@ -65,7 +65,7 @@
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_cat" />
   </object>
 
-  <object Name="BaseArkaedus" Inherits="BaseHumanoid">
+  <object Name="BaseVoderaiArkai" Inherits="BaseHumanoid">
     <part Name="Body" Anatomy="TailedBiped" />
     <part Name="Brain" Factions="Voderai-100" />
     <stat Name="Strength" sValue="14,1d3,(t-1)d2" />
@@ -87,7 +87,6 @@
     <tag Name="RandomGender" Value="dorator female,dorator fluid fem,dorator fluid masc,dorator male,dorator nonbinary,dorator plural" />
     <part Name="Pettable" UseFactionForFeelingFloor="Voderai" />
     <tag Name="PetResponse" Value="=subject.T= =verb:purrs=." />
-    <part Name="SmartuseForceTwiddles" />
     <xtagTextFragments Skin="feathery fur" PoeticFeatures="ridged beak,versatile anatomy,voracious demeanor" YounglingNoise="*barks*,*chirps*,*purrs*" Activity="fending off one's instincts" VillageActivity="caring for one another" SacredThing="reason above all else" />
     <tag Name="PrimaryLimbType" Value="Hand" />
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_cat" />
@@ -95,7 +94,7 @@
 
   <!--Bases-->
 
-  <object Name="BaseAvyrialus" Inherits="BaseAnimal">
+  <object Name="BaseAvyriali" Inherits="BaseAnimal">
     <part Name="Render" DisplayName="Avyrialus" Tile="Assets_Content_Textures_Creatures_sw_snapjaw.bmp" RenderString="s" ColorString="&amp;m" DetailColor="g" />
     <part Name="Brain" Factions="Avyrialus-100" />
     <stat Name="Strength" sValue="16,1d3,(t-1)d2" />
@@ -440,7 +439,7 @@
 
   <!--Avyrialus-->
 
-  <object Name="Avyrialus_Elder_Feral" Inherits="BaseAvyrialus">
+  <object Name="Avyrialus_Elder_Feral" Inherits="BaseAvyriali">
     <part Name="Render" DisplayName="{{R|feral avyrialus elder}}" Tile="Creatures/" RenderString="A" ColorString="&amp;R" />
     <part Name="Description" Short="Standing amongst the prey, =pronouns.possessive= eyes glimmer with a deep desire to consume." />
     <part Name="Brain" Hostile="True" Calm="false" />
@@ -457,7 +456,7 @@
     <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
   </object>
 
-  <object Name="Avyrialus_Elder_Hunter" Inherits="BaseAvyrialus">
+  <object Name="Avyrialus_Elder_Hunter" Inherits="BaseAvyriali">
     <part Name="Render" DisplayName="{{G|avyrialus elder hunter}}" Tile="Creatures/" RenderString="A" ColorString="&amp;G" />
     <part Name="Description" Short="The elderly =pronouns.parent= cares for =pronouns.possessive= =pronouns.offspring=. Standing with =pronouns.possessive= her family, =pronouns.subjective= teaches them to hunt." />
     <part Name="Brain" Hostile="false" Calm="false" />
@@ -471,7 +470,7 @@
     <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
   </object>
 
-  <object Name="Avyrialus_Feral" Inherits="BaseAvyrialus">
+  <object Name="Avyrialus_Feral" Inherits="BaseAvyriali">
     <part Name="Render" DisplayName="{{r|feral avyrialus}}" Tile="Creatures/" RenderString="A" ColorString="&amp;r" />
     <part Name="Description" Short="Swallower of life. Embracer of desire. The once gentle giant now seeks only to consume." />
     <part Name="Brain" Hostile="True" Calm="false" />
@@ -488,7 +487,7 @@
     <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
   </object>
 
-  <object Name="Avyrialus_Hunter" Inherits="BaseAvyrialus">
+  <object Name="Avyrialus_Hunter" Inherits="BaseAvyriali">
     <part Name="Render" DisplayName="{{g|avyrialus hunter}}" Tile="Creatures/" RenderString="A" ColorString="&amp;g" />
     <part Name="Description" Short="Large but youthful. =pronouns.subjective= watches for prey to bring home to =pronouns.possessive= =pronouns.offspring=." />
     <part Name="Brain" Hostile="false" Calm="false" />
@@ -502,7 +501,7 @@
     <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
   </object>
 
-  <object Name="Avyrialus_Pack" Inherits="BaseAvyrialus">
+  <object Name="Avyrialus_Pack" Inherits="BaseAvyriali">
     <part Name="Render" DisplayName="{{K|avyrialus pack member}}" Tile="Creatures/" RenderString="A" ColorString="&amp;K" />
     <part Name="Description" Short="The =pronouns.sibling= to arkaedus, resembles all but wings and size. Instead =pronouns.subjective= bears a potent sting." />
     <part Name="Brain" Hostile="false" Calm="True" />
@@ -515,7 +514,7 @@
     <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
   </object>
 
-  <object Name="Avyrialus_Pack_Leader" Inherits="BaseAvyrialus">
+  <object Name="Avyrialus_Pack_Leader" Inherits="BaseAvyriali">
     <part Name="Render" DisplayName="{{y|avyrialus pack leader}}" Tile="Creatures/" RenderString="A" ColorString="&amp;y" />
     <part Name="Description" Short="Standing with pride. =pronouns.subjective= watches over =pronouns.possessive= pack as a =pronouns.parent=." />
     <part Name="Brain" Hostile="false" Calm="false" />
@@ -800,7 +799,7 @@
     <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
   </object>
 
-  <object Name="Voderai_Arkai_Elder_Feral" Inherits="BaseArkaedus">
+  <object Name="Voderai_Arkai_Elder_Feral" Inherits="BaseVoderaiArkai">
     <part Name="Render" DisplayName="{{R|feral arkaedus elder}}" Tile="Creatures/" RenderString="A" ColorString="&amp;R" />
     <part Name="Description" Short="With glistening feathers soaked within fresh saliva =pronouns.subjective= merely speaks with a natural hiss. But upon sensing prey =pronouns.subjective= prepares to pounce." />
     <part Name="Brain" Hostile="True" Calm="false" />
@@ -818,7 +817,7 @@
     <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
   </object>
 
-  <object Name="Voderai_Arkai_Elder_Hunter" Inherits="BaseArkaedus">
+  <object Name="Voderai_Arkai_Elder_Hunter" Inherits="BaseVoderaiArkai">
     <part Name="Render" DisplayName="{{G|arkaedus elder hunter}}" Tile="Creatures/" RenderString="A" ColorString="&amp;G" />
     <part Name="Description" Short="Cunning, resolute, and wise. =pronouns.subjective= stands tall as feathers shimmer in the light, watching forth until the prowl return." />
     <part Name="Brain" Hostile="false" Calm="false" />
@@ -833,7 +832,7 @@
     <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
   </object>
 
-  <object Name="Voderai_Arkai_Feral" Inherits="BaseArkaedus">
+  <object Name="Voderai_Arkai_Feral" Inherits="BaseVoderaiArkai">
     <part Name="Render" DisplayName="{{r|feral arkaedus}}" Tile="Creatures/" RenderString="A" ColorString="&amp;r" />
     <part Name="Description" Short="Bearing down on all four paws =pronouns.subjective= has succumbed to =pronouns.possessive instinctual hunger as =pronouns.subjective= had sought to avoid." />
     <part Name="Brain" Hostile="True" Calm="false" />
@@ -851,7 +850,7 @@
     <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
   </object>
 
-  <object Name="Voderai_Arkai_Hunter" Inherits="BaseArkaedus">
+  <object Name="Voderai_Arkai_Hunter" Inherits="BaseVoderaiArkai">
     <part Name="Render" DisplayName="{{g|arkaedus hunter}}" Tile="Creatures/" RenderString="A" ColorString="&amp;g" />
     <part Name="Description" Short="There's a glance of hunger in =pronouns.possessive= eyes. What's on =pronouns.possessive= mind, is only known to =pronouns.reflexive=." />
     <part Name="Brain" Hostile="false" Calm="false" />
@@ -866,7 +865,7 @@
     <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
   </object>
 
-  <object Name="Voderai_Arkai_Pack" Inherits="BaseArkaedus">
+  <object Name="Voderai_Arkai_Pack" Inherits="BaseVoderaiArkai">
     <part Name="Render" DisplayName="{{K|arkaedus pack member}}" Tile="Creatures/" RenderString="A" ColorString="&amp;K" />
     <part Name="Description" Short="=pronouns.possessive= stature stands to be of =pronouns.possessive= kindreds archaic form. Feathers speckled with colour, indicate =pronouns.subjective= is on the elderly path." />
     <part Name="Brain" Hostile="false" Calm="True" />
@@ -879,7 +878,7 @@
     <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
   </object>
 
-  <object Name="Voderai_Arkai_Pack_Leader" Inherits="BaseArkaedus">
+  <object Name="Voderai_Arkai_Pack_Leader" Inherits="BaseVoderaiArkai">
     <part Name="Render" DisplayName="{{y|arkaedus pack leader}}" Tile="Creatures/" RenderString="A" ColorString="&amp;y" />
     <part Name="Description" Short="Aged with guilded colour, =pronouns.subjective= watches over =pronouns.possessive= pack. Like a =pronouns.parent= and =pronouns.sibling=, =pronouns.subjective= cares for =pronouns.possessive= adopted family." />
     <part Name="Brain" Hostile="false" Calm="false" />
@@ -1300,7 +1299,7 @@
 
   <!--Children of Daemina-->
 
-  <object Name="COD_Alacamdaca" Inherits="BaseArkaedus">
+  <object Name="COD_Alacamdaca" Inherits="BaseVoderaiArkai">
     <part Name="Render" DisplayName="{{daemina|Alacamdaca}}" Tile="Creatures/" RenderString="A" ColorString="&amp;w" />
     <part Name="Description" Short="Even as the Avenkyri aged, =pronouns.subjective= are still yet a young passionate soul within the vessel of the elden arkaedus." />
     <part Name="Brain" Hostile="false" Calm="true" Factions="Avenkyr-25,VeidancyriDaemina-100" />
@@ -1528,7 +1527,7 @@
 
   <!--The Avenkyri-->
 
-  <object Name="AvenkyriAkafiol" Inherits="BaseArkaedus">
+  <object Name="AvenkyriAkafiol" Inherits="BaseVoderaiArkai">
     <part Name="Render" DisplayName="{{doratorian|Avenkyr Akafiol}}" Tile="Creatures/" RenderString="A" ColorString="&amp;W" />
     <part Name="Description" Short="Glancing into the eyes of the voracious giant, one sees desire, lust, and sin, however even with her habits: the daughter of voderai and avyrialus, emits a calm, affectionate, almost maternal feeling." />
     <part Name="Brain" Hostile="false" Calm="True" Factions="Avenkyr-100" />
@@ -1625,7 +1624,7 @@
     <xtagWaterRitual NoJoin="true" SellSkill="Endurance" />
   </object>
 
-  <object Name="AvenkyriArikal" Inherits="BaseArkaedus">
+  <object Name="AvenkyriArikal" Inherits="BaseVoderaiArkai">
     <part Name="Render" DisplayName="{{doratorian|Avenkyr Arikal}}" Tile="Creatures/" RenderString="A" ColorString="&amp;w" />
     <part Name="Description" Short="The incendiery glare of a perceptive arkaedus, bears disdain for humanity's history. He cares little for mortals, and prefers peace." />
     <part Name="Brain" Hostile="false" Calm="false" Factions="Avenkyr-100" />
