@@ -21,7 +21,7 @@
 		</step>
   </quest>
 
-  <!--The Avenkyri-->
+  <!--Avenkyri-->
 
   <quest Name="The Avenkyri" Level="40"
          Accomplishment="You found and spoke with each of the Avenkyri."
@@ -42,6 +42,9 @@
     <step Name="Meet Arikal" XP="5000">
       <text>Find and speak with Arikal.</text>
     </step>
+    <step Name="Meet Javska" XP="5000">
+      <text>Find and speak with Javska.</text>
+    </step>
     <step Name="Meet Suizva" XP="5000">
       <text>Find and speak with Suizva.</text>
     </step>
@@ -60,9 +63,9 @@
       <text>Find the lair of Andekitalia.</text>
     </step>
     <step Name="Guardian of Dorator" XP="5000">
-      <text>Speak with or slay the greater wyrm, whom resides over the portal.</text>
+      <text>Speak with or slay the archaic wyrm, whom resides over the portal.</text>
     </step>
-    <step Name="Favour for Andekitalia" XP="5000" Optional="true">>
+    <step Name="Favour for Andekitalia" XP="5000" Optional="true">
       <text>Eliminate the Azkuvalian zealots who've been disturbing Andekitalia.</text>
     </step>
     </step>

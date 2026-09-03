@@ -3,7 +3,7 @@
 
   <faction
     Name="AADivine"
-    DisplayName="The Dae"
+    DisplayName="Dae"
     Old="true"
     FormatWithArticle="true"
     InitialPlayerReputation="0"
@@ -144,7 +144,7 @@
 
   <faction
     Name="Azkuvalian"
-    DisplayName="The Azkuvalian Hierarchy"
+    DisplayName="Azkuvalian Hierarchy"
     Old="false"
     FormatWithArticle="true"
     InitialPlayerReputation="-250"
@@ -175,7 +175,7 @@
 
   <faction
     Name="Avenkyr"
-    DisplayName="The Avenkyri"
+    DisplayName="Avenkyri"
     Old="false"
     FormatWithArticle="true"
     InitialPlayerReputation="-50"
@@ -349,7 +349,7 @@
 
   <faction
     Name="Syrenalian"
-    DisplayName="The Syrenalian High Council"
+    DisplayName="Syrenalian High Council"
     Old="false"
     FormatWithArticle="true"
     InitialPlayerReputation="-200"
@@ -379,7 +379,7 @@
 
   <faction
     Name="SyrnlCyber"
-    DisplayName="The Octusarian Technological Forces"
+    DisplayName="Octusarian Technological Forces"
     Old="false"
     FormatWithArticle="true"
     InitialPlayerReputation="-300"
@@ -410,7 +410,7 @@
 
   <faction
     Name="SyrnlRF"
-    DisplayName="The Syrenalian Axilarium"
+    DisplayName="Syrenalian Axilarium"
     Old="false"
     FormatWithArticle="true"
     InitialPlayerReputation="-250"
@@ -440,7 +440,7 @@
 
   <faction
     Name="Talfieran"
-    DisplayName="The Talfieran Civil Volunteers"
+    DisplayName="Talfieran Civil Volunteers"
     Old="false"
     FormatWithArticle="true"
     InitialPlayerReputation="-150"
@@ -472,7 +472,7 @@
 
   <faction
     Name="Veidancyri"
-    DisplayName="The Veidancyri"
+    DisplayName="Veidancyri"
     Old="false"
     FormatWithArticle="true"
     InitialPlayerReputation="0"

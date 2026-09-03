@@ -550,17 +550,23 @@
 
         {{emote|*As you begin to rub the ridges of her beak, she purrs louder as she softly nuzzles against your hand*}}
       </text>
-      <text IfNotHaveQuest="The Avenkyri">
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akafiol">..I don't think we've properly introduced ourselves?</choice>
+      <choice GotoID="rest">There there, good giant avian wolf cat.</choice>
+    </node>
+    <node ID="Pet" IfNotHaveQuest="The Avenkyri">
+      <text>
         {{emote|*She cautiously lowers her head as you place your hand on her beak*}}
 
         {{emote|*As you begin to rub the ridges of her beak, you hear a soft purr*}}
       </text>
-      <text IfFinishedQuest="The Avenkyri">
+      <choice GotoID="rest">There there, good giant avian wolf cat.</choice>
+    </node>
+    <node ID="Pet" IfFinishedQuest="The Avenkyri">
+      <text>
         {{emote|*She lowers her head to you, nuzzling against you with a loud purr*}}
 
         {{emote|*As you begin to rub the ridges of her beak, she looks to you with a affectionate smile.*}}
       </text>
-      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akafiol">..I don't think we've properly introduced ourselves?</choice>
       <choice GotoID="rest">There there, good giant avian wolf cat.</choice>
     </node>
     <node ID="WhoAreYou">
@@ -635,27 +641,41 @@
   <!--AvenkyrAkzato-->
 
   <conversation ID="Akzato">
-    <node ID="Start">
-      <text IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akzato">
+    <node ID="Start" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akzato">
+      <text>
         Child of lesser soul, make any attempts and you'll meet my horns.
         
         If your here for other reasons, then determine them.
       </text>
-      <text IfHaveActiveQuest="The Avenkyri" IfFinishedQuestStep="Meet Akzato">
+      <choice GotoID="Child" IfHaveActiveQuest="The Avenkyri">Why do you call me child?</choice>
+      <choice GotoID="Feathers" IfHaveActiveQuest="The Avenkyri">your feathers are a obsidian shade, buffed by crimson gold.</choice>
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akzato">..I don't think we've met?</choice>
+      <choice GotoID="End">I mean not to bother, live and drink.</choice>
+    </node>
+    <node ID="Start" IfHaveActiveQuest="The Avenkyri" IfFinishedQuestStep="Meet Akzato">
+      <text>
         Are you bothering me for any particular reason, child?.
-      </text>
-      <text IfNotHaveQuest="The Avenkyri">
-        {{emote|*Akzato gives you a cautious glare*}}
-      </text>
-      <text IfFinishedQuest="The Avenkyri">
-        What is it child?
       </text>
       <choice GotoID="AkzatoDelas">I'd like to ask if visit the wetseer?</choice>
       <choice GotoID="AkzatoDiary">I found this book laying around, do you know anything of it?</choice>
       <choice GotoID="AkzatoGlyphs">Your diary seems to have glyphs of which the Barathrum is interested in.</choice>
       <choice GotoID="Child" IfHaveActiveQuest="The Avenkyri">Why do you call me child?</choice>
       <choice GotoID="Feathers" IfHaveActiveQuest="The Avenkyri">your feathers are a obsidian shade, buffed by crimson gold.</choice>
-      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akzato">..I don't think we've met?</choice>
+      <choice GotoID="End">I mean not to bother, live and drink.</choice>
+    </node>
+    <node ID="Start" IfNotHaveQuest="The Avenkyri">
+      <text>
+        {{emote|*Akzato gives you a cautious glare*}}
+      </text>
+      <choice GotoID="End">I mean not to bother, live and drink.</choice>
+    </node>
+    <node ID="Start" IfFinishedQuest="The Avenkyri">
+      <text IfFinishedQuest="The Avenkyri">
+        What is it child?
+      </text>
+      <choice GotoID="AkzatoDelas">I'd like to ask if visit the wetseer?</choice>
+      <choice GotoID="AkzatoDiary">I found this book laying around, do you know anything of it?</choice>
+      <choice GotoID="AkzatoGlyphs">Your diary seems to have glyphs of which the Barathrum is interested in.</choice>
       <choice GotoID="End">I mean not to bother, live and drink.</choice>
     </node>
     <node ID="AkzatoDelas">
@@ -690,12 +710,20 @@
 
         Child of lesser soul, hand it over!
       </text>
-      <text IfHavePart="MentalMirror" Priority="2">
+      <choice GotoID="AkzatoRefuse">What if I don't?</choice>
+      <choice GotoID="AkzatoDiary2">Here then.</choice>
+    </node>
+    <node ID="AkzatoDiary" IfHavePart="MentalMirror" Priority="2">
+      <text>
         {{emote|*You feel a slight of psionic power, as Akzato's feathers tense up.*}}
 
         Return my diary, or else!
       </text>
-      <text IfHavePart="Telepathy" Priority="1">
+      <choice GotoID="AkzatoRefuse">What if I don't?</choice>
+      <choice GotoID="AkzatoDiary2">Here then.</choice>
+    </node>
+    <node ID="AkzatoDiary" IfHavePart="Telepathy" Priority="1">
+      <text>
         {{emote|*You feel a force of psionic power, and Akzato speaks with will as her feathers tense up.*}}
 
         {{emote|*Return my diary, or else!*}}
@@ -771,20 +799,31 @@
   <!--AvenkyrArikal-->
 
   <conversation ID="Arikal">
-    <node ID="Start">
-      <text IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Arikal">
+    <node ID="Start" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Arikal">
+      <text>
         Stay at will. Make any attempts, and the answer is known!
       </text>
-      <text IfHaveActiveQuest="The Avenkyri" IfFinishedQuestStep="Meet Arikal">
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Arikal">..I don't think we've met?</choice>
+      <choice GotoID="Attitude">What's with your attitude?</choice>
+      <choice GotoID="End">I'll just leave you be then.</choice>
+    </node>
+    <node ID="Start" IfHaveActiveQuest="The Avenkyri" IfFinishedQuestStep="Meet Arikal">
+      <text>
         What is it they say? That lion stalk their prey, as the thunder before the storm? Make any attempts, and I'll show you prey..
       </text>
-      <text IfNotHaveQuest="The Avenkyri">
+      <choice GotoID="Attitude">What's with your attitude?</choice>
+      <choice GotoID="End">I'll just leave you be then.</choice>
+    </node>
+    <node ID="Start" IfNotHaveQuest="The Avenkyri">
+      <text>
         {{emote|*Arikal hisses as you approach*}}
       </text>
-      <text IfFinishedQuest="The Avenkyri">
+      <choice GotoID="End">I'll just leave you be then.</choice>
+    </node>
+    <node ID="Start" IfFinishedQuest="The Avenkyri">
+      <text>
         Trust is only given within reason =name=, I won't hesitate if you try anything.
       </text>
-      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Arikal">..I don't think we've met?</choice>
       <choice GotoID="Attitude">What's with your attitude?</choice>
       <choice GotoID="End">I'll just leave you be then.</choice>
     </node>
@@ -813,7 +852,7 @@
 
   <conversation ID="Javska" Inherits="Kazvate">
     <node ID="Start">
-      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Arikal">..I don't think we've met?</choice>
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Javska">..I don't think we've met?</choice>
       <choice GotoID="Kazvate">Can you clarify?</choice>
     </node>
     <node ID="WhoAreYou">
@@ -868,12 +907,18 @@
   <!--AvenkyrSuizva-->
 
   <conversation ID="Suizva">
-    <node ID="Start">
-      <text IfHavePart="Carapace" Priority="1">
+    <node ID="Start" IfHavePart="Carapace" Priority="1">
+      <text>
         {{emote|*frantically barks and chirps in excitement*}}
 
         Akwu icefa! Turtle! Shell!
       </text>
+      <choice GotoID="Turtleshell" IfHavePart="Carapace">Turtle shell?</choice>
+      <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Suizva">..I don't think we've met?</choice>
+      <choice GotoID="Cat" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Suizva">Are you supposed to be some kind of cat?</choice>
+      <choice GotoID="End" IfFinishedQuest="The Avenkyri">Live and drink, Suizva.</choice>
+    </node>
+    <node ID="Start">
       <text>
         {{emote|*Suizva gives a few barks and chirps as you approach*}}
       </text>
@@ -1388,11 +1433,15 @@
   </conversation>
 
   <conversation ID="Ansiamia">
-    <node ID="Start">
-      <text IfNotReputationAtLeast="Liked">
+    <node ID="Start" IfNotReputationAtLeast="Liked">
+      <text>
         {{emote|*Ansiamia stares at you with distrust*}}
       </text>
-      <text IfReputationAtLeast="Liked">
+      <choice GotoID="Silent">Your a bit smaller than most voderai.</choice>
+      <choice GotoID="End">...live and drink, little one.</choice>
+    </node>
+    <node ID="Start" IfReputationAtLeast="Liked">
+      <text>
         {{emote|*Ansiamia stares at you with curiosity*}}
       </text>
       <choice GotoID="Silent">Your a bit smaller than most voderai.</choice>
@@ -1408,11 +1457,16 @@
   </conversation>
 
   <conversation ID="Delastraos">
-    <node ID="Start">
-      <text IfNotReputationAtLeast="Liked">
+    <node ID="Start" IfNotReputationAtLeast="Liked">
+      <text>
         {{emote|*Delastraos looks to you, with a unwavering glare*}}
       </text>
-      <text IfReputationAtLeast="Liked">
+      <choice GotoID="Wetseer">I require your forsight, will you grant it?</choice>
+      <choice GotoID="WhoAreYou">Who are you?</choice>
+      <choice GotoID="Drink">...live and drink.</choice>
+    </node>
+    <node ID="Start" IfReputationAtLeast="Liked">
+      <text>
         If your here for my vision, I'm not in the mood.~
         I've a little flower to care for, try not to bother her.
       </text>
@@ -1486,17 +1540,32 @@
   <!--Andekitalia-->
 
   <conversation ID="Andekitalia">
-    <node ID="Start">
-      <text IfNotHaveQuest="Andekitalia, Harbingers of Chaos">
+    <node ID="Start" IfNotHaveQuest="Andekitalia, Harbingers of Chaos">
+      <text>
         {{emote|*violent hissing*}}
 
         Who dares trespass within a vault of the firstborn, Andekitalia, Harbingers of Chaos, daughters of Talcius, diety of chaos demands an answer!?
       </text>
-      <text IfHaveActiveQuest="Andekitalia, Harbingers of Chaos" IfNotFinishedQuestStep="Favour for Andekitalia">
+      <choice GotoID="Disturbance">I apologise, for my intrusion!</choice>
+      <choice GotoID="Speech">Why are are you talking in third person?</choice>
+      <choice GotoID="End">
+        <text>!!!</text>
+        <part Name="StartFight" />
+      </choice>
+    </node>
+    <node ID="Start" IfHaveActiveQuest="Andekitalia, Harbingers of Chaos" IfNotFinishedQuestStep="Favour for Andekitalia">
+      <text>
         {{emote|*violent hissing*}}
 
         =player.ApparentSpecies=, what reasoning is there to disturb Andekitalia, Harbingers of Chaos, daughters of Talcius, diety of chaos!?
       </text>
+      <choice GotoID="Disturbance">I apologise, for my intrusion!</choice>
+      <choice GotoID="Speech">Why are are you talking in third person?</choice>
+      <choice GotoID="End">
+        <text>!!!</text>
+        <part Name="StartFight" />
+      </choice>
+    <node ID="Start" IfNotFinishedQuestStep="Favour for Andekitalia">
       <text IfFinishedQuest="Andekitalia, Harbingers of Chaos" IfFinishedQuestStep="Favour for Andekitalia">
         {{emote|*Andekitalia looks to you with a mocking hiss, clawing against their shrine*}}
 
@@ -1504,11 +1573,15 @@
       </text>
       <choice GotoID="Portal" IfHaveActiveQuest="Andekitalia, Harbingers of Chaos" IfNotFinishedQuestStep="Guardian of Dorator">I've come seaking the portal of which you guard, harbingers.</choice>
       <choice GotoID="Speech">Why are are you talking in third person?</choice>
-      <choice GotoID="Disturbance" IfNotHaveQuest="Andekitalia, Harbingers of Chaos" IfHaveActiveQuest="Andekitalia, Harbingers of Chaos" IfNotFinishedQuestStep="Favour for Andekitalia">I apologise, for my intrusion!</choice>
-      <choice GotoID="End" IfNotHaveQuest="Andekitalia, Harbingers of Chaos">
-        <text>!!!</text>
-        <part Name="StartFight" />
-      </choice>
+      <choice GotoID="End">Nothing, sorry for bothering Harbingers.</choice>
+    </node>
+      <text IfFinishedQuest="Andekitalia, Harbingers of Chaos">
+        {{emote|*Andekitalia looks to you with a mocking hiss, clawing against their shrine*}}
+
+        Child of lesser soul? What can Andekitalia do, for you? Not that oaths have meaning, for Andekitalia swears to none.
+      </text>
+      <choice GotoID="Speech">Why are are you talking in third person?</choice>
+      <choice GotoID="End">Nothing, sorry for bothering Harbingers.</choice>
     </node>
     <node ID="Disturbance">
       <text>
