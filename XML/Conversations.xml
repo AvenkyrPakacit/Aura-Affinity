@@ -215,31 +215,40 @@
   <!--Syrenalian-->
 
   <conversation ID="Savistato" Inherits="BaseSlynthMayor">
-    <node ID="Start">
+    <node ID="Start" IfNotHaveQuest="The Hegemon of Fire">
       <text IfNotHaveQuest="The Hegemon of Fire">
         Oh, I wasn't expecting company..
 
         Savistato, high councillor of Syrenalia. And..you are?
       </text>
-      <text IfHaveActiveQuest="The Hegemon of Fire" IfNotFinishedQuestStep="Accept Savistato's proposal">
+      <choice GotoID="Greetings" IfNotHaveQuest="The Hegemon of Fire">I am =player.formalAddressTerm=.</choice>
+      <choice GotoID="End">live and drink, high councillor.</choice>
+    </node>
+    <node ID="Start" IfHaveActiveQuest="The Hegemon of Fire" IfNotFinishedQuestStep="Accept Savistato's proposal">
+      <text>
         Welcome back, =name=.
 
         Did you forget something?
       </text>
-      <text IfHaveActiveQuest="The Hegemon of Fire" IfFinishedQuestStep="Accept Savistato's proposal">
+      <choice GotoID="Work" IfHaveActiveQuest="The Hegemon of Fire" IfNotFinishedQuestStep="Accept Savistato's proposal">Is there any work you have.</choice>
+      <choice GotoID="End">live and drink, high councillor.</choice>
+    </node>
+    <node ID="Start" IfHaveActiveQuest="The Hegemon of Fire" IfFinishedQuestStep="Accept Savistato's proposal">
+      <text>
         Welcome back, =name=.
 
         Is there any news?
       </text>
-      <text IfFinishedQuest="The Hegemon of Fire">
+      <choice GotoID="Resolved" IfHaveActiveQuest="The Hegemon of Fire" IfFinishedQuestStep="The prisoner">I have handled the situation.</choice>
+      <choice GotoID="End">live and drink, high councillor.</choice>
+    </node>
+    <node ID="Start" IfFinishedQuest="The Hegemon of Fire">
+      <text>
         Welcome back, =name=.
 
         Is there anything I can do for you?
       </text>
-      <choice GotoID="Work" IfHaveActiveQuest="The Hegemon of Fire" IfNotFinishedQuestStep="Accept Savistato's proposal">Is there any work you have.</choice>
       <choice GotoID="Questions" IfFinishedQuest="The Hegemon of Fire">I have questions, councillor.</choice>
-      <choice GotoID="Resolved" IfHaveActiveQuest="The Hegemon of Fire" IfFinishedQuestStep="The prisoner">I have handled the situation.</choice>
-      <choice GotoID="Greetings" IfNotHaveQuest="The Hegemon of Fire">I am =player.formalAddressTerm=.</choice>
       <choice GotoID="End">live and drink, high councillor.</choice>
     </node>
     <node ID="Greetings">
@@ -267,21 +276,27 @@
       <choice GotoID="Variants">Why are there three variants of Syrenals?</choice>
       <choice GotoID="End">I forgot what I was going to ask.</choice>
     </node>
-    <node ID="Resolved">
-      <text IfFinishedQuestStep="Investigate">
+    <node ID="Resolved" IfFinishedQuestStep="Investigate">
+      <text>
         So I've heard..
 
         I would've prefered it have been resolved more..favourably.
       </text>
+      <choice GotoID="End" CompleteQuestStep="Return to Savistato">I've handled it in the way I sought fit.</choice>
+    </node>
+    <!--<node ID="Resolved" IfFinishedQuestStep="Investigate">
+      <text>
+        So I've heard, =name=.
+
+        And what will sought within a explicit note written by the local vexara herself..
+      </text>
+      <choice GotoID="End" CompleteQuestStep="Return to Savistato">I've handled it in the way I sought fit.</choice>
+    </node>-->
+    <node ID="Resolved" IfNotFinishedQuestStep="Investigate">
       <text>
         So I've heard..
 
         =name=, when I said 'clear their name' I meant to find evidence, not..
-      </text>
-      <text IfFinishedQuestStep="Investigate">
-        So I've heard, =name=.
-
-        And what will sought within a explicit note written by the local vexara herself..
       </text>
       <choice GotoID="End" CompleteQuestStep="Return to Savistato">I've handled it in the way I sought fit.</choice>
     </node>
@@ -471,30 +486,40 @@
   <!--AvenkyrAkafiol-->
 
   <conversation ID="Akafiol">
-    <node ID="Start">
-      <text IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akafiol">
+    <node ID="Start" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akafiol">
+      <text>
         {{emote|*With a curious look as you approach: Akafiol licks the sides of her beak*}}
 
         Aren't you a lovely thing.
-      </text>
-      <text IfHaveActiveQuest="The Avenkyri" IfFinishedQuestStep="Meet Akafiol">
-        {{emote|*Akafiol lifts her head patiently with curiosity as you approach*}}
-
-        Did you forget anything, or just need the company of a gentle giant?
-      </text>
-      <text IfNotHaveQuest="The Avenkyri">
-        {{emote|*Akafiol looks to you with hunger in her eyes*}}
-      </text>
-      <text IfFinishedQuest="The Avenkyri">
-        {{emote|*Akafiol lifts her head patiently with a comforting smile as you approach*}}
       </text>
       <choice GotoID="Uneasy" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akafiol">Don't get any ideas!</choice>
       <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akafiol">..I don't think we've met?</choice>
       <choice GotoID="Hunger" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akafiol">If your hungry: I don't think I have anything that'd suit you.</choice>
       <choice GotoID="Uneasy" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akafiol">Umm..on second thought: I'll keep my distance..</choice>
+      <choice GotoID="Pet">May I pet you?</choice>
+    </node>
+    <node ID="Start" IfHaveActiveQuest="The Avenkyri" IfFinishedQuestStep="Meet Akafiol">
+      <text>
+        {{emote|*Akafiol lifts her head patiently with curiosity as you approach*}}
+
+        Did you forget anything, or just need the company of a gentle giant?
+      </text>
       <choice GotoID="Rest" IfHaveActiveQuest="The Avenkyri" IfFinishedQuestStep="Meet Akafiol">Was just checking on you, gentle giant.</choice>
       <choice GotoID="Pet">May I pet you?</choice>
+    </node>
+    <node ID="Start" IfNotHaveQuest="The Avenkyri">
+      <text>
+        {{emote|*Akafiol looks to you with hunger in her eyes*}}
+      </text>
+      <choice GotoID="Pet">May I pet you?</choice>
       <choice GotoID="End" IfNotHaveQuest="The Avenkyri">On second thought..</choice>
+    </node>
+    <node ID="Start" IfFinishedQuest="The Avenkyri">
+      <text>
+        {{emote|*Akafiol lifts her head patiently with a comforting smile as you approach*}}
+      </text>
+      <choice GotoID="Pet">May I pet you?</choice>
+      <choice GotoID="Rest" IfFinishedQuest="The Avenkyri">Was just checking on you, gentle giant.</choice>
     </node>
     <node ID="Uneasy">
       <text>
@@ -519,8 +544,8 @@
       <choice GotoID="WhoAreYou">..I don't think we've met?</choice>
       <choice GotoID="Pet">May I pet you?</choice>
     </node>
-    <node ID="Pet">
-      <text IfHaveActiveQuest="The Avenkyri">
+    <node ID="Pet" IfHaveActiveQuest="The Avenkyri">
+      <text>
         Need little to ask for a gentle beast, with an insatiable hunger.
 
         {{emote|*As you begin to rub the ridges of her beak, she purrs louder as she softly nuzzles against your hand*}}
@@ -559,23 +584,31 @@
   <!--AvenkyrAkailios-->
   
   <conversation ID="Akailios">
-    <node ID="Start">
-      <text IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akailios">
+    <node ID="Start" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akailios">
+      <text>
         You seem..relatively friendly?
-      </text>
-      <text IfHaveActiveQuest="The Avenkyri" IfFinishedQuestStep="Meet Akailios">
-        Anything else you need?
-      </text>
-      <text IfNotHaveQuest="The Avenkyri">
-        {{emote|*Akailios looks to you with curiosity*}}
-      </text>
-      <text IfFinishedQuest="The Avenkyri">
-        If you need anyone to talk to: I'm here.
       </text>
       <choice GotoID="WhatAreYou" IfHaveActiveQuest="The Avenkyri">..what are voderai?</choice>
       <choice GotoID="WhoAreYou" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akailios">..I don't think we've met?</choice>
       <choice GotoID="End" IfHaveActiveQuest="The Avenkyri" IfNotFinishedQuestStep="Meet Akailios">I'll keep that in mind..</choice>
+    </node>
+    <node ID="Start" IfHaveActiveQuest="The Avenkyri" IfFinishedQuestStep="Meet Akailios">
+      <text>
+        Anything else you need?
+      </text>
+      <choice GotoID="WhatAreYou" IfHaveActiveQuest="The Avenkyri">..what are voderai?</choice>
       <choice GotoID="End" IfHaveActiveQuest="The Avenkyri" IfFinishedQuestStep="Meet Akailios">No, your fine.</choice>
+    </node>
+    <node ID="Start" IfNotHaveQuest="The Avenkyri">
+      <text>
+        {{emote|*Akailios looks to you with curiosity*}}
+      </text>
+      <choice GotoID="End" IfNotHaveQuest="The Avenkyri">...</choice>
+    </node>
+    <node ID="Start" IfFinishedQuest="The Avenkyri">
+      <text>
+        If you need anyone to talk to: I'm here.
+      </text>
       <choice GotoID="End" IfFinishedQuest="The Avenkyri">I'll be alright, Akailios.</choice>
     </node>
     <node ID="WhatAreYou">
