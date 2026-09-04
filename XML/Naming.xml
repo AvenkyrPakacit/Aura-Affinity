@@ -123,10 +123,6 @@
 
     <namestyle Name="Aizalvaran" HyphenationChance="10" TwoNameChance="20" Format="TitleCase">
       <scopes>
-        <scope Name="Subtype1" Subtype="Blade of Eidrati" Priority="100" Combine="false" />
-        <scope Name="Subtype2" Subtype="Eidrati Harbinger" Priority="100" Combine="false" />
-        <scope Name="Subtype3" Subtype="Eidrati Priest" Priority="100" Combine="false" />
-        <scope Name="Subtype4" Subtype="Ekluat akuit Shirask" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Aizalvaran" Priority="50" Combine="true" />
         <scope Name="Faction" Faction="Eidrati" Priority="100" Combine="false" />
         <scope Name="Species" Species="eidrati" Priority="50" Combine="true" />
@@ -193,10 +189,6 @@
         <scope Name="Culture" Culture="Azkuvalian" Priority="50" Combine="true" />
         <scope Name="Faction" Faction="Azkuvalian" Priority="100" Combine="false" />
         <scope Name="Species" Species="azkuvalian" Priority="50" Combine="true" />
-        <scope Name="Subtype1" Subtype="Akatylian Rogue Diciple" Priority="100" Combine="false" />
-        <scope Name="Subtype2" Subtype="Thatylian Rogue Mechanist" Priority="100" Combine="false" />
-        <scope Name="Subtype3" Subtype="Xyatylian Rogue Battlemage" Priority="100" Combine="false" />
-        <scope Name="Subtype4" Subtype="Xyatylian Rogue Techpriest" Priority="100" Combine="false" />
       </scopes>
       <prefixes Amount="1">
         <prefix Name="aj'" />
@@ -319,6 +311,24 @@
         <scope Name="Species3" Species="kazvate" Priority="50" Combine="true" />
         <scope Name="Species4" Species="vaskate" Priority="50" Combine="true" />
         <scope Name="Species5" Species="voderai" Priority="50" Combine="true" />
+        <scope Name="Subtype1" Subtype="Kazvate Akamalask" Priority="50" Combine="true" />
+        <scope Name="Subtype2" Subtype="Kazvate Akameikal" Priority="50" Combine="true" />
+        <scope Name="Subtype3" Subtype="Kazvate Akamkraato" Priority="50" Combine="true" />
+        <scope Name="Subtype4" Subtype="Kazvate Akammika" Priority="50" Combine="true" />
+        <scope Name="Subtype5" Subtype="Kazvate Child of Daemina" Priority="50" Combine="true" />
+        <scope Name="Subtype6" Subtype="Kazvate Cseiklasca" Priority="50" Combine="true" />
+        <scope Name="Subtype7" Subtype="Kazvate Uwakati" Priority="50" Combine="true" />
+        <scope Name="Subtype8" Subtype="Kazvate Veskaskwe" Priority="50" Combine="true" />
+        <scope Name="Subtype9" Subtype="Kazvate Veskerai" Priority="50" Combine="true" />
+        <scope Name="Subtype10" Subtype="Voderai Akamalask" Priority="50" Combine="true" />
+        <scope Name="Subtype11" Subtype="Voderai Akameikal" Priority="50" Combine="true" />
+        <scope Name="Subtype12" Subtype="Voderai Akamkraato" Priority="50" Combine="true" />
+        <scope Name="Subtype13" Subtype="Voderai Akammika" Priority="50" Combine="true" />
+        <scope Name="Subtype14" Subtype="Voderai Child of Daemina" Priority="50" Combine="true" />
+        <scope Name="Subtype15" Subtype="Voderai Cseiklasca" Priority="50" Combine="true" />
+        <scope Name="Subtype16" Subtype="Voderai Uwakati" Priority="50" Combine="true" />
+        <scope Name="Subtype17" Subtype="Voderai Veskaskwe" Priority="50" Combine="true" />
+        <scope Name="Subtype18" Subtype="Voderai Veskerai" Priority="50" Combine="true" />
       </scopes>
       <prefixes Amount="1">
         <prefix Name="ak" Weight="5" />
@@ -502,10 +512,15 @@
 	
 	<namestyle Name="AANamingArinate" TwoNameChance="40" Format="TitleCase">
       <scopes>
-        <scope Name="Subtype1" Subtype="Arinate Uwakati" Priority="50" Combine="true" />
-        <scope Name="Subtype2" Subtype="Arinate Cseiklasca" Priority="50" Combine="true" />
-        <scope Name="Subtype3" Subtype="Arinate Veskaskwe" Priority="50" Combine="true" />
+        <scope Name="Subtype1" Subtype="Arinate Akamalask" Priority="50" Combine="true" />
+        <scope Name="Subtype2" Subtype="Arinate Akameikal" Priority="50" Combine="true" />
+        <scope Name="Subtype3" Subtype="Arinate Akamkraato" Priority="50" Combine="true" />
         <scope Name="Subtype4" Subtype="Arinate Akammika" Priority="50" Combine="true" />
+        <scope Name="Subtype5" Subtype="Arinate Child of Daemina" Priority="50" Combine="true" />
+        <scope Name="Subtype6" Subtype="Arinate Cseiklasca" Priority="50" Combine="true" />
+        <scope Name="Subtype7" Subtype="Arinate Uwakati" Priority="50" Combine="true" />
+        <scope Name="Subtype8" Subtype="Arinate Veskaskwe" Priority="50" Combine="true" />
+        <scope Name="Subtype9" Subtype="Arinate Veskerai" Priority="50" Combine="true" />
       </scopes>
       <prefixes Amount="1">
         <prefix Name="ak" Weight="5" />
@@ -607,10 +622,24 @@
       <scopes>
         <scope Name="Culture" Culture="Syrenalian" Priority="50" Combine="true" />
         <scope Name="Species" Species="syrenalian" Priority="50" Combine="true" />
-        <scope Name="Subtype1" Subtype="Syrenalian Councillor" Priority="50" Combine="true" />
-        <scope Name="Subtype2" Subtype="Eilasalian Medic" Priority="50" Combine="true" />
-        <scope Name="Subtype3" Subtype="Talfieran Volunteer" Priority="50" Combine="true" />
-        <scope Name="Subtype4" Subtype="Octusarian Scientist" Priority="50" Combine="true" />
+        <scope Name="Subtype1" Subtype="Eilasalian Axilari" Priority="50" Combine="true" />
+        <scope Name="Subtype2" Subtype="Eilasalian Councillor" Priority="50" Combine="true" />
+        <scope Name="Subtype3" Subtype="Eilasalian Exarch Axilari" Priority="50" Combine="true" />
+        <scope Name="Subtype4" Subtype="Eilasalian Exarch Vexara" Priority="50" Combine="true" />
+        <scope Name="Subtype5" Subtype="Eilasalian Medic" Priority="50" Combine="true" />
+        <scope Name="Subtype6" Subtype="Eilasalian Vexara" Priority="50" Combine="true" />
+        <scope Name="Subtype7" Subtype="Einfieran Axilari" Priority="50" Combine="true" />
+        <scope Name="Subtype8" Subtype="Einfieran Councillor" Priority="50" Combine="true" />
+        <scope Name="Subtype9" Subtype="Einfieran Exarch Axilari" Priority="50" Combine="true" />
+        <scope Name="Subtype10" Subtype="Einfieran Exarch Vexara" Priority="50" Combine="true" />
+        <scope Name="Subtype11" Subtype="Einfieran Vexara" Priority="50" Combine="true" />
+        <scope Name="Subtype12" Subtype="Einfieran Volunteer" Priority="50" Combine="true" />
+        <scope Name="Subtype13" Subtype="Octusarian Axilari" Priority="50" Combine="true" />
+        <scope Name="Subtype14" Subtype="Octusarian Councillor" Priority="50" Combine="true" />
+        <scope Name="Subtype15" Subtype="Octusarian Exarch Axilari" Priority="50" Combine="true" />
+        <scope Name="Subtype16" Subtype="Octusarian Exarch Vexara" Priority="50" Combine="true" />
+        <scope Name="Subtype17" Subtype="Octusarian Scientist" Priority="50" Combine="true" />
+        <scope Name="Subtype17" Subtype="Octusarian Vexara" Priority="50" Combine="true" />
       </scopes>
       <prefixes Amount="1">
         <prefix Name="ae" />
